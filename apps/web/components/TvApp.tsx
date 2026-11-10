@@ -694,6 +694,7 @@ export function TvApp({
       videoElsewhere={videoElsewhere}
       onTune={tuneSlot}
       hideActions={hideActions || b === unknownGap}
+      noSignOff={tab === "chronik"}
       suggestUrl={b === onAir ? suggestUrl : null}
     />
   );

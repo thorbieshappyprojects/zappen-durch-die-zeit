@@ -52,6 +52,8 @@ interface CardProps {
   onTune?: (displayNumber: number) => void;
   /** Hide the media actions, e.g. while the consent overlay offers them instead. */
   hideActions?: boolean;
+  /** No "Danach: Sendeschluss" after the last programme (Chronik: the day is not a real one). */
+  noSignOff?: boolean;
 }
 
 /** Programme info screen: title, times, progress, and the best available link. */
@@ -66,6 +68,7 @@ export function ProgrammeCard({
   videoElsewhere,
   onTune,
   hideActions,
+  noSignOff,
 }: CardProps) {
   const level = media?.matchLevel ?? "none";
   return (
@@ -121,15 +124,17 @@ export function ProgrammeCard({
           ))}
         </div>
       )}
-      <div className="next">
-        {next ? (
-          <>
-            Danach <b>{formatClock(next.startMin)}</b> {next.title}
-          </>
-        ) : (
-          "Danach: Sendeschluss"
-        )}
-      </div>
+      {(next || !noSignOff) && (
+        <div className="next">
+          {next ? (
+            <>
+              Danach <b>{formatClock(next.startMin)}</b> {next.title}
+            </>
+          ) : (
+            "Danach: Sendeschluss"
+          )}
+        </div>
+      )}
     </div>
   );
 }
