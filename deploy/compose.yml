@@ -1,0 +1,107 @@
+# Zappen durch die Zeit on one server: Caddy (HTTPS) → app (Node.js 22) → PostgreSQL 17.
+# Lives in /opt/zadudize next to Caddyfile and .env (from env.production.example). See docs/DEPLOYMENT.md.
+# Only Caddy publishes ports; the database is reachable from the app and the jobs only.
+name: zadudize
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+x-app: &app
+  image: ghcr.io/thorbieshappyprojects/zappen-durch-die-zeit:${APP_TAG:-latest}
+  env_file: .env
+  environment:
+    # Built from the database password, so the secret exists only once in .env.
+    DATABASE_URL: postgres://zadudize:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD fehlt in .env}@db:5432/zadudize
+  volumes:
+    - uploads:/data/uploads
+  depends_on:
+    db:
+      condition: service_healthy
+  logging: *logging
+
+services:
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443/tcp"
+      - "443:443/udp"
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:-zadudize.de}
+      SITE_LOCK_USER: ${SITE_LOCK_USER:-}
+      SITE_LOCK_HASH: ${SITE_LOCK_HASH:-}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    mem_limit: 200m
+    logging: *logging
+
+  app:
+    <<: *app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/healthz').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    mem_limit: 1800m
+
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zadudize
+      POSTGRES_DB: zadudize
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD fehlt in .env}
+    # Sized for a 4 GB server shared with the app (docs/DEPLOYMENT.md).
+    command:
+      - postgres
+      - -c
+      - shared_buffers=512MB
+      - -c
+      - effective_cache_size=1500MB
+      - -c
+      - work_mem=8MB
+      - -c
+      - maintenance_work_mem=128MB
+      - -c
+      - max_connections=30
+      - -c
+      - random_page_cost=1.1
+    shm_size: 256m
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U zadudize -d zadudize"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    mem_limit: 1200m
+    logging: *logging
+
+  # One-off commands: docker compose run --rm jobs pnpm ingest snapshot
+  jobs:
+    <<: *app
+    profiles: ["jobs"]
+    environment:
+      DATABASE_URL: postgres://zadudize:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD fehlt in .env}@db:5432/zadudize
+      NODE_OPTIONS: --max-old-space-size=1000
+    volumes:
+      - uploads:/data/uploads
+      - ./import:/import:ro
+    mem_limit: 1200m
+
+volumes:
+  pgdata:
+  uploads:
+  caddy_data:
+  caddy_config:

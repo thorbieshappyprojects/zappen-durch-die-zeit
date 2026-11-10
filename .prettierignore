@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+seed/
+.data/
+docs/archive/
+**/.next/
+**/drizzle/
+LICENSE

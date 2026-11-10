@@ -1,0 +1,736 @@
+{
+  "date": "1998-11-20",
+  "completeness": "partial",
+  "tvDayStart": "06:00",
+  "timezone": "Europe/Berlin",
+  "source": {
+    "name": "Eigene Recherche aus öffentlichen Quellen (Wikipedia, TheTVDB, datierte Mitschnitte)",
+    "url": "https://de.wikipedia.org/",
+    "license": "not required (own research from public sources)"
+  },
+  "channels": [
+    {
+      "id": "ard",
+      "name": "Das Erste",
+      "displayNumber": 1,
+      "isPrivate": false
+    },
+    {
+      "id": "zdf",
+      "name": "ZDF",
+      "displayNumber": 2,
+      "isPrivate": false
+    },
+    {
+      "id": "sat-1",
+      "name": "SAT.1",
+      "displayNumber": 3,
+      "isPrivate": true
+    },
+    {
+      "id": "rtl-plus",
+      "name": "RTL",
+      "displayNumber": 4,
+      "isPrivate": true
+    },
+    {
+      "id": "rtl-2",
+      "name": "RTL II",
+      "displayNumber": 5,
+      "isPrivate": true
+    },
+    {
+      "id": "pro-7",
+      "name": "ProSieben",
+      "displayNumber": 7,
+      "isPrivate": true
+    },
+    {
+      "id": "super-rtl",
+      "name": "Super RTL",
+      "displayNumber": 8,
+      "isPrivate": true
+    },
+    {
+      "id": "vox",
+      "name": "VOX",
+      "displayNumber": 10,
+      "isPrivate": true
+    },
+    {
+      "id": "kabel-1",
+      "name": "Kabel 1",
+      "displayNumber": 11,
+      "isPrivate": true
+    }
+  ],
+  "broadcasts": [
+    {
+      "channel": "ard",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "Morgenmagazin",
+      "description": "Gemeinsames Frühmagazin von ARD und ZDF",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/ARD-Morgenmagazin",
+        "https://de.wikipedia.org/wiki/ZDF-Morgenmagazin"
+      ]
+    },
+    {
+      "channel": "ard",
+      "start": "20:00",
+      "end": "20:15",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1215,
+      "title": "Tagesschau",
+      "description": "Hauptausgabe der Tagesschau",
+      "confidence": "high",
+      "sources": [
+        "https://www.youtube.com/watch?v=lTVDmIMj9VE"
+      ]
+    },
+    {
+      "channel": "ard",
+      "start": "20:15",
+      "end": "21:50",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1310,
+      "title": "Dangerous Minds – Wilde Gedanken",
+      "description": "Spielfilm, USA 1995 · mit Michelle Pfeiffer",
+      "confidence": "medium",
+      "sources": [
+        "https://www.youtube.com/watch?v=xJ3EmPd-g4s",
+        "https://www.prisma.de/filme/Dangerous-Minds-Wilde-Gedanken,347093"
+      ]
+    },
+    {
+      "channel": "ard",
+      "start": "21:50",
+      "end": "22:20",
+      "startMinOfTvDay": 1310,
+      "endMinOfTvDay": 1340,
+      "title": "ARD exclusiv",
+      "description": "Reportagereihe (Beginn aus der Filmlänge geschätzt)",
+      "confidence": "medium",
+      "sources": [
+        "https://www.youtube.com/watch?v=xJ3EmPd-g4s"
+      ]
+    },
+    {
+      "channel": "zdf",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "Morgenmagazin",
+      "description": "Gemeinsames Frühmagazin von ARD und ZDF",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/ZDF-Morgenmagazin"
+      ]
+    },
+    {
+      "channel": "zdf",
+      "start": "17:15",
+      "end": "17:40",
+      "startMinOfTvDay": 1035,
+      "endMinOfTvDay": 1060,
+      "title": "hallo Deutschland",
+      "description": "Boulevardmagazin",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Hallo_Deutschland"
+      ]
+    },
+    {
+      "channel": "zdf",
+      "start": "17:40",
+      "end": "20:15",
+      "startMinOfTvDay": 1060,
+      "endMinOfTvDay": 1215,
+      "title": "Leute heute",
+      "description": "Promi-Magazin mit Nina Ruge",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Leute_heute"
+      ]
+    },
+    {
+      "channel": "zdf",
+      "start": "20:15",
+      "end": "21:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1275,
+      "title": "Mordkommission",
+      "description": "„Ein Akt der Barmherzigkeit“ · Krimiserie, Folge 1 (Erstausstrahlung) · mit Jophi Ries und Gunda Ebert",
+      "confidence": "high",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Mordkommission_(Fernsehserie,_1998)"
+      ]
+    },
+    {
+      "channel": "zdf",
+      "start": "21:45",
+      "end": "22:15",
+      "startMinOfTvDay": 1305,
+      "endMinOfTvDay": 1335,
+      "title": "heute-journal",
+      "description": "Nachrichtenmagazin",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Heute-journal"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "Deutschland heute morgen",
+      "description": "SAT.1-Frühstücksfernsehen",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Sat.1-Frühstücksfernsehen"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "start": "11:00",
+      "end": "12:00",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 720,
+      "title": "Jörg Pilawa",
+      "description": "Tägliche Talkshow",
+      "confidence": "low",
+      "sources": [
+        "https://www.bpb.de/medien/247906/PuF_U_23_Talkshow-Boom.pdf?download=1"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "start": "13:00",
+      "end": "14:00",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 840,
+      "title": "Sonja",
+      "description": "Tägliche Talkshow mit Sonja Zietlow",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Sonja_(Talkshow)"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "start": "18:00",
+      "end": "18:30",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1110,
+      "title": "Blitz",
+      "description": "Boulevardmagazin",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Blitz_(Fernsehsendung)"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "start": "23:15",
+      "end": "00:15",
+      "startMinOfTvDay": 1395,
+      "endMinOfTvDay": 1455,
+      "title": "Die Harald Schmidt Show",
+      "description": "Late-Night-Show · Gäste: Nina Ruge und Gesine Cukrowski (Show #497)",
+      "confidence": "medium",
+      "sources": [
+        "https://www.thetvdb.com/series/harald-schmidt-show/episodes/407291",
+        "https://de.wikipedia.org/wiki/Die_Harald_Schmidt_Show"
+      ]
+    },
+    {
+      "channel": "vox",
+      "start": "18:15",
+      "end": "18:45",
+      "startMinOfTvDay": 1095,
+      "endMinOfTvDay": 1125,
+      "title": "Kochduell",
+      "description": "Kochshow mit Britta von Lojewski",
+      "confidence": "low",
+      "sources": [
+        "https://www.falter.at/zeitung/19980916/fernsehen",
+        "https://de.wikipedia.org/wiki/Kochduell"
+      ]
+    },
+    {
+      "channel": "kabel-1",
+      "start": "20:00",
+      "end": "20:30",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1230,
+      "title": "Kabel 1 Nachrichten",
+      "description": "Nachrichten",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Kabel_eins_news"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "06:00",
+      "end": "07:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 420,
+      "title": "Punkt 6",
+      "description": "Frühmagazin, live aus Köln",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Punkt_6"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "12:00",
+      "end": "12:30",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 750,
+      "title": "Punkt 12",
+      "description": "Mittagsmagazin",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Punkt_12"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "15:00",
+      "end": "16:00",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 960,
+      "title": "Ilona Christen",
+      "description": "Tägliche Talkshow",
+      "confidence": "low",
+      "sources": [
+        "https://www.youtube.com/watch?v=f7Mg5MLVTxs",
+        "https://de.wikipedia.org/wiki/Ilona_Christen"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "16:00",
+      "end": "17:00",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 1020,
+      "title": "Hans Meiser",
+      "description": "Tägliche Talkshow",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Hans_Meiser_(Talkshow)"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:30",
+      "end": "18:00",
+      "startMinOfTvDay": 1050,
+      "endMinOfTvDay": 1080,
+      "title": "Unter uns",
+      "description": "Daily Soap",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Unter_uns"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:45",
+      "end": "19:10",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1150,
+      "title": "RTL aktuell",
+      "description": "Hauptnachrichten",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/RTL_Aktuell"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "19:10",
+      "end": "19:40",
+      "startMinOfTvDay": 1150,
+      "endMinOfTvDay": 1180,
+      "title": "Explosiv – Das Magazin",
+      "description": "Boulevardmagazin",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Explosiv_–_Das_Magazin"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "19:40",
+      "end": "20:15",
+      "startMinOfTvDay": 1180,
+      "endMinOfTvDay": 1215,
+      "title": "Gute Zeiten, schlechte Zeiten",
+      "description": "Folge 1609: Felix verlangt, dass Vanessa den „Fasan“ verkauft",
+      "confidence": "medium",
+      "sources": [
+        "https://thetvdb.com/series/82495-show/seasons/official/1998"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "21:15",
+      "end": "21:45",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1305,
+      "title": "Nikola",
+      "description": "„Der Traumtyp“ · Sitcom mit Mariele Millowitsch und Walter Sittler (Staffel 2, Folge 3)",
+      "confidence": "medium",
+      "sources": [
+        "https://thetvdb.com/series/nikola/allseasons/official"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "22:15",
+      "end": "23:15",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1395,
+      "title": "7 Tage, 7 Köpfe",
+      "description": "Comedy-Wochenrückblick mit Jochen Busse (Folge 80)",
+      "confidence": "medium",
+      "sources": [
+        "https://www.thetvdb.com/series/7-tage-7-kopfe/seasons/official/1998",
+        "https://de.wikipedia.org/wiki/7_Tage,_7_Köpfe"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "23:15",
+      "end": "00:00",
+      "startMinOfTvDay": 1395,
+      "endMinOfTvDay": 1440,
+      "title": "T.V. Kaiser",
+      "description": "Talkshow-Parodie mit Martin Zuhr",
+      "confidence": "medium",
+      "sources": [
+        "https://www.youtube.com/watch?v=04YqfVLaKqY",
+        "https://thetvdb.com/series/261559-show/seasons/official/5"
+      ]
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "00:00",
+      "end": "00:30",
+      "startMinOfTvDay": 1440,
+      "endMinOfTvDay": 1470,
+      "title": "RTL Nachtjournal",
+      "description": "Spätnachrichten",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/RTL_Nachtjournal"
+      ]
+    },
+    {
+      "channel": "rtl-2",
+      "start": "20:00",
+      "end": "20:15",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1215,
+      "title": "RTL 2 Nachrichten",
+      "description": "Abendnachrichten",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/RTL_Zwei_News"
+      ]
+    },
+    {
+      "channel": "pro-7",
+      "start": "19:30",
+      "end": "20:15",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1215,
+      "title": "ProSieben Nachrichten",
+      "description": "Hauptnachrichten",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/ProSieben_Newstime"
+      ]
+    },
+    {
+      "channel": "pro-7",
+      "start": "20:15",
+      "end": "20:45",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1245,
+      "title": "Hard to Kill",
+      "description": "Actionfilm mit Steven Seagal, USA 1990 (Startzeit angenommen)",
+      "confidence": "low",
+      "sources": [
+        "https://www.youtube.com/watch?v=BG9SWCLjRJc"
+      ]
+    },
+    {
+      "channel": "super-rtl",
+      "start": "20:15",
+      "end": "00:00",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1440,
+      "title": "Spielfilm",
+      "description": "Abendfilm (welcher Film lief, ist nicht überliefert)",
+      "confidence": "low",
+      "sources": [
+        "https://de.wikipedia.org/wiki/SuperRTL"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "matchTitle": "Dangerous Minds – Wilde Gedanken",
+      "channel": "ard",
+      "start": "20:15",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=xJ3EmPd-g4s",
+      "note": "Originalmitschnitt vom 20.11.1998: Ende des Films im Ersten",
+      "alt": null,
+      "durationS": 462
+    },
+    {
+      "matchTitle": "ARD exclusiv",
+      "channel": "ard",
+      "start": "21:50",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=xJ3EmPd-g4s",
+      "note": "Mitschnitt vom 20.11.1998 mit dem Anfang von „ARD exclusiv“",
+      "alt": null,
+      "durationS": 462
+    },
+    {
+      "matchTitle": "Deutschland heute morgen",
+      "channel": "sat-1",
+      "start": "06:00",
+      "level": "same",
+      "url": "https://www.dailymotion.com/video/x3uctib",
+      "note": "Nena zu Gast bei „Deutschland heute morgen“, 21.07.1998",
+      "alt": null
+    },
+    {
+      "matchTitle": "Jörg Pilawa",
+      "channel": "sat-1",
+      "start": "11:00",
+      "level": "same",
+      "url": "https://www.joyn.de/serien/joerg-pilawa/1998-11-jedes-wochenende-einen-anderen-mann-schaem-dich",
+      "note": "Eine Folge vom November 1998 bei Joyn",
+      "alt": null
+    },
+    {
+      "matchTitle": "Blitz",
+      "channel": "sat-1",
+      "start": "18:00",
+      "level": "same",
+      "url": "https://archive.org/details/blitz-spezial-star-trek-1998/Blitz%20Spezial%20-%20Star%20Trek%20%281998%29.mp4",
+      "note": "„Blitz Spezial: Star Trek“, SAT.1-Mitschnitt von 1998",
+      "alt": null
+    },
+    {
+      "matchTitle": "Die Harald Schmidt Show",
+      "channel": "sat-1",
+      "start": "23:15",
+      "level": "same",
+      "url": "https://www.dailymotion.com/video/x36udd1",
+      "note": "Herbert Grönemeyer zu Gast in der Harald Schmidt Show, 1998",
+      "alt": null
+    },
+    {
+      "matchTitle": "Kabel 1 Nachrichten",
+      "channel": "kabel-1",
+      "start": "20:00",
+      "level": "same",
+      "url": "https://www.dailymotion.com/video/x7zy0dq",
+      "note": "Trailer und Intro der Kabel-1-Nachrichten, 1998",
+      "alt": null
+    },
+    {
+      "matchTitle": "Ilona Christen",
+      "channel": "rtl-plus",
+      "start": "15:00",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=njm_H37Fidw",
+      "note": "Fragment der letzten Folge, RTL 30.6.1999",
+      "alt": null,
+      "durationS": 245
+    },
+    {
+      "matchTitle": "Hans Meiser",
+      "channel": "rtl-plus",
+      "start": "16:00",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=sXENaPTGets",
+      "note": "Hans Meiser, RTL 08.09.1997",
+      "alt": null,
+      "durationS": 3666
+    },
+    {
+      "matchTitle": "RTL aktuell",
+      "channel": "rtl-plus",
+      "start": "18:45",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=OdozhsjwHps",
+      "note": "Fragment von RTL aktuell und Explosiv vom 19.12.1998",
+      "alt": null,
+      "durationS": 2186
+    },
+    {
+      "matchTitle": "Explosiv – Das Magazin",
+      "channel": "rtl-plus",
+      "start": "19:10",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=UOLEBTPxzh4",
+      "note": "Explosiv mit Markus Lanz, 1998",
+      "alt": null,
+      "durationS": 72
+    },
+    {
+      "matchTitle": "Nikola",
+      "channel": "rtl-plus",
+      "start": "21:15",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=ssttj4EdObo",
+      "note": "Zusammenschnitt mit Szenen aus Nikola, nicht diese Folge",
+      "alt": null,
+      "durationS": 223
+    },
+    {
+      "matchTitle": "T.V. Kaiser",
+      "channel": "rtl-plus",
+      "start": "23:15",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=04YqfVLaKqY",
+      "note": "Fragment der Ausstrahlung vom 20.11.1998",
+      "alt": null,
+      "durationS": 992
+    },
+    {
+      "matchTitle": "Hard to Kill",
+      "channel": "pro-7",
+      "start": "20:15",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=BG9SWCLjRJc",
+      "note": "Abspanntafel der Ausstrahlung vom 20.11.1998 (nur das Filmende)",
+      "alt": null,
+      "durationS": 39
+    }
+  ],
+  "adBreaks": [
+    {
+      "channel": "sat-1",
+      "url": "https://archive.org/details/AdvertisingSpotsSat1Januar1998/Advertising%20spots%20-%20Sat1%20-%20Januar%201998.mp4",
+      "note": "SAT.1-Werbespots, Januar 1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "vox",
+      "url": "https://archive.org/details/02.11.1998-vox-werbeblock-bei-medicine-man-nr.-1/02.11.1998%20Vox%20Werbeblock%20bei%20Medicine%20Man%20Nr.1.mp4",
+      "note": "VOX-Werbeblock vom 02.11.1998 („Medicine Man“, Teil 1)",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "vox",
+      "url": "https://archive.org/details/02.11.1998-vox-werbeblock-bei-medicine-man-nr.-2/02.11.1998%20Vox%20Werbeblock%20bei%20Medicine%20Man%20Nr.2.mp4",
+      "note": "VOX-Werbeblock vom 02.11.1998 („Medicine Man“, Teil 2)",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "vox",
+      "url": "https://archive.org/details/02.11.1998-vox-werbeblock-bei-medicine-man-nr.-3/02.11.1998%20Vox%20Werbeblock%20bei%20Medicine%20Man%20Nr.3.mp4",
+      "note": "VOX-Werbeblock vom 02.11.1998 („Medicine Man“, Teil 3)",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "kabel-1",
+      "url": "https://www.youtube.com/watch?v=itMgIk0Sf2Y",
+      "note": "Kabel 1 – Programmhinweise und Werbung, November 1999",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-plus",
+      "url": "https://www.youtube.com/watch?v=2U_lDwUTeNo",
+      "note": "RTL-Werbeblock vom 7. November 1998 (Intel, Raffaello, Jack Daniels …)",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-plus",
+      "url": "https://www.youtube.com/watch?v=1DJnV8sM7Nw",
+      "note": "RTL-Werbeblock 1998, Teil 5",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-plus",
+      "url": "https://www.youtube.com/watch?v=KH1BlJornkc",
+      "note": "RTL-Werbeblock vom 14.12.1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-2",
+      "url": "https://www.youtube.com/watch?v=K4yTYTq35aI",
+      "note": "RTL-2-Ident, Werbeblock und Programmtrailer vom 20.11.1998 – genau dieser Tag",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-2",
+      "url": "https://www.youtube.com/watch?v=Wdcbni4vKpg",
+      "note": "RTL-2-Werbeblock 1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "rtl-2",
+      "url": "https://www.youtube.com/watch?v=AxLYJrRBk7o",
+      "note": "RTL 2 am 27.12.1998: Werbung und Trailer",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "pro-7",
+      "url": "https://www.youtube.com/watch?v=BMwYvsGE3s8",
+      "note": "ProSieben-Werbung vom 30.10.1998 (bei „Zurück in die Zukunft II“)",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "pro-7",
+      "url": "https://www.youtube.com/watch?v=Qt1gaLPSy20",
+      "note": "ProSieben-Werbeblock vom 17.07.1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "super-rtl",
+      "url": "https://www.youtube.com/watch?v=ZTejbLC1zps",
+      "note": "Super-RTL-Werbeblöcke vom 16.10.1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    },
+    {
+      "channel": "super-rtl",
+      "url": "https://www.youtube.com/watch?v=acoCY_EVNqg",
+      "note": "Super-RTL-Werbeblock vom 27.03.1998",
+      "alternatives": [],
+      "airedPeriod": "1998"
+    }
+  ]
+}

@@ -1,0 +1,2706 @@
+{
+  "date": "1997-05-02",
+  "completeness": "partial",
+  "tvDayStart": "06:00",
+  "timezone": "Europe/Berlin",
+  "source": {
+    "name": "tvprogramme.net (retro-media-tv.de), erfasst von Eleyne Fraser",
+    "url": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-05-02",
+    "license": "not required – no copyright on the programme itself (site imprint); database right assumed expired (no substantial update since ~2003, site discontinued). Owner decision, 2026-11-09."
+  },
+  "channels": [
+    {
+      "id": "ard",
+      "name": "Das Erste",
+      "displayNumber": 1,
+      "isPrivate": false
+    },
+    {
+      "id": "zdf",
+      "name": "ZDF",
+      "displayNumber": 2,
+      "isPrivate": false
+    },
+    {
+      "id": "sat-1",
+      "name": "SAT.1",
+      "displayNumber": 3,
+      "isPrivate": true
+    },
+    {
+      "id": "rtl-plus",
+      "name": "RTL",
+      "displayNumber": 4,
+      "isPrivate": true
+    },
+    {
+      "id": "rtl-2",
+      "name": "RTL II",
+      "displayNumber": 5,
+      "isPrivate": true
+    },
+    {
+      "id": "pro-7",
+      "name": "ProSieben",
+      "displayNumber": 7,
+      "isPrivate": true
+    },
+    {
+      "id": "vox",
+      "name": "VOX",
+      "displayNumber": 10,
+      "isPrivate": true
+    },
+    {
+      "id": "kabel-1",
+      "name": "Kabel 1",
+      "displayNumber": 11,
+      "isPrivate": true
+    },
+    {
+      "id": "n3",
+      "name": "N3",
+      "displayNumber": 13,
+      "isPrivate": false
+    }
+  ],
+  "broadcasts": [
+    {
+      "channel": "ard",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "ARD-Morgenmagazin",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "09:00",
+      "end": "09:03",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 543,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "09:03",
+      "end": "09:45",
+      "startMinOfTvDay": 543,
+      "endMinOfTvDay": 585,
+      "title": "Dallas",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "09:45",
+      "end": "10:00",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 600,
+      "title": "Tele-Gym",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "10:00",
+      "end": "10:03",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 603,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "10:03",
+      "end": "10:35",
+      "startMinOfTvDay": 603,
+      "endMinOfTvDay": 635,
+      "title": "Großbritannien nach der Wahl.",
+      "description": "Mit Berichten, Analysen und Studiogästen"
+    },
+    {
+      "channel": "ard",
+      "start": "10:35",
+      "end": "11:00",
+      "startMinOfTvDay": 635,
+      "endMinOfTvDay": 660,
+      "title": "ZDF-info Arbeit und Beruf",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "11:00",
+      "end": "11:04",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 664,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "11:04",
+      "end": "13:00",
+      "startMinOfTvDay": 664,
+      "endMinOfTvDay": 780,
+      "title": "Fußball: EM U16, live",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "13:00",
+      "end": "19:25",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 1165,
+      "title": "Tennis: WTA-Turnier in Hamburg, live.",
+      "description": "Dazw. ca.: 14.00, 15.00, 16.00 Tagesschau."
+    },
+    {
+      "channel": "ard",
+      "start": "19:25",
+      "end": "19:53",
+      "startMinOfTvDay": 1165,
+      "endMinOfTvDay": 1193,
+      "title": "Herzblatt",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "19:53",
+      "end": "19:58",
+      "startMinOfTvDay": 1193,
+      "endMinOfTvDay": 1198,
+      "title": "Wetter",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "19:58",
+      "end": "20:58",
+      "startMinOfTvDay": 1198,
+      "endMinOfTvDay": 1258,
+      "title": "Programmvorschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "ARD-Morgenmagazin",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "09:00",
+      "end": "09:03",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 543,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "09:03",
+      "end": "09:45",
+      "startMinOfTvDay": 543,
+      "endMinOfTvDay": 585,
+      "title": "Dallas",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "09:45",
+      "end": "10:00",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 600,
+      "title": "Tele-Gym",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "10:00",
+      "end": "10:03",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 603,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "10:03",
+      "end": "10:35",
+      "startMinOfTvDay": 603,
+      "endMinOfTvDay": 635,
+      "title": "Großbritannien nach der Wahl",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "10:35",
+      "end": "11:00",
+      "startMinOfTvDay": 635,
+      "endMinOfTvDay": 660,
+      "title": "ZDF-info Arbeit und Beruf",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "11:00",
+      "end": "11:04",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 664,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "11:04",
+      "end": "12:00",
+      "startMinOfTvDay": 664,
+      "endMinOfTvDay": 720,
+      "title": "Alpenland Quintett Einfach stark",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "12:00",
+      "end": "12:45",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 765,
+      "title": "Abenteuer Zoo",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "12:45",
+      "end": "13:00",
+      "startMinOfTvDay": 765,
+      "endMinOfTvDay": 780,
+      "title": "Umschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:00",
+      "end": "13:05",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 785,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:05",
+      "end": "13:45",
+      "startMinOfTvDay": 785,
+      "endMinOfTvDay": 825,
+      "title": "ARD-Mittagsmagazin",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:45",
+      "end": "14:10",
+      "startMinOfTvDay": 825,
+      "endMinOfTvDay": 850,
+      "title": "Gesundheit! Thema: Mandelentzündung",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "14:10",
+      "end": "14:40",
+      "startMinOfTvDay": 850,
+      "endMinOfTvDay": 880,
+      "title": "Hals über Kopf",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "14:40",
+      "end": "17:15",
+      "startMinOfTvDay": 880,
+      "endMinOfTvDay": 1035,
+      "title": "Eishockey: WM, live. Ca.: 15.35 Tischtennis: WM in Manchester. Ca.: 16.20 heute",
+      "description": "Anschl.: Lottoquoten vom Mittwoch"
+    },
+    {
+      "channel": "zdf",
+      "start": "17:15",
+      "end": "17:50",
+      "startMinOfTvDay": 1035,
+      "endMinOfTvDay": 1070,
+      "title": "ZDF-Abendmagazin",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "17:50",
+      "end": "18:45",
+      "startMinOfTvDay": 1070,
+      "endMinOfTvDay": 1125,
+      "title": "Duell zu dritt",
+      "description": "Ca.: 18.20 heute-Schlagzeilen · Anschl.: Vorschau; Zeit für Millionen"
+    },
+    {
+      "channel": "zdf",
+      "start": "18:45",
+      "end": "19:00",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1140,
+      "title": "Leute heute",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "19:00",
+      "end": "19:20",
+      "startMinOfTvDay": 1140,
+      "endMinOfTvDay": 1160,
+      "title": "heute",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "19:20",
+      "end": "19:25",
+      "startMinOfTvDay": 1160,
+      "endMinOfTvDay": 1165,
+      "title": "Wetter",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "19:25",
+      "end": "20:15",
+      "startMinOfTvDay": 1165,
+      "endMinOfTvDay": 1215,
+      "title": "Forsthaus Falkenau",
+      "description": "26tlg. dt. Familien-Serie (1996) · 25. Folge: Süße Zeiten · Mit Christian Wolff"
+    },
+    {
+      "channel": "zdf",
+      "start": "20:15",
+      "end": "21:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1275,
+      "title": "Aktenzeichen: XY . . .ungelöst",
+      "description": "Die Kriminalpolizei bittet um Mithilfe · Mit Eduard Zimmermann"
+    },
+    {
+      "channel": "zdf",
+      "start": "21:15",
+      "end": "21:45",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1305,
+      "title": "Mit Blair und Busen",
+      "description": "Britanniens Presse macht Politik"
+    },
+    {
+      "channel": "zdf",
+      "start": "21:45",
+      "end": "22:15",
+      "startMinOfTvDay": 1305,
+      "endMinOfTvDay": 1335,
+      "title": "heute-journal",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "22:15",
+      "end": "22:45",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1365,
+      "title": "aspekte",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "22:45",
+      "end": "22:55",
+      "startMinOfTvDay": 1365,
+      "endMinOfTvDay": 1375,
+      "title": "Aktenzeichen: XY . . .ungelöst",
+      "description": "Zuschauerreaktionen"
+    },
+    {
+      "channel": "zdf",
+      "start": "22:55",
+      "end": "00:40",
+      "startMinOfTvDay": 1375,
+      "endMinOfTvDay": 1480,
+      "title": "Canyon Cop",
+      "description": "US-Thriller (1991)"
+    },
+    {
+      "channel": "zdf",
+      "start": "00:40",
+      "end": "00:55",
+      "startMinOfTvDay": 1480,
+      "endMinOfTvDay": 1495,
+      "title": "heute nacht",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "00:55",
+      "end": "02:20",
+      "startMinOfTvDay": 1495,
+      "endMinOfTvDay": 1580,
+      "title": "Aufstand der Gladiatoren",
+      "description": "Ital.-franz.-span. Historienfilm(1958)"
+    },
+    {
+      "channel": "zdf",
+      "start": "02:20",
+      "end": "02:50",
+      "startMinOfTvDay": 1580,
+      "endMinOfTvDay": 1610,
+      "title": "aspekte",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "02:50",
+      "end": "03:05",
+      "startMinOfTvDay": 1610,
+      "endMinOfTvDay": 1625,
+      "title": "heute nacht",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "03:05",
+      "end": "03:35",
+      "startMinOfTvDay": 1625,
+      "endMinOfTvDay": 1655,
+      "title": "VIP’s Tierleben (3)",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "03:35",
+      "end": "04:30",
+      "startMinOfTvDay": 1655,
+      "endMinOfTvDay": 1710,
+      "title": "Straßenfeger",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "04:30",
+      "end": "05:00",
+      "startMinOfTvDay": 1710,
+      "endMinOfTvDay": 1740,
+      "title": "Miteinander wohnen – Miteinander leben",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "05:00",
+      "end": "06:00",
+      "startMinOfTvDay": 1740,
+      "endMinOfTvDay": 1800,
+      "title": "Mit Blair und Busen",
+      "description": "Britanniens Presse macht Politik (Wh.)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "06:00",
+      "end": "09:00",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 540,
+      "title": "Deutschland heute morgen. Mit täglich ran",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "09:00",
+      "end": "10:00",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 600,
+      "title": "Drei Engel für Charlie",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "10:00",
+      "end": "10:30",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 630,
+      "title": "Hast du Worte!?",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "10:30",
+      "end": "11:00",
+      "startMinOfTvDay": 630,
+      "endMinOfTvDay": 660,
+      "title": "Bube, Dame, Hörig",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "11:00",
+      "end": "12:00",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 720,
+      "title": "Kerner.",
+      "description": "Thema: Ändere deine Manieren, oder ich verlasse dich"
+    },
+    {
+      "channel": "sat-1",
+      "start": "12:00",
+      "end": "13:00",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 780,
+      "title": "Vera am Mittag.",
+      "description": "Thema: Nachlese Was ist aus Veras Gästen geworden?"
+    },
+    {
+      "channel": "sat-1",
+      "start": "13:00",
+      "end": "14:00",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 840,
+      "title": "Sonja. Talkshow. Thema: Mein Leben ist eine Lüge",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "14:00",
+      "end": "15:00",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 900,
+      "title": "Drei Engel für Charlie.",
+      "description": "US-Detektiv-Serie: Engel auf der Rennbahn"
+    },
+    {
+      "channel": "sat-1",
+      "start": "15:00",
+      "end": "16:00",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 960,
+      "title": "Star Trek: Das nächste Jahrhundert",
+      "description": "Endars Sohn"
+    },
+    {
+      "channel": "sat-1",
+      "start": "16:00",
+      "end": "17:00",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 1020,
+      "title": "Baywatch Die Rettungsschwimmer von Malibu",
+      "description": "US-Action-Serie (1992) · Urlaub in der Hölle (Teil 2)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "17:00",
+      "end": "17:30",
+      "startMinOfTvDay": 1020,
+      "endMinOfTvDay": 1050,
+      "title": "Jeder gegen Jeden",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "17:30",
+      "end": "18:00",
+      "startMinOfTvDay": 1050,
+      "endMinOfTvDay": 1080,
+      "title": "Live aus Berlin",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "18:00",
+      "end": "18:30",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1110,
+      "title": "Blitz",
+      "description": "Moderation: Monica Lierhaus"
+    },
+    {
+      "channel": "sat-1",
+      "start": "18:30",
+      "end": "19:00",
+      "startMinOfTvDay": 1110,
+      "endMinOfTvDay": 1140,
+      "title": "18:30",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "19:00",
+      "end": "19:15",
+      "startMinOfTvDay": 1140,
+      "endMinOfTvDay": 1155,
+      "title": "täglich ran",
+      "description": "Moderation: Oliver Welke · Anschl.: Wetter"
+    },
+    {
+      "channel": "sat-1",
+      "start": "19:15",
+      "end": "20:15",
+      "startMinOfTvDay": 1155,
+      "endMinOfTvDay": 1215,
+      "title": "Glücksrad",
+      "description": "Gewinnshow mit Frederic Meisner"
+    },
+    {
+      "channel": "sat-1",
+      "start": "20:15",
+      "end": "21:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1275,
+      "title": "Wahr oder unwahr?",
+      "description": "Schwindelshow · Moderation: Jörg Pilawa · Gäste u. a.: Peer Augustinski, Minh-Khai Phan-Thi, Herbert Feuerstein"
+    },
+    {
+      "channel": "sat-1",
+      "start": "21:15",
+      "end": "22:15",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1335,
+      "title": "Die Unzertrennlichen",
+      "description": "13tlg. dt. Familien-Serie (1996) · 5. Folge: Freunde"
+    },
+    {
+      "channel": "sat-1",
+      "start": "22:15",
+      "end": "23:15",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1395,
+      "title": "ran Fußball Bundesliga",
+      "description": "30. Spieltag"
+    },
+    {
+      "channel": "sat-1",
+      "start": "23:15",
+      "end": "00:15",
+      "startMinOfTvDay": 1395,
+      "endMinOfTvDay": 1455,
+      "title": "Die Harald Schmidt Show",
+      "description": "Gäste: Birgit Schrowange und Oliver Kalkofe"
+    },
+    {
+      "channel": "sat-1",
+      "start": "00:15",
+      "end": "02:05",
+      "startMinOfTvDay": 1455,
+      "endMinOfTvDay": 1565,
+      "title": "The Forgotten One",
+      "description": "US-Gruselthriller (1990)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "02:05",
+      "end": "02:55",
+      "startMinOfTvDay": 1565,
+      "endMinOfTvDay": 1615,
+      "title": "Star Trek: Das nächste Jahrhundert",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "02:55",
+      "end": "03:55",
+      "startMinOfTvDay": 1615,
+      "endMinOfTvDay": 1675,
+      "title": "Baywatch Die Rettungsschwimmer von Malibu",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "03:55",
+      "end": "04:45",
+      "startMinOfTvDay": 1675,
+      "endMinOfTvDay": 1725,
+      "title": "Sonja",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "04:45",
+      "end": "05:35",
+      "startMinOfTvDay": 1725,
+      "endMinOfTvDay": 1775,
+      "title": "Vera am Mittag",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "05:35",
+      "end": "06:00",
+      "startMinOfTvDay": 1775,
+      "endMinOfTvDay": 1800,
+      "title": "Kerner",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "06:00",
+      "end": "06:05",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 365,
+      "title": "RTL aktuell (halbstündlich bis 9.00)",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "06:05",
+      "end": "06:35",
+      "startMinOfTvDay": 365,
+      "endMinOfTvDay": 395,
+      "title": "Paradise Beach",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "06:35",
+      "end": "07:00",
+      "startMinOfTvDay": 395,
+      "endMinOfTvDay": 420,
+      "title": "Explosiv",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "07:00",
+      "end": "07:35",
+      "startMinOfTvDay": 420,
+      "endMinOfTvDay": 455,
+      "title": "Punkt 7",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "07:35",
+      "end": "08:05",
+      "startMinOfTvDay": 455,
+      "endMinOfTvDay": 485,
+      "title": "Unter uns",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "08:05",
+      "end": "08:45",
+      "startMinOfTvDay": 485,
+      "endMinOfTvDay": 525,
+      "title": "Gute Zeiten,schlechte Zeiten",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "08:45",
+      "end": "09:35",
+      "startMinOfTvDay": 525,
+      "endMinOfTvDay": 575,
+      "title": "Springfield Story",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "09:35",
+      "end": "10:30",
+      "startMinOfTvDay": 575,
+      "endMinOfTvDay": 630,
+      "title": "California Clan",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "10:30",
+      "end": "11:00",
+      "startMinOfTvDay": 630,
+      "endMinOfTvDay": 660,
+      "title": "Reich und schön",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "11:00",
+      "end": "11:30",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 690,
+      "title": "Der Preis ist heiß",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "11:30",
+      "end": "12:00",
+      "startMinOfTvDay": 690,
+      "endMinOfTvDay": 720,
+      "title": "Familienduell",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "12:00",
+      "end": "12:30",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 750,
+      "title": "Punkt 12",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "12:30",
+      "end": "13:30",
+      "startMinOfTvDay": 750,
+      "endMinOfTvDay": 810,
+      "title": "Magnum",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "13:30",
+      "end": "14:00",
+      "startMinOfTvDay": 810,
+      "endMinOfTvDay": 840,
+      "title": "Hör mal, wer da hämmert!",
+      "description": "US-Comedy-Serie: Schlängeleien"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "14:00",
+      "end": "15:00",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 900,
+      "title": "Bärbel Schäfer",
+      "description": "Thema: Heiraten ist spießig"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "15:00",
+      "end": "16:00",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 960,
+      "title": "Ilona Christen. Talkshow.",
+      "description": "Thema: Der Amtsschimmel wiehert"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "16:00",
+      "end": "17:00",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 1020,
+      "title": "Hans Meiser",
+      "description": "Thema: Wenn’s nach euch ginge,wäre ich tot!"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:00",
+      "end": "17:30",
+      "startMinOfTvDay": 1020,
+      "endMinOfTvDay": 1050,
+      "title": "Jeopardy!",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:30",
+      "end": "18:00",
+      "startMinOfTvDay": 1050,
+      "endMinOfTvDay": 1080,
+      "title": "Unter uns",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:00",
+      "end": "18:30",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1110,
+      "title": "Guten Abend RTL 3717",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:30",
+      "end": "18:45",
+      "startMinOfTvDay": 1110,
+      "endMinOfTvDay": 1125,
+      "title": "Exclusiv - Das Star-Magazin",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:45",
+      "end": "19:10",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1150,
+      "title": "RTL aktuell",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "19:10",
+      "end": "19:40",
+      "startMinOfTvDay": 1150,
+      "endMinOfTvDay": 1180,
+      "title": "Explosiv - Das Magazin",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "19:40",
+      "end": "20:15",
+      "startMinOfTvDay": 1180,
+      "endMinOfTvDay": 1215,
+      "title": "Gute Zeiten, schlechte Zeiten",
+      "description": "Dt. Familien-Serie (1992-97)"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "20:15",
+      "end": "21:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1275,
+      "title": "Felix - Ein Freund fürs Leben",
+      "description": "13tlg. dt. Familien-Serie (1996) · 11. Folge: Held des Tages"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "21:15",
+      "end": "21:45",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1305,
+      "title": "Die Camper",
+      "description": "13tlg. dt. Comedy-Serie (1996) · 10. Folge: Die Alten"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "21:45",
+      "end": "22:15",
+      "startMinOfTvDay": 1305,
+      "endMinOfTvDay": 1335,
+      "title": "Flodder - Eine Familie zum Knutschen",
+      "description": "8tlg. niederl. Comedy-Serie (1994/95) · 4. Folge: Der Wunderheiler"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "22:15",
+      "end": "23:15",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1395,
+      "title": "7 Tage - 7 Köpfe",
+      "description": "Der etwas andere Wochenrückblick · Moderation: Jochen Busse · Gäste: Lisa Fitz und Piet Klocke · Mit Rudi Carrell, Karl Dall, Mike Krüger und Gaby Köster"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "23:15",
+      "end": "00:00",
+      "startMinOfTvDay": 1395,
+      "endMinOfTvDay": 1440,
+      "title": "T. V. Kaiser - Die Talkshow, wo voll gut ist",
+      "description": "Comedy-Serie · Frauen am Steuer oder Grüner wird’s nicht"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "00:00",
+      "end": "00:30",
+      "startMinOfTvDay": 1440,
+      "endMinOfTvDay": 1470,
+      "title": "Nachtjournal",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "00:30",
+      "end": "01:30",
+      "startMinOfTvDay": 1470,
+      "endMinOfTvDay": 1530,
+      "title": "Die Aufrechten - Aus den Akten der Straße",
+      "description": "US-Krimi-Serie (1994/95) · Plötzlicher Kindstod"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "01:30",
+      "end": "01:55",
+      "startMinOfTvDay": 1530,
+      "endMinOfTvDay": 1555,
+      "title": "Hör mal, wer da hämmert!",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "01:55",
+      "end": "02:45",
+      "startMinOfTvDay": 1555,
+      "endMinOfTvDay": 1605,
+      "title": "Magnum",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "02:45",
+      "end": "03:15",
+      "startMinOfTvDay": 1605,
+      "endMinOfTvDay": 1635,
+      "title": "Nachtjournal",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "03:15",
+      "end": "05:00",
+      "startMinOfTvDay": 1635,
+      "endMinOfTvDay": 1740,
+      "title": "stern TV",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "05:00",
+      "end": "06:00",
+      "startMinOfTvDay": 1740,
+      "endMinOfTvDay": 1800,
+      "title": "Explosiv - Weekend",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "06:00",
+      "end": "06:20",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 380,
+      "title": "SAM",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "06:20",
+      "end": "06:40",
+      "startMinOfTvDay": 380,
+      "endMinOfTvDay": 400,
+      "title": "Inspektor Gadget",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "06:40",
+      "end": "07:05",
+      "startMinOfTvDay": 400,
+      "endMinOfTvDay": 425,
+      "title": "Dennis",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "07:05",
+      "end": "07:35",
+      "startMinOfTvDay": 425,
+      "endMinOfTvDay": 455,
+      "title": "Die Schlümpfe",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "07:35",
+      "end": "08:00",
+      "startMinOfTvDay": 455,
+      "endMinOfTvDay": 480,
+      "title": "Tiny Toon Abenteuer",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "08:00",
+      "end": "08:25",
+      "startMinOfTvDay": 480,
+      "endMinOfTvDay": 505,
+      "title": "Die Schatzinsel",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "08:25",
+      "end": "08:55",
+      "startMinOfTvDay": 505,
+      "endMinOfTvDay": 535,
+      "title": "Alles total normal",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "08:55",
+      "end": "09:25",
+      "startMinOfTvDay": 535,
+      "endMinOfTvDay": 565,
+      "title": "Alle unter einem Dach",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "09:25",
+      "end": "09:55",
+      "startMinOfTvDay": 565,
+      "endMinOfTvDay": 595,
+      "title": "Roseanne",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "09:55",
+      "end": "11:35",
+      "startMinOfTvDay": 595,
+      "endMinOfTvDay": 695,
+      "title": "Charlie’s Ghost",
+      "description": "US-Fantasykomödie (1994)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "11:35",
+      "end": "12:35",
+      "startMinOfTvDay": 695,
+      "endMinOfTvDay": 755,
+      "title": "Der Polizeichef",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "12:35",
+      "end": "13:30",
+      "startMinOfTvDay": 755,
+      "endMinOfTvDay": 810,
+      "title": "Matlock",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "13:30",
+      "end": "14:00",
+      "startMinOfTvDay": 810,
+      "endMinOfTvDay": 840,
+      "title": "SAM",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "14:00",
+      "end": "15:00",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 900,
+      "title": "Arabella",
+      "description": "Thema: Hilfe, Arabella! – Ich traue mir nichts zu!"
+    },
+    {
+      "channel": "pro-7",
+      "start": "15:00",
+      "end": "15:55",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 955,
+      "title": "MacGyver",
+      "description": "US-Action-Serie: Der letzte der Familie Chung"
+    },
+    {
+      "channel": "pro-7",
+      "start": "15:55",
+      "end": "17:55",
+      "startMinOfTvDay": 955,
+      "endMinOfTvDay": 1075,
+      "title": "Joey",
+      "description": "Deutscher Science-fiction-Film (1984/85)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "17:55",
+      "end": "19:30",
+      "startMinOfTvDay": 1075,
+      "endMinOfTvDay": 1170,
+      "title": "Miracles – Ein ganz unglaubliches Abenteuer",
+      "description": "US-Actionkomödie (1985)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "19:30",
+      "end": "19:40",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1180,
+      "title": "Nachrichten",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "19:40",
+      "end": "19:45",
+      "startMinOfTvDay": 1180,
+      "endMinOfTvDay": 1185,
+      "title": "Wetter",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "19:45",
+      "end": "20:15",
+      "startMinOfTvDay": 1185,
+      "endMinOfTvDay": 1215,
+      "title": "taff",
+      "description": "Magazin mit Eva Mähl"
+    },
+    {
+      "channel": "pro-7",
+      "start": "20:15",
+      "end": "22:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1335,
+      "title": "Die Friedensmission – 10 Stunden Angst",
+      "description": "Dt. Thriller (1996)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "22:15",
+      "end": "00:25",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1465,
+      "title": "Der Wolf hetzt die Meute",
+      "description": "US-Actionthriller (1984) · Mit Clint Eastwood"
+    },
+    {
+      "channel": "pro-7",
+      "start": "00:25",
+      "end": "02:15",
+      "startMinOfTvDay": 1465,
+      "endMinOfTvDay": 1575,
+      "title": "Red Force IV",
+      "description": "Hongk. Actionfilm (1991)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "02:15",
+      "end": "03:10",
+      "startMinOfTvDay": 1575,
+      "endMinOfTvDay": 1630,
+      "title": "O N E",
+      "description": "Talentshow (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "03:10",
+      "end": "03:20",
+      "startMinOfTvDay": 1630,
+      "endMinOfTvDay": 1640,
+      "title": "Nachrichten",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "03:20",
+      "end": "05:05",
+      "startMinOfTvDay": 1640,
+      "endMinOfTvDay": 1745,
+      "title": "Der Wolf hetzt die Meute",
+      "description": "(Wh. von 22.15)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "05:05",
+      "end": "06:00",
+      "startMinOfTvDay": 1745,
+      "endMinOfTvDay": 1800,
+      "title": "Nachrichten",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "06:00",
+      "end": "06:15",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 375,
+      "title": "Agentur Maxwell",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "06:15",
+      "end": "06:40",
+      "startMinOfTvDay": 375,
+      "endMinOfTvDay": 400,
+      "title": "Hey, Dad!",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "06:40",
+      "end": "07:10",
+      "startMinOfTvDay": 400,
+      "endMinOfTvDay": 430,
+      "title": "Herzbube mit zwei Damen",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "07:10",
+      "end": "07:20",
+      "startMinOfTvDay": 430,
+      "endMinOfTvDay": 440,
+      "title": "Hugo",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "07:20",
+      "end": "07:45",
+      "startMinOfTvDay": 440,
+      "endMinOfTvDay": 465,
+      "title": "Verliebt in eine Hexe",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "07:45",
+      "end": "10:30",
+      "startMinOfTvDay": 465,
+      "endMinOfTvDay": 630,
+      "title": "Bim Bam Bino. Mit Zeichentrick-Serien",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "10:30",
+      "end": "11:30",
+      "startMinOfTvDay": 630,
+      "endMinOfTvDay": 690,
+      "title": "Unsere kleine Farm",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "11:30",
+      "end": "12:45",
+      "startMinOfTvDay": 690,
+      "endMinOfTvDay": 765,
+      "title": "Zwei Ladies im Wilden Westen",
+      "description": "US-Pilotfilm zur Serie (1978)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "12:45",
+      "end": "13:50",
+      "startMinOfTvDay": 765,
+      "endMinOfTvDay": 830,
+      "title": "Mannix",
+      "description": null
+    },
+    {
+      "channel": "kabel-1",
+      "start": "13:50",
+      "end": "14:50",
+      "startMinOfTvDay": 830,
+      "endMinOfTvDay": 890,
+      "title": "Hawaii 5 – 0",
+      "description": "US-Krimi-Serie: In der Schußlinie"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "14:50",
+      "end": "15:45",
+      "startMinOfTvDay": 890,
+      "endMinOfTvDay": 945,
+      "title": "Rauchende Colts",
+      "description": "USWestern-Serie: Sheriff Harkers Regeln"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "15:45",
+      "end": "16:40",
+      "startMinOfTvDay": 945,
+      "endMinOfTvDay": 1000,
+      "title": "Bonanza",
+      "description": "US-Western-Serie: Ist Billy Burgess schuldig?"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "16:40",
+      "end": "18:30",
+      "startMinOfTvDay": 1000,
+      "endMinOfTvDay": 1110,
+      "title": "Unsere kleine Farm",
+      "description": "Wo ist Rose? · US-Serienspecial (1983)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "18:30",
+      "end": "20:15",
+      "startMinOfTvDay": 1110,
+      "endMinOfTvDay": 1215,
+      "title": "Man nennt ihn Sacramento",
+      "description": "Ital. Western (1972)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "20:15",
+      "end": "21:35",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1295,
+      "title": "Einer gibt nicht auf",
+      "description": "US-Western (1959)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "21:35",
+      "end": "22:50",
+      "startMinOfTvDay": 1295,
+      "endMinOfTvDay": 1370,
+      "title": "Bis zur letzten Kugel",
+      "description": "US-Western (1953)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "22:50",
+      "end": "00:20",
+      "startMinOfTvDay": 1370,
+      "endMinOfTvDay": 1460,
+      "title": "Der Henker wartet schon",
+      "description": "US-Western (1958)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "00:20",
+      "end": "01:45",
+      "startMinOfTvDay": 1460,
+      "endMinOfTvDay": 1545,
+      "title": "Tod in L. A.",
+      "description": "US-Actionthriller (1988)"
+    },
+    {
+      "channel": "kabel-1",
+      "start": "01:45",
+      "end": "02:45",
+      "startMinOfTvDay": 1545,
+      "endMinOfTvDay": 1605,
+      "title": "Meinen Freund begrab’ ich selbst",
+      "description": "US-Western (1984) (Wh. vom 1. 5.) · Anschl.: Programmvorschau"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "06:00",
+      "end": "06:30",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 390,
+      "title": "Alle zusammen – Jeder für sich",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "06:30",
+      "end": "09:15",
+      "startMinOfTvDay": 390,
+      "endMinOfTvDay": 555,
+      "title": "Vampy. Mit Zeichentrick-Serien",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "09:15",
+      "end": "09:20",
+      "startMinOfTvDay": 555,
+      "endMinOfTvDay": 560,
+      "title": "Dick und Doof",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "09:20",
+      "end": "09:45",
+      "startMinOfTvDay": 560,
+      "endMinOfTvDay": 585,
+      "title": "Kelly",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "09:45",
+      "end": "10:25",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 625,
+      "title": "Bitte lächeln",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "10:25",
+      "end": "11:20",
+      "startMinOfTvDay": 625,
+      "endMinOfTvDay": 680,
+      "title": "Knight Rider",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "11:20",
+      "end": "11:40",
+      "startMinOfTvDay": 680,
+      "endMinOfTvDay": 700,
+      "title": "Calimero",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "11:40",
+      "end": "12:10",
+      "startMinOfTvDay": 700,
+      "endMinOfTvDay": 730,
+      "title": "Frau Pfeffertopf",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "12:10",
+      "end": "12:15",
+      "startMinOfTvDay": 730,
+      "endMinOfTvDay": 735,
+      "title": "Thomas, die kleine Lokomotive",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "12:15",
+      "end": "12:45",
+      "startMinOfTvDay": 735,
+      "endMinOfTvDay": 765,
+      "title": "Die Glücksbärchis",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "12:45",
+      "end": "13:10",
+      "startMinOfTvDay": 765,
+      "endMinOfTvDay": 790,
+      "title": "Der Traumstein",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "13:10",
+      "end": "13:35",
+      "startMinOfTvDay": 790,
+      "endMinOfTvDay": 815,
+      "title": "Im Land des Zauberers von Oz",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "13:35",
+      "end": "14:05",
+      "startMinOfTvDay": 815,
+      "endMinOfTvDay": 845,
+      "title": "Eine fröhliche Familie",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "14:05",
+      "end": "14:30",
+      "startMinOfTvDay": 845,
+      "endMinOfTvDay": 870,
+      "title": "Mila Superstar",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "14:30",
+      "end": "14:55",
+      "startMinOfTvDay": 870,
+      "endMinOfTvDay": 895,
+      "title": "Die tollen Fußballstars",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "14:55",
+      "end": "15:00",
+      "startMinOfTvDay": 895,
+      "endMinOfTvDay": 900,
+      "title": "Dick und Doof",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "15:00",
+      "end": "15:25",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 925,
+      "title": "Itsy Bitsy – Einer spinnt immer",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "15:25",
+      "end": "15:55",
+      "startMinOfTvDay": 925,
+      "endMinOfTvDay": 955,
+      "title": "Die verrückte Vampy-Show",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "15:55",
+      "end": "16:20",
+      "startMinOfTvDay": 955,
+      "endMinOfTvDay": 980,
+      "title": "Kelly",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "16:20",
+      "end": "16:50",
+      "startMinOfTvDay": 980,
+      "endMinOfTvDay": 1010,
+      "title": "Wunderbare Jahre",
+      "description": "US-Comedy-Serie (1988–93) · Brüderchen und Schwesterchen"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "16:50",
+      "end": "17:55",
+      "startMinOfTvDay": 1010,
+      "endMinOfTvDay": 1075,
+      "title": "Knight Rider",
+      "description": "US-Action-Serie (1982–86) · Aus Spaß wird bitterer Ernst"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "17:55",
+      "end": "18:55",
+      "startMinOfTvDay": 1075,
+      "endMinOfTvDay": 1135,
+      "title": "Beverly Hills, 90210",
+      "description": "US-Jugend-Serie (1990–96) · Trauer"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "18:55",
+      "end": "19:30",
+      "startMinOfTvDay": 1135,
+      "endMinOfTvDay": 1170,
+      "title": "Alle zusammen – Jeder für sich",
+      "description": "Anschl.: Kurznachrichten"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "19:30",
+      "end": "20:15",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1215,
+      "title": "Bitte lächeln",
+      "description": null
+    },
+    {
+      "channel": "rtl-2",
+      "start": "20:15",
+      "end": "22:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1335,
+      "title": "Immer Ärger mit Mama",
+      "description": "Kanad. Fantasykomödie (1993) · Anschl.: Kurznachrichten"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "22:15",
+      "end": "00:15",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1455,
+      "title": "Killing Annie",
+      "description": "US-Psychothriller (1994)"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "00:15",
+      "end": "01:15",
+      "startMinOfTvDay": 1455,
+      "endMinOfTvDay": 1515,
+      "title": "Die Redaktion",
+      "description": "Reportermagazin (Wh.)"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "01:15",
+      "end": "01:40",
+      "startMinOfTvDay": 1515,
+      "endMinOfTvDay": 1540,
+      "title": "Nachrichten",
+      "description": "Anschl.: Wetter"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "01:40",
+      "end": "03:15",
+      "startMinOfTvDay": 1540,
+      "endMinOfTvDay": 1635,
+      "title": "Immer Ärger mit Mama",
+      "description": "(Wh. von 20.15)"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "03:15",
+      "end": "04:55",
+      "startMinOfTvDay": 1635,
+      "endMinOfTvDay": 1735,
+      "title": "Killing Annie",
+      "description": "(Wh. von 22.15)"
+    },
+    {
+      "channel": "rtl-2",
+      "start": "04:55",
+      "end": "05:55",
+      "startMinOfTvDay": 1735,
+      "endMinOfTvDay": 1795,
+      "title": "Auf eigene Faust",
+      "description": "Kanad.-franz. Action-Serie · Sein größter Kampf"
+    },
+    {
+      "channel": "vox",
+      "start": "06:50",
+      "end": "07:20",
+      "startMinOfTvDay": 410,
+      "endMinOfTvDay": 440,
+      "title": "Unter uns",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "07:20",
+      "end": "07:30",
+      "startMinOfTvDay": 440,
+      "endMinOfTvDay": 450,
+      "title": "Best Direct",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "07:30",
+      "end": "07:55",
+      "startMinOfTvDay": 450,
+      "endMinOfTvDay": 475,
+      "title": "Dominion",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "07:55",
+      "end": "08:25",
+      "startMinOfTvDay": 475,
+      "endMinOfTvDay": 505,
+      "title": "Gute Zeiten, schlechte Zeiten",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "08:25",
+      "end": "09:00",
+      "startMinOfTvDay": 505,
+      "endMinOfTvDay": 540,
+      "title": "Regal Shop",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "09:00",
+      "end": "10:00",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 600,
+      "title": "Ein Engel auf Erden",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "10:00",
+      "end": "11:00",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 660,
+      "title": "Hart aber herzlich",
+      "description": "Vertauschte Rollen"
+    },
+    {
+      "channel": "vox",
+      "start": "11:00",
+      "end": "12:00",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 720,
+      "title": "Trio mit vier Fäusten",
+      "description": "Eine unvergeßliche Begegnung"
+    },
+    {
+      "channel": "vox",
+      "start": "12:00",
+      "end": "13:00",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 780,
+      "title": "Matt Houston",
+      "description": "Noch 48 Stunden für Tony"
+    },
+    {
+      "channel": "vox",
+      "start": "13:00",
+      "end": "14:00",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 840,
+      "title": "Detektiv Rockford – Anruf genügt",
+      "description": "US-Krimi-Serie: Die Schlacht im Canoga Park"
+    },
+    {
+      "channel": "vox",
+      "start": "14:00",
+      "end": "14:30",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 870,
+      "title": "Unter uns",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "14:30",
+      "end": "15:00",
+      "startMinOfTvDay": 870,
+      "endMinOfTvDay": 900,
+      "title": "Gute Zeiten, schlechte Zeiten",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "15:00",
+      "end": "16:00",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 960,
+      "title": "Ein Engel auf Erden",
+      "description": "US-Familien-Serie: Gelähmte Schwingen"
+    },
+    {
+      "channel": "vox",
+      "start": "16:00",
+      "end": "17:00",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 1020,
+      "title": "Matt Houston 400 918",
+      "description": "US-Krimi-Serie (1982–85) · Die Doppelgängerin"
+    },
+    {
+      "channel": "vox",
+      "start": "17:00",
+      "end": "18:00",
+      "startMinOfTvDay": 1020,
+      "endMinOfTvDay": 1080,
+      "title": "Trio mit vier Fäusten",
+      "description": "US-Action-Serie (1983–86) · Der mysteriöse Tod eines Surfers"
+    },
+    {
+      "channel": "vox",
+      "start": "18:00",
+      "end": "18:15",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1095,
+      "title": "Nachrichten",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "18:15",
+      "end": "19:15",
+      "startMinOfTvDay": 1095,
+      "endMinOfTvDay": 1155,
+      "title": "Hart aber herzlich",
+      "description": "US-Detektiv-Serie (1979–84) · Flaschenteufel"
+    },
+    {
+      "channel": "vox",
+      "start": "19:15",
+      "end": "20:15",
+      "startMinOfTvDay": 1155,
+      "endMinOfTvDay": 1215,
+      "title": "Detektiv Rockford – Anruf genügt",
+      "description": "US-Krimi-Serie (1974–80) · Die bessere Hälfte"
+    },
+    {
+      "channel": "vox",
+      "start": "20:15",
+      "end": "22:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1335,
+      "title": "Die Rentner-Gang",
+      "description": "US-Kriminalkomödie (1979)"
+    },
+    {
+      "channel": "vox",
+      "start": "22:15",
+      "end": "22:50",
+      "startMinOfTvDay": 1335,
+      "endMinOfTvDay": 1370,
+      "title": "Spiegel TV – Interview",
+      "description": "Patrick Lindner (Schlagersänger)"
+    },
+    {
+      "channel": "vox",
+      "start": "22:50",
+      "end": "00:00",
+      "startMinOfTvDay": 1370,
+      "endMinOfTvDay": 1440,
+      "title": "Spiegel TV – Thema",
+      "description": "Jugendliche Triebtäter"
+    },
+    {
+      "channel": "vox",
+      "start": "00:00",
+      "end": "00:15",
+      "startMinOfTvDay": 1440,
+      "endMinOfTvDay": 1455,
+      "title": "Spätnachrichten",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "00:15",
+      "end": "01:15",
+      "startMinOfTvDay": 1455,
+      "endMinOfTvDay": 1515,
+      "title": "Mitternachtsmagazin",
+      "description": "Thema: Der Mensch lebt in einem Kokon von Urvertrauen: Wie reagiert das Gefühl elf Jahre nach Tschernobyl?"
+    },
+    {
+      "channel": "vox",
+      "start": "01:15",
+      "end": "02:10",
+      "startMinOfTvDay": 1515,
+      "endMinOfTvDay": 1570,
+      "title": "auto motor und sport tv",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "02:10",
+      "end": "02:40",
+      "startMinOfTvDay": 1570,
+      "endMinOfTvDay": 1600,
+      "title": "Wolkenlos",
+      "description": null
+    },
+    {
+      "channel": "vox",
+      "start": "02:40",
+      "end": "04:20",
+      "startMinOfTvDay": 1600,
+      "endMinOfTvDay": 1700,
+      "title": "Gentleman Joe – Der Rächer bin ich",
+      "description": "Ital.-span. Western (1967)(Wh. vom 30. 4.)"
+    },
+    {
+      "channel": "vox",
+      "start": "04:20",
+      "end": "05:00",
+      "startMinOfTvDay": 1700,
+      "endMinOfTvDay": 1740,
+      "title": "Rave around the World",
+      "description": "Die Dance-Night für Ausgeschlafene"
+    },
+    {
+      "channel": "vox",
+      "start": "05:00",
+      "end": "06:00",
+      "startMinOfTvDay": 1740,
+      "endMinOfTvDay": 1800,
+      "title": "BBC World",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "06:00",
+      "end": "06:45",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 405,
+      "title": "Wahlverwandtschaften",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "06:45",
+      "end": "07:15",
+      "startMinOfTvDay": 405,
+      "endMinOfTvDay": 435,
+      "title": "N-Joy",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "07:15",
+      "end": "07:30",
+      "startMinOfTvDay": 435,
+      "endMinOfTvDay": 450,
+      "title": "Vor 20 Jahren",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "07:30",
+      "end": "08:00",
+      "startMinOfTvDay": 450,
+      "endMinOfTvDay": 480,
+      "title": "Sendung mit der Maus",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "08:00",
+      "end": "08:45",
+      "startMinOfTvDay": 480,
+      "endMinOfTvDay": 525,
+      "title": "Reportage aus der Lunge",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "08:45",
+      "end": "09:30",
+      "startMinOfTvDay": 525,
+      "endMinOfTvDay": 570,
+      "title": "Atomkraft – Nein Danke!",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "09:30",
+      "end": "10:15",
+      "startMinOfTvDay": 570,
+      "endMinOfTvDay": 615,
+      "title": "Mit elf allein China",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "10:15",
+      "end": "11:00",
+      "startMinOfTvDay": 615,
+      "endMinOfTvDay": 660,
+      "title": "Das Ende kann ein Anfang sein",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "11:00",
+      "end": "11:45",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 705,
+      "title": "An den Ufern des Tajo",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "11:45",
+      "end": "12:15",
+      "startMinOfTvDay": 705,
+      "endMinOfTvDay": 735,
+      "title": "Ammerland",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "12:15",
+      "end": "13:00",
+      "startMinOfTvDay": 735,
+      "endMinOfTvDay": 780,
+      "title": "Lüneburger Heide",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "13:00",
+      "end": "13:45",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 825,
+      "title": "Auf der Suche nach der Schwarzen Stadt",
+      "description": "Expedition in die Innere Mongolei und die Wüste Gobi"
+    },
+    {
+      "channel": "n3",
+      "start": "13:45",
+      "end": "14:00",
+      "startMinOfTvDay": 825,
+      "endMinOfTvDay": 840,
+      "title": "Früchte der Erde",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "14:00",
+      "end": "15:00",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 900,
+      "title": "Pumuckl TV",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "15:00",
+      "end": "15:45",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 945,
+      "title": "Bilderbuch Deutschland",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "15:45",
+      "end": "16:00",
+      "startMinOfTvDay": 945,
+      "endMinOfTvDay": 960,
+      "title": "Tiere und Pflanzen",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "16:00",
+      "end": "17:00",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 1020,
+      "title": "ServiceZeit Freizeit",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "17:00",
+      "end": "17:25",
+      "startMinOfTvDay": 1020,
+      "endMinOfTvDay": 1045,
+      "title": "Neues vom Kleinstadtbahnhof",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "17:25",
+      "end": "17:30",
+      "startMinOfTvDay": 1045,
+      "endMinOfTvDay": 1050,
+      "title": "N 3 regional",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "17:30",
+      "end": "18:00",
+      "startMinOfTvDay": 1050,
+      "endMinOfTvDay": 1080,
+      "title": "Schlagzeile Sport",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "18:00",
+      "end": "18:35",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1115,
+      "title": "Hallo Spencer",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "18:35",
+      "end": "18:45",
+      "startMinOfTvDay": 1115,
+      "endMinOfTvDay": 1125,
+      "title": "N 3 regional",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "18:45",
+      "end": "19:30",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1170,
+      "title": "DAS! – Das AbendStudio",
+      "description": "Mit DAS! kocht"
+    },
+    {
+      "channel": "n3",
+      "start": "19:30",
+      "end": "20:00",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1200,
+      "title": "N 3 regional",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "20:00",
+      "end": "20:15",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1215,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "20:15",
+      "end": "21:00",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1260,
+      "title": "Expedition zur „Titanic“",
+      "description": "Reportage von David Cohen und David Elisco"
+    },
+    {
+      "channel": "n3",
+      "start": "21:00",
+      "end": "21:15",
+      "startMinOfTvDay": 1260,
+      "endMinOfTvDay": 1275,
+      "title": "Nordtour",
+      "description": "Reisemagazin"
+    },
+    {
+      "channel": "n3",
+      "start": "21:15",
+      "end": "22:00",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1320,
+      "title": "Die aktuelle Schaubude",
+      "description": "Mit Carlo von Tiedemann und Isabel Varell"
+    },
+    {
+      "channel": "n3",
+      "start": "22:00",
+      "end": "00:00",
+      "startMinOfTvDay": 1320,
+      "endMinOfTvDay": 1440,
+      "title": "NDR Talk Show",
+      "description": "Mit Alida Gundlach und Hubertus Meyer-Burckhardt"
+    },
+    {
+      "channel": "n3",
+      "start": "00:00",
+      "end": "02:00",
+      "startMinOfTvDay": 1440,
+      "endMinOfTvDay": 1560,
+      "title": "Tschaikowsky – Genie und Wahnsinn",
+      "description": "Engl. Biographie (1970) · Mit Richard Chamberlain, Glenda Jackson, Christopher Gable"
+    },
+    {
+      "channel": "n3",
+      "start": "02:00",
+      "end": "02:15",
+      "startMinOfTvDay": 1560,
+      "endMinOfTvDay": 1575,
+      "title": "Tagesschau vor 20 Jahren",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "02:15",
+      "end": "03:00",
+      "startMinOfTvDay": 1575,
+      "endMinOfTvDay": 1620,
+      "title": "DAS! – Das AbendStudio",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "03:00",
+      "end": "03:30",
+      "startMinOfTvDay": 1620,
+      "endMinOfTvDay": 1650,
+      "title": "Hallo Niedersachsen",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "03:30",
+      "end": "04:00",
+      "startMinOfTvDay": 1650,
+      "endMinOfTvDay": 1680,
+      "title": "Nordmagazin",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "04:00",
+      "end": "04:30",
+      "startMinOfTvDay": 1680,
+      "endMinOfTvDay": 1710,
+      "title": "SH-Magazin",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "04:30",
+      "end": "05:00",
+      "startMinOfTvDay": 1710,
+      "endMinOfTvDay": 1740,
+      "title": "Hamburger Journal",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "05:00",
+      "end": "05:35",
+      "startMinOfTvDay": 1740,
+      "endMinOfTvDay": 1775,
+      "title": "Kamerafahrt",
+      "description": null
+    },
+    {
+      "channel": "n3",
+      "start": "05:35",
+      "end": "06:00",
+      "startMinOfTvDay": 1775,
+      "endMinOfTvDay": 1800,
+      "title": "Leihmutter",
+      "description": null
+    }
+  ],
+  "media": [
+    {
+      "matchTitle": "Blitz",
+      "channel": "sat-1",
+      "start": "18:00",
+      "level": "sim",
+      "url": "https://archive.org/details/blitz-spezial-star-trek-1998/Blitz%20Spezial%20-%20Star%20Trek%20%281998%29.mp4",
+      "note": "„Blitz Spezial: Star Trek“, SAT.1-Mitschnitt von 1998",
+      "alt": null
+    },
+    {
+      "matchTitle": "Springfield Story",
+      "channel": "rtl-plus",
+      "start": "08:45",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=qECWg5dJhxE",
+      "note": "Kurzer RTL-Beitrag zur 1000. Folge, keine ganze Folge",
+      "alt": null,
+      "durationS": 520
+    },
+    {
+      "matchTitle": "California Clan",
+      "channel": "rtl-plus",
+      "start": "09:35",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=YsEh6APbnIc",
+      "note": "Frühe Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 737
+    },
+    {
+      "matchTitle": "Hans Meiser",
+      "channel": "rtl-plus",
+      "start": "16:00",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=sXENaPTGets",
+      "note": "Hans Meiser, RTL 08.09.1997",
+      "alt": null,
+      "durationS": 3666
+    },
+    {
+      "matchTitle": "RTL aktuell",
+      "channel": "rtl-plus",
+      "start": "18:45",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=OdozhsjwHps",
+      "note": "Fragment von RTL aktuell und Explosiv vom 19.12.1998",
+      "alt": null,
+      "durationS": 2186
+    },
+    {
+      "matchTitle": "Explosiv - Das Magazin",
+      "channel": "rtl-plus",
+      "start": "19:10",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=UOLEBTPxzh4",
+      "note": "Explosiv mit Markus Lanz, 1998",
+      "alt": null,
+      "durationS": 72
+    },
+    {
+      "matchTitle": "Die Harald Schmidt Show",
+      "channel": "sat-1",
+      "start": "23:15",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=bgaOnfIxjv8",
+      "note": "Die Harald Schmidt Show, Folge 232 vom 14.03.1997",
+      "alt": null,
+      "durationS": 2701
+    },
+    {
+      "matchTitle": "T. V. Kaiser - Die Talkshow, wo voll gut ist",
+      "channel": "rtl-plus",
+      "start": "23:15",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=KpCL5VYXLh8",
+      "note": "T.V. Kaiser, Staffel 2 Folge 6 „Frauen am Steuer oder Grüner wird's nicht!“ – die Folge dieses Abends",
+      "alt": null,
+      "durationS": 2190
+    },
+    {
+      "matchTitle": "7 Tage - 7 Köpfe",
+      "channel": "rtl-plus",
+      "start": "22:15",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=_wmbN-3Td84",
+      "note": "7 Tage, 7 Köpfe vom 14.02.1997 mit Mike Krüger, Karl Dall und Gaby Köster",
+      "alt": null,
+      "durationS": 2557
+    },
+    {
+      "matchTitle": "Glücksrad",
+      "channel": "sat-1",
+      "start": "19:15",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=MVwOV5izuW4",
+      "note": "Glücksrad 1997 mit Frederic Meisner",
+      "alt": null,
+      "durationS": 1909
+    },
+    {
+      "matchTitle": "Aktenzeichen: XY . . .ungelöst",
+      "channel": "zdf",
+      "start": "20:15",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=M2Mz6Yp96oU",
+      "note": "Aktenzeichen XY: Eduard Zimmermanns Abschied 1997 (Ausschnitt)",
+      "alt": null,
+      "durationS": 172
+    },
+    {
+      "matchTitle": "Herzblatt",
+      "channel": "ard",
+      "start": "19:25",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=r4uoINOR6ZA",
+      "note": "Herzblatt, komplette Folge von 1996 mit Rainhard Fendrich",
+      "alt": null,
+      "durationS": 1471
+    },
+    {
+      "matchTitle": "Flodder - Eine Familie zum Knutschen",
+      "channel": "rtl-plus",
+      "start": "21:45",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/xb1macu",
+      "note": "Flodder - Eine Familie zum Knutschen Trailer DF",
+      "alt": null,
+      "durationS": 440
+    },
+    {
+      "matchTitle": "Inspektor Gadget",
+      "channel": "pro-7",
+      "start": "06:20",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x7xb75l",
+      "note": "Inspektor Gadget Staffel 1 Folge 13",
+      "alt": null,
+      "durationS": 1303
+    },
+    {
+      "matchTitle": "Die Schlümpfe",
+      "channel": "pro-7",
+      "start": "07:05",
+      "level": "sim",
+      "url": "https://archive.org/details/die-schlumpfe-cartoon-compilation-deutsch/Die%20Schl%C3%BCmpfe%20Cartoon%20Compilation%20-%20Deutsch.mp4",
+      "note": "Die Schlümpfe Cartoon Compilation Deutsch",
+      "alt": null,
+      "durationS": 3552
+    },
+    {
+      "matchTitle": "Der Wolf hetzt die Meute",
+      "channel": "pro-7",
+      "start": "22:15",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8i0z23",
+      "note": "Der Wolf hetzt die Meute | movie | 1984 | Official Trailer",
+      "alt": null,
+      "durationS": 130
+    },
+    {
+      "matchTitle": "Der Wolf hetzt die Meute",
+      "channel": "pro-7",
+      "start": "03:20",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8i0z23",
+      "note": "Der Wolf hetzt die Meute | movie | 1984 | Official Trailer",
+      "alt": null,
+      "durationS": 130
+    },
+    {
+      "matchTitle": "Dick und Doof",
+      "channel": "rtl-2",
+      "start": "09:15",
+      "level": "sim",
+      "url": "https://archive.org/details/chimp_202005/chimp.ia.mp4",
+      "note": "Dick und Doof - Der Gorilla unter der Bettdecke",
+      "alt": null,
+      "durationS": 1445
+    },
+    {
+      "matchTitle": "Dick und Doof",
+      "channel": "rtl-2",
+      "start": "14:55",
+      "level": "sim",
+      "url": "https://archive.org/details/chimp_202005/chimp.ia.mp4",
+      "note": "Dick und Doof - Der Gorilla unter der Bettdecke",
+      "alt": null,
+      "durationS": 1445
+    },
+    {
+      "matchTitle": "Thomas, die kleine Lokomotive",
+      "channel": "rtl-2",
+      "start": "12:10",
+      "level": "sim",
+      "url": "https://archive.org/details/thomas-die-kleine-lokomotive/Thomas%20die%20Kleine%20Lokomotive%20-%20Der%20Ausrei%C3%9Fer%20%2836%29%20%5BThomas%20the%20Tank%20Engine%20GERMAN%20DUB%5D-6YdTlNxkiGk.mp4",
+      "note": "Thomas Die Kleine Lokomotive",
+      "alt": null,
+      "durationS": 332
+    },
+    {
+      "matchTitle": "Die Glücksbärchis",
+      "channel": "rtl-2",
+      "start": "12:15",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x85dgpp",
+      "note": "Die Glücksbärchis Folge 1 - Geburtstag des Wolkenlandes",
+      "alt": null,
+      "durationS": 1365
+    },
+    {
+      "matchTitle": "Im Land des Zauberers von Oz",
+      "channel": "rtl-2",
+      "start": "13:10",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8ly0mt",
+      "note": "Im Land des Zauberers von Oz - Die Kalidahs (Folge. 04)",
+      "alt": null,
+      "durationS": 1388
+    },
+    {
+      "matchTitle": "Mila Superstar",
+      "channel": "rtl-2",
+      "start": "14:05",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x7bi2lu",
+      "note": "Mila Superstar Staffel 1 Folge 49 deutsch german",
+      "alt": null,
+      "durationS": 1394
+    },
+    {
+      "matchTitle": "Die tollen Fußballstars",
+      "channel": "rtl-2",
+      "start": "14:30",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8fzhlz",
+      "note": "Die tollen Fußballstars Staffel 3 Folge 27 HD Deutsch",
+      "alt": null,
+      "durationS": 1499
+    },
+    {
+      "matchTitle": "Ein Engel auf Erden",
+      "channel": "vox",
+      "start": "09:00",
+      "level": "sim",
+      "url": "https://archive.org/details/ein-engel-auf-erden-jonathan-und-der-teufel-film-deutsch/Ein%20Engel%20auf%20Erden%20Jonathan%20und%20der%20Teufel%20Film%20Deutsch.mp4",
+      "note": "Ein Engel Auf Erden Jonathan Und Der Teufel Film Deutsch",
+      "alt": null,
+      "durationS": 3183
+    },
+    {
+      "matchTitle": "Ein Engel auf Erden",
+      "channel": "vox",
+      "start": "15:00",
+      "level": "sim",
+      "url": "https://archive.org/details/ein-engel-auf-erden-jonathan-und-der-teufel-film-deutsch/Ein%20Engel%20auf%20Erden%20Jonathan%20und%20der%20Teufel%20Film%20Deutsch.mp4",
+      "note": "Ein Engel Auf Erden Jonathan Und Der Teufel Film Deutsch",
+      "alt": null,
+      "durationS": 3183
+    },
+    {
+      "matchTitle": "Hart aber herzlich",
+      "channel": "vox",
+      "start": "10:00",
+      "level": "sim",
+      "url": "https://archive.org/details/hart-aber-herzlich-1.01-todliche-verwandtschaft-kabel-1-01.02.1999/Hart%20aber%20herzlich%20-%201.01%20-%20T%C3%B6dliche%20Verwandtschaft%20-%20Kabel%201%201998.mp4",
+      "note": "Hart Aber Herzlich 1.01 Tödliche Verwandtschaft Kabel 1 01.02.1999",
+      "alt": null,
+      "durationS": 2968
+    },
+    {
+      "matchTitle": "Hart aber herzlich",
+      "channel": "vox",
+      "start": "18:15",
+      "level": "sim",
+      "url": "https://archive.org/details/hart-aber-herzlich-1.01-todliche-verwandtschaft-kabel-1-01.02.1999/Hart%20aber%20herzlich%20-%201.01%20-%20T%C3%B6dliche%20Verwandtschaft%20-%20Kabel%201%201998.mp4",
+      "note": "Hart Aber Herzlich 1.01 Tödliche Verwandtschaft Kabel 1 01.02.1999",
+      "alt": null,
+      "durationS": 2968
+    },
+    {
+      "matchTitle": "Trio mit vier Fäusten",
+      "channel": "vox",
+      "start": "11:00",
+      "level": "sim",
+      "url": "https://archive.org/details/trio-mit-vier-faeusten/Ein%20Trio%20mit%20vier%20F%C3%A4usten/Trio%20mit%20vier%20F%C3%A4usten%20Staffel%201%20Folge%201%20und%202%20-%20Pilotfilm.mp4",
+      "note": "Trio mit vier Fäusten",
+      "alt": null,
+      "durationS": 5310
+    },
+    {
+      "matchTitle": "Trio mit vier Fäusten",
+      "channel": "vox",
+      "start": "17:00",
+      "level": "sim",
+      "url": "https://archive.org/details/trio-mit-vier-faeusten/Ein%20Trio%20mit%20vier%20F%C3%A4usten/Trio%20mit%20vier%20F%C3%A4usten%20Staffel%201%20Folge%201%20und%202%20-%20Pilotfilm.mp4",
+      "note": "Trio mit vier Fäusten",
+      "alt": null,
+      "durationS": 5310
+    },
+    {
+      "matchTitle": "Detektiv Rockford – Anruf genügt",
+      "channel": "vox",
+      "start": "13:00",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8frej8",
+      "note": "Detektiv Rockford Anruf genügt Staffel 7 Folge 1 HD Deutsch",
+      "alt": null,
+      "durationS": 457
+    },
+    {
+      "matchTitle": "Detektiv Rockford – Anruf genügt",
+      "channel": "vox",
+      "start": "19:15",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8frej8",
+      "note": "Detektiv Rockford Anruf genügt Staffel 7 Folge 1 HD Deutsch",
+      "alt": null,
+      "durationS": 457
+    }
+  ],
+  "adBreaks": [
+    {
+      "channel": "rtl-2",
+      "url": "https://www.youtube.com/watch?v=9RqegIoW5Nk",
+      "note": "RTL II, 09.05.1997: Werbeblöcke während „Overboard“",
+      "alternatives": [],
+      "airedPeriod": "1997-05"
+    },
+    {
+      "channel": "pro-7",
+      "url": "https://www.youtube.com/watch?v=EiaOTPHcI5g",
+      "note": "ProSieben, 19.04.1997: Werbeblöcke während „Crocodile Dundee“",
+      "alternatives": [],
+      "airedPeriod": "1997-04"
+    },
+    {
+      "channel": "rtl-plus",
+      "url": "https://www.youtube.com/watch?v=lilbe-KznoA",
+      "note": "RTL-Werbung vom 26.03.1997",
+      "alternatives": [],
+      "airedPeriod": "1997-03"
+    },
+    {
+      "channel": "sat-1",
+      "url": "https://www.youtube.com/watch?v=5-Buxtq5q2M",
+      "note": "SAT.1-Werbeblock vom 19.07.1997",
+      "alternatives": [],
+      "airedPeriod": "1997-07"
+    }
+  ]
+}

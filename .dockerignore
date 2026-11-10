@@ -1,0 +1,21 @@
+# Only what the image needs: sources, manifests, seed data, migrations.
+.git
+.github
+.claude
+.data
+**/node_modules
+**/.next
+**/*.tsbuildinfo
+**/.env
+**/.env.*
+!apps/web/.env.example
+docs
+deploy
+!deploy/docker-entrypoint.sh
+**/*.test.ts
+**/.DS_Store
+*.md
+!seed/README.md
+eslint.config.mjs
+.prettierrc.json
+.prettierignore

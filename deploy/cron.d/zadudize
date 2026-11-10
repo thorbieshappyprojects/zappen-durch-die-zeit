@@ -1,0 +1,14 @@
+# Zappen durch die Zeit – scheduled jobs (install: install -m 644 cron.d/zadudize /etc/cron.d/zadudize).
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# 03:15 daily key figures for the dashboard, then the retention purge (core RETENTION_DAYS).
+15 3 * * * deploy cd /opt/zadudize && docker compose run --rm jobs pnpm --silent ingest snapshot >> /var/log/zadudize/jobs.log 2>&1
+
+# 03:45 backup of database and uploads (7 daily, 4 weekly, optional encrypted copy off the server).
+45 3 * * * deploy /opt/zadudize/backup.sh >> /var/log/zadudize/backup.log 2>&1
+
+# Monday 04:10 empty Caddy's access log (it contains IP addresses; kept at most 14 days).
+10 4 * * 1 root f="$(docker inspect -f '{{.LogPath}}' zadudize-caddy-1 2>/dev/null)" && [ -n "$f" ] && truncate -s 0 "$f" && rm -f "$f".*
+
+# Sunday 04:30 re-check of reported or long-unchecked videos: no command for it yet (docs/OPERATIONS.md).

@@ -1,0 +1,48 @@
+# Zappen durch die Zeit – HTTPS in front of the app (deploy/compose.yml).
+# Security headers come from the app (CSP with nonce, HSTS …): none here, to avoid duplicates.
+# The visitor address: Caddy ignores an X-Forwarded-For sent by the caller (no trusted proxies) and
+# passes the address it sees; the app takes it with TRUSTED_PROXY_HOPS=1.
+{
+	# Certificates via Let's Encrypt; the address for expiry notices.
+	email dev@thorbieshappyprojects.com
+}
+
+{$SITE_DOMAIN} {
+	encode zstd gzip
+
+	# Access log as JSON on stdout (Docker keeps 5 × 10 MB). It contains IP addresses: kept at most
+	# 14 days – the weekly cron job (deploy/cron.d/zadudize) empties it.
+	log {
+		output stdout
+		format json
+	}
+	@health path /healthz
+	log_skip @health
+
+	# Site lock before the launch: with SITE_LOCK_USER and SITE_LOCK_HASH set (caddy hash-password),
+	# everything but /healthz asks for a password. Remove both from .env and restart Caddy to open the site.
+	# The defaults only keep the file valid; without SITE_LOCK_USER the lock is off.
+	@locked {
+		expression `{env.SITE_LOCK_USER} != ""`
+		not path /healthz
+	}
+	basic_auth @locked {
+		{$SITE_LOCK_USER:unused} {$SITE_LOCK_HASH:$2a$14$TROlrSmT.E4RLF6hhF5U.eQHawTA9ipz05dozwvWE.F.b34RTo2xC}
+	}
+
+	# Request bodies: the contribution route takes attachments (the app caps them at 26 MB), 1 MB elsewhere.
+	@upload path /mitmachen/senden
+	request_body @upload {
+		max_size 27MB
+	}
+	@other not path /mitmachen/senden
+	request_body @other {
+		max_size 1MB
+	}
+
+	reverse_proxy app:3000
+}
+
+www.{$SITE_DOMAIN} {
+	redir https://{$SITE_DOMAIN}{uri} permanent
+}

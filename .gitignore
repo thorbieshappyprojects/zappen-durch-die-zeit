@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.DS_Store
+next-env.d.ts
+.data/
+.claude/settings.local.json
+.env
+.env.local
+.env*.local
+
+# Owner's working papers – kept out of the public repository.
+docs/change-request-2026-11-10-netcup.md
+docs/archive/change-request-2026-11-10-github.md
+docs/archive/publishing-checklist-2026-11-10.md

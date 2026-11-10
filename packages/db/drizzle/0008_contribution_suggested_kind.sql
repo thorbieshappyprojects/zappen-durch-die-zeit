@@ -1,0 +1,1 @@
+ALTER TABLE "contribution" ADD COLUMN "suggested_kind" text;

@@ -1,0 +1,29 @@
+name: Fehler
+description: Etwas auf der Website oder im Code funktioniert nicht.
+labels: ["fehler"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ein falsches oder defektes Video bitte direkt im Fernseher mit „Video melden“ melden, fehlende Programme über das [Mitmachen-Formular](https://zadudize.de/mitmachen). Sicherheitslücken nie hier, sondern wie in `SECURITY.md` beschrieben.
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist passiert?
+      description: Und was hättest du erwartet?
+    validations:
+      required: true
+  - type: input
+    id: adresse
+    attributes:
+      label: Adresse
+      description: Der Link aus der Adresszeile (mit Datum, Sender und Uhrzeit), falls es um eine Stelle im Fernseher geht.
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Schritte zum Nachvollziehen
+  - type: input
+    id: geraet
+    attributes:
+      label: Browser und Gerät
+      placeholder: z. B. Firefox 140 auf Windows, Safari auf iPhone

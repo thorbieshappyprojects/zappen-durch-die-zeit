@@ -1,0 +1,2513 @@
+{
+  "date": "1991-03-13",
+  "tvDayStart": "06:00",
+  "timezone": "Europe/Berlin",
+  "source": {
+    "name": "HÖRZU 10/1991 via tvprogramme.net (retro-media-tv.de), erfasst von Kolja Marker",
+    "url": "http://retro-media-tv.de/tvp/view_tag.php?tag=1991-03-13",
+    "license": "not required – no copyright on the programme itself (site imprint); database right assumed expired (no substantial update since ~2003, site discontinued). Owner decision, 2026-11-09."
+  },
+  "channels": [
+    {
+      "id": "ard",
+      "name": "ARD",
+      "displayNumber": 1,
+      "isPrivate": false
+    },
+    {
+      "id": "zdf",
+      "name": "ZDF",
+      "displayNumber": 2,
+      "isPrivate": false
+    },
+    {
+      "id": "sat-1",
+      "name": "SAT.1",
+      "displayNumber": 3,
+      "isPrivate": true
+    },
+    {
+      "id": "rtl-plus",
+      "name": "RTL",
+      "displayNumber": 4,
+      "isPrivate": true
+    },
+    {
+      "id": "tele-5",
+      "name": "Tele 5",
+      "displayNumber": 6,
+      "isPrivate": true
+    },
+    {
+      "id": "pro-7",
+      "name": "PRO 7",
+      "displayNumber": 7,
+      "isPrivate": true
+    }
+  ],
+  "broadcasts": [
+    {
+      "channel": "ard",
+      "start": "09:00",
+      "end": "09:03",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 543,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "09:03",
+      "end": "09:45",
+      "startMinOfTvDay": 543,
+      "endMinOfTvDay": 585,
+      "title": "Dallas",
+      "description": "„Weg ohne Hoffnung“ · Serie (Wh.)"
+    },
+    {
+      "channel": "ard",
+      "start": "09:45",
+      "end": "10:00",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 600,
+      "title": "Medizin nach Noten",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "10:00",
+      "end": "10:03",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 603,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "10:03",
+      "end": "10:50",
+      "startMinOfTvDay": 603,
+      "endMinOfTvDay": 650,
+      "title": "Haste Töne",
+      "description": "Musikmesse Frankfurt (Wh.)"
+    },
+    {
+      "channel": "ard",
+      "start": "10:50",
+      "end": "11:00",
+      "startMinOfTvDay": 650,
+      "endMinOfTvDay": 660,
+      "title": "Hundert Meisterwerke",
+      "description": "Pablo Picasso: La Vie (Wh.)"
+    },
+    {
+      "channel": "ard",
+      "start": "11:00",
+      "end": "11:03",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 663,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "11:03",
+      "end": "12:35",
+      "startMinOfTvDay": 663,
+      "endMinOfTvDay": 755,
+      "title": "Willy Bogner – Feuer und Eis",
+      "description": "Spielfilm, USA 1985 (Wh.)"
+    },
+    {
+      "channel": "ard",
+      "start": "12:35",
+      "end": "12:55",
+      "startMinOfTvDay": 755,
+      "endMinOfTvDay": 775,
+      "title": "Umschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "12:55",
+      "end": "13:00",
+      "startMinOfTvDay": 775,
+      "endMinOfTvDay": 780,
+      "title": "Presseschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "13:00",
+      "end": "13:05",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 785,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "13:05",
+      "end": "13:45",
+      "startMinOfTvDay": 785,
+      "endMinOfTvDay": 825,
+      "title": "ARD-Mittagsmagazin",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "13:45",
+      "end": "14:00",
+      "startMinOfTvDay": 825,
+      "endMinOfTvDay": 840,
+      "title": "Wirtschafts-Telegramm",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "14:00",
+      "end": "14:02",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 842,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "14:02",
+      "end": "14:30",
+      "startMinOfTvDay": 842,
+      "endMinOfTvDay": 870,
+      "title": "Sesamstraße",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "14:30",
+      "end": "15:00",
+      "startMinOfTvDay": 870,
+      "endMinOfTvDay": 900,
+      "title": "Ein Hamster im Nachthemd",
+      "description": "Jugendserie, 4. Folge (Wh.)"
+    },
+    {
+      "channel": "ard",
+      "start": "15:00",
+      "end": "15:03",
+      "startMinOfTvDay": 900,
+      "endMinOfTvDay": 903,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "15:03",
+      "end": "15:30",
+      "startMinOfTvDay": 903,
+      "endMinOfTvDay": 930,
+      "title": "Flip Flop",
+      "description": "Spielshow mit Claus Kruesken und Schülern aus Weilmünster und Ramerberg"
+    },
+    {
+      "channel": "ard",
+      "start": "15:30",
+      "end": "16:00",
+      "startMinOfTvDay": 930,
+      "endMinOfTvDay": 960,
+      "title": "Frauengeschichten",
+      "description": "Heidi Keimel – die weltweit erste Spielbankdirektorin"
+    },
+    {
+      "channel": "ard",
+      "start": "16:00",
+      "end": "16:03",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 963,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "16:03",
+      "end": "16:30",
+      "startMinOfTvDay": 963,
+      "endMinOfTvDay": 990,
+      "title": "Gutmanns Erzählungen",
+      "description": "2. Folge: Von Hostessen, Hausfrauen und anderen Karrieren im Fernsehen der 60er"
+    },
+    {
+      "channel": "ard",
+      "start": "16:30",
+      "end": "17:25",
+      "startMinOfTvDay": 990,
+      "endMinOfTvDay": 1045,
+      "title": "Eiskunstlauf-WM",
+      "description": "Originalprogramm der Herren · aus der Olympiahalle München · Reporterin: Corinna Halke"
+    },
+    {
+      "channel": "ard",
+      "start": "17:25",
+      "end": "17:35",
+      "startMinOfTvDay": 1045,
+      "endMinOfTvDay": 1055,
+      "title": "Regionalprogramm",
+      "description": "z. B. WDR-Studio, Puzzle (HR), Berichte vom Tage (NDR)"
+    },
+    {
+      "channel": "ard",
+      "start": "17:35",
+      "end": "18:30",
+      "startMinOfTvDay": 1055,
+      "endMinOfTvDay": 1110,
+      "title": "Ein Lord für alle Fälle",
+      "description": "„Traumwagen mit Chauffeur“ · Unterhaltungsserie, 1. Folge"
+    },
+    {
+      "channel": "ard",
+      "start": "18:30",
+      "end": "18:35",
+      "startMinOfTvDay": 1110,
+      "endMinOfTvDay": 1115,
+      "title": "Regionales",
+      "description": "Hier und Heute · Hessen heute · Buten & Binnen"
+    },
+    {
+      "channel": "ard",
+      "start": "18:35",
+      "end": "19:30",
+      "startMinOfTvDay": 1115,
+      "endMinOfTvDay": 1170,
+      "title": "Die glückliche Familie",
+      "description": "„Familienchaos“ · Familienserie"
+    },
+    {
+      "channel": "ard",
+      "start": "19:30",
+      "end": "19:58",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1198,
+      "title": "Landesprogramme",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "19:58",
+      "end": "20:00",
+      "startMinOfTvDay": 1198,
+      "endMinOfTvDay": 1200,
+      "title": "Heute im Ersten",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "20:00",
+      "end": "20:10",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1210,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "20:10",
+      "end": "21:09",
+      "startMinOfTvDay": 1210,
+      "endMinOfTvDay": 1269,
+      "title": "Geschichten aus der Heimat",
+      "description": "Zwei heitere Episoden aus Norddeutschland von Wolfgang Limmer"
+    },
+    {
+      "channel": "ard",
+      "start": "21:09",
+      "end": "21:10",
+      "startMinOfTvDay": 1269,
+      "endMinOfTvDay": 1270,
+      "title": "Tagesthemen-Telegramm",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "21:10",
+      "end": "22:30",
+      "startMinOfTvDay": 1270,
+      "endMinOfTvDay": 1350,
+      "title": "Eiskunstlauf-WM live",
+      "description": "Kür der Paare · Reporter: Rudi Cerne · Olympiahalle München"
+    },
+    {
+      "channel": "ard",
+      "start": "22:30",
+      "end": "23:00",
+      "startMinOfTvDay": 1350,
+      "endMinOfTvDay": 1380,
+      "title": "Tagesthemen",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "23:00",
+      "end": "23:05",
+      "startMinOfTvDay": 1380,
+      "endMinOfTvDay": 1385,
+      "title": "Nachschlag",
+      "description": "Kabarettistisches mit Matthias Beltz"
+    },
+    {
+      "channel": "ard",
+      "start": "23:05",
+      "end": "00:00",
+      "startMinOfTvDay": 1385,
+      "endMinOfTvDay": 1440,
+      "title": "Veranda",
+      "description": "Talkshow mit Dagobert Lindlau"
+    },
+    {
+      "channel": "ard",
+      "start": "00:00",
+      "end": "00:30",
+      "startMinOfTvDay": 1440,
+      "endMinOfTvDay": 1470,
+      "title": "Tischtennis-Europaliga",
+      "description": "Deutschland – Schweden, 2. Endspiel in Hannover"
+    },
+    {
+      "channel": "ard",
+      "start": "00:30",
+      "end": "01:15",
+      "startMinOfTvDay": 1470,
+      "endMinOfTvDay": 1515,
+      "title": "Detektiv Rockford: Anruf genügt",
+      "description": "„Pech mit Öl“ · Krimiserie"
+    },
+    {
+      "channel": "ard",
+      "start": "01:15",
+      "end": "01:20",
+      "startMinOfTvDay": 1515,
+      "endMinOfTvDay": 1520,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "ard",
+      "start": "01:20",
+      "end": "01:25",
+      "startMinOfTvDay": 1520,
+      "endMinOfTvDay": 1525,
+      "title": "Zuschauen – Entspannen – Nachdenken",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "09:00",
+      "end": "09:03",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 543,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "09:03",
+      "end": "09:45",
+      "startMinOfTvDay": 543,
+      "endMinOfTvDay": 585,
+      "title": "Dallas",
+      "description": "„Weg ohne Hoffnung“ · Serie (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "09:45",
+      "end": "10:00",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 600,
+      "title": "Medizin nach Noten",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "10:00",
+      "end": "10:03",
+      "startMinOfTvDay": 600,
+      "endMinOfTvDay": 603,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "10:03",
+      "end": "10:50",
+      "startMinOfTvDay": 603,
+      "endMinOfTvDay": 650,
+      "title": "Haste Töne",
+      "description": "Musikmesse Frankfurt (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "10:50",
+      "end": "11:00",
+      "startMinOfTvDay": 650,
+      "endMinOfTvDay": 660,
+      "title": "Hundert Meisterwerke",
+      "description": "Pablo Picasso: La Vie (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "11:00",
+      "end": "11:03",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 663,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "11:03",
+      "end": "12:35",
+      "startMinOfTvDay": 663,
+      "endMinOfTvDay": 755,
+      "title": "Willy Bogner – Feuer und Eis",
+      "description": "Spielfilm, USA 1985 (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "12:35",
+      "end": "12:55",
+      "startMinOfTvDay": 755,
+      "endMinOfTvDay": 775,
+      "title": "Umschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "12:55",
+      "end": "13:00",
+      "startMinOfTvDay": 775,
+      "endMinOfTvDay": 780,
+      "title": "Presseschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:00",
+      "end": "13:05",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 785,
+      "title": "Tagesschau",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:05",
+      "end": "13:45",
+      "startMinOfTvDay": 785,
+      "endMinOfTvDay": 825,
+      "title": "ARD-Mittagsmagazin",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "13:45",
+      "end": "14:10",
+      "startMinOfTvDay": 825,
+      "endMinOfTvDay": 850,
+      "title": "Ein Fall für TKKG",
+      "description": "„Das Geheimnis der chinesischen Vase“ · Jugendserie, 5. Folge (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "14:10",
+      "end": "14:15",
+      "startMinOfTvDay": 850,
+      "endMinOfTvDay": 855,
+      "title": "Singen macht Spaß",
+      "description": "Mit Rolf Zuckowski"
+    },
+    {
+      "channel": "zdf",
+      "start": "14:15",
+      "end": "15:58",
+      "startMinOfTvDay": 855,
+      "endMinOfTvDay": 958,
+      "title": "Schachnovelle",
+      "description": "Spielfilm, BRD 1960 · s/w"
+    },
+    {
+      "channel": "zdf",
+      "start": "15:58",
+      "end": "16:00",
+      "startMinOfTvDay": 958,
+      "endMinOfTvDay": 960,
+      "title": "Programm-Service",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "16:00",
+      "end": "16:03",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 963,
+      "title": "heute",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "16:03",
+      "end": "16:25",
+      "startMinOfTvDay": 963,
+      "endMinOfTvDay": 985,
+      "title": "Wickie und die starken Männer",
+      "description": "„Die zwei Kampfhähne“ · Zeichentrickserie"
+    },
+    {
+      "channel": "zdf",
+      "start": "16:25",
+      "end": "16:30",
+      "startMinOfTvDay": 985,
+      "endMinOfTvDay": 990,
+      "title": "logo",
+      "description": "Nachrichten für Kinder"
+    },
+    {
+      "channel": "zdf",
+      "start": "16:30",
+      "end": "17:00",
+      "startMinOfTvDay": 990,
+      "endMinOfTvDay": 1020,
+      "title": "Löwenzahn",
+      "description": "„Peter wird rot“ · Peter wurde von einem Auto angefahren …"
+    },
+    {
+      "channel": "zdf",
+      "start": "17:00",
+      "end": "17:15",
+      "startMinOfTvDay": 1020,
+      "endMinOfTvDay": 1035,
+      "title": "heute / Aus den Ländern",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "17:15",
+      "end": "17:50",
+      "startMinOfTvDay": 1035,
+      "endMinOfTvDay": 1070,
+      "title": "Tele-Illustrierte",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "17:50",
+      "end": "18:10",
+      "startMinOfTvDay": 1070,
+      "endMinOfTvDay": 1090,
+      "title": "Die Schwarzwaldklinik",
+      "description": "„Sturz mit Folgen“ · Familien-Arztserie (Wh.)"
+    },
+    {
+      "channel": "zdf",
+      "start": "18:10",
+      "end": "18:25",
+      "startMinOfTvDay": 1090,
+      "endMinOfTvDay": 1105,
+      "title": "Lotto am Mittwoch",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "18:25",
+      "end": "18:50",
+      "startMinOfTvDay": 1105,
+      "endMinOfTvDay": 1130,
+      "title": "Die Schwarzwaldklinik (Fortsetzung)",
+      "description": "„Sturz mit Folgen“, zweiter Teil"
+    },
+    {
+      "channel": "zdf",
+      "start": "18:50",
+      "end": "19:00",
+      "startMinOfTvDay": 1130,
+      "endMinOfTvDay": 1140,
+      "title": "Programm-Service",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "19:00",
+      "end": "19:30",
+      "startMinOfTvDay": 1140,
+      "endMinOfTvDay": 1170,
+      "title": "heute",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "19:30",
+      "end": "20:15",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1215,
+      "title": "Wie würden Sie entscheiden?",
+      "description": "„Hände weg von meiner Frau“ · Rechtsfälle im Urteil des Bürgers"
+    },
+    {
+      "channel": "zdf",
+      "start": "20:15",
+      "end": "21:00",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1260,
+      "title": "Kennzeichen D",
+      "description": "Leitung: Joachim Jauer"
+    },
+    {
+      "channel": "zdf",
+      "start": "21:00",
+      "end": "21:45",
+      "startMinOfTvDay": 1260,
+      "endMinOfTvDay": 1305,
+      "title": "Matlock",
+      "description": "„Eine Augenzeugin verschwindet“ · Krimiserie, 3. Folge"
+    },
+    {
+      "channel": "zdf",
+      "start": "21:45",
+      "end": "22:10",
+      "startMinOfTvDay": 1305,
+      "endMinOfTvDay": 1330,
+      "title": "heute-journal",
+      "description": null
+    },
+    {
+      "channel": "zdf",
+      "start": "22:10",
+      "end": "22:40",
+      "startMinOfTvDay": 1330,
+      "endMinOfTvDay": 1360,
+      "title": "Leben ohne Seele?",
+      "description": "Stoppt das Leid der Tiere · Reihe „Kontext“"
+    },
+    {
+      "channel": "zdf",
+      "start": "22:40",
+      "end": "00:30",
+      "startMinOfTvDay": 1360,
+      "endMinOfTvDay": 1470,
+      "title": "Eleni",
+      "description": "Spielfilm, USA 1985 · Deutsche Erstaufführung"
+    },
+    {
+      "channel": "zdf",
+      "start": "00:30",
+      "end": "00:35",
+      "startMinOfTvDay": 1470,
+      "endMinOfTvDay": 1475,
+      "title": "heute",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "06:00",
+      "end": "08:35",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 515,
+      "title": "Hallo Europa – Guten Morgen Deutschland",
+      "description": "Frühmagazin, halbstündlich Nachrichten"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "08:35",
+      "end": "09:10",
+      "startMinOfTvDay": 515,
+      "endMinOfTvDay": 550,
+      "title": "Showladen (Wh.)",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "09:10",
+      "end": "11:00",
+      "startMinOfTvDay": 550,
+      "endMinOfTvDay": 660,
+      "title": "Zu klug für die Liebe",
+      "description": "Liebeskomödie, USA 1945"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "11:00",
+      "end": "11:30",
+      "startMinOfTvDay": 660,
+      "endMinOfTvDay": 690,
+      "title": "Riskant! (Wh.)",
+      "description": "Spielshow"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "11:30",
+      "end": "12:00",
+      "startMinOfTvDay": 690,
+      "endMinOfTvDay": 720,
+      "title": "Showladen",
+      "description": "Einkaufsmagazin"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "12:00",
+      "end": "12:35",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 755,
+      "title": "Der Preis ist heiß",
+      "description": "Gewinnshow (Wh.)"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "12:35",
+      "end": "13:00",
+      "startMinOfTvDay": 755,
+      "endMinOfTvDay": 780,
+      "title": "Dezernat M",
+      "description": "„Der faule Apfel“ · Krimiserie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "13:00",
+      "end": "13:20",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 800,
+      "title": "Hart auf Hart",
+      "description": "„Der Ozelot“ · Comedyserie (Wh. von 1989)"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "13:20",
+      "end": "14:10",
+      "startMinOfTvDay": 800,
+      "endMinOfTvDay": 850,
+      "title": "California Clan",
+      "description": "Serie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "14:10",
+      "end": "14:55",
+      "startMinOfTvDay": 850,
+      "endMinOfTvDay": 895,
+      "title": "Springfield Story",
+      "description": "Serie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "14:55",
+      "end": "15:35",
+      "startMinOfTvDay": 895,
+      "endMinOfTvDay": 935,
+      "title": "Die wilde Rose",
+      "description": "Telenovela"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "15:35",
+      "end": "15:38",
+      "startMinOfTvDay": 935,
+      "endMinOfTvDay": 938,
+      "title": "RTL aktuell",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "15:38",
+      "end": "15:50",
+      "startMinOfTvDay": 938,
+      "endMinOfTvDay": 950,
+      "title": "netto",
+      "description": "Wirtschaft heute"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "15:50",
+      "end": "16:40",
+      "startMinOfTvDay": 950,
+      "endMinOfTvDay": 1000,
+      "title": "CHiPs",
+      "description": "„Fliegender Stoff“ · Krimiserie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "16:40",
+      "end": "17:10",
+      "startMinOfTvDay": 1000,
+      "endMinOfTvDay": 1030,
+      "title": "Riskant!",
+      "description": "Spielshow mit Hans-Jürgen Bäumler"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:10",
+      "end": "17:45",
+      "startMinOfTvDay": 1030,
+      "endMinOfTvDay": 1065,
+      "title": "Der Preis ist heiß",
+      "description": "Gewinnshow mit Harry Wijnvoord"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:45",
+      "end": "17:55",
+      "startMinOfTvDay": 1065,
+      "endMinOfTvDay": 1075,
+      "title": "Sterntaler",
+      "description": "Spielshow"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "17:55",
+      "end": "18:00",
+      "startMinOfTvDay": 1075,
+      "endMinOfTvDay": 1080,
+      "title": "RTL aktuell",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:00",
+      "end": "18:45",
+      "startMinOfTvDay": 1080,
+      "endMinOfTvDay": 1125,
+      "title": "Der Sechs-Millionen-Dollar-Mann",
+      "description": "„Erfinder-Pech“ · Abenteuerserie (Wh.)"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "18:45",
+      "end": "19:15",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1155,
+      "title": "RTL aktuell",
+      "description": "Nachrichten"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "19:15",
+      "end": "20:15",
+      "startMinOfTvDay": 1155,
+      "endMinOfTvDay": 1215,
+      "title": "Der Engel kehrt zurück",
+      "description": "„Der Wahlkampf“ · Unterhaltungsserie, 1. Folge"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "20:15",
+      "end": "21:15",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1275,
+      "title": "Gottschalk",
+      "description": "Personality-Show, live, mit Thomas Gottschalk"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "21:15",
+      "end": "22:10",
+      "startMinOfTvDay": 1275,
+      "endMinOfTvDay": 1330,
+      "title": "Die Heimatmelodie",
+      "description": "Das große Familienfest der Volksmusik · mit Marianne & Michael"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "22:10",
+      "end": "22:45",
+      "startMinOfTvDay": 1330,
+      "endMinOfTvDay": 1365,
+      "title": "stern TV",
+      "description": "Politisches Magazin · Moderation: Günther Jauch · Studiogast: Bodo Illgner"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "22:45",
+      "end": "23:40",
+      "startMinOfTvDay": 1365,
+      "endMinOfTvDay": 1420,
+      "title": "Chefarzt Dr. Westphal",
+      "description": "„Der Regen“ · Arztserie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "23:40",
+      "end": "23:50",
+      "startMinOfTvDay": 1420,
+      "endMinOfTvDay": 1430,
+      "title": "RTL aktuell",
+      "description": null
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "23:50",
+      "end": "00:40",
+      "startMinOfTvDay": 1430,
+      "endMinOfTvDay": 1480,
+      "title": "Kampf gegen die Mafia",
+      "description": "„Die Abrechnung“ · Krimiserie"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "00:40",
+      "end": "01:25",
+      "startMinOfTvDay": 1480,
+      "endMinOfTvDay": 1525,
+      "title": "Der Schutzengel von New York",
+      "description": "„Der Überläufer“ · Krimiserie (Wh.)"
+    },
+    {
+      "channel": "rtl-plus",
+      "start": "01:25",
+      "end": "02:20",
+      "startMinOfTvDay": 1525,
+      "endMinOfTvDay": 1580,
+      "title": "Chefarzt Dr. Westphal (Wh.)",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "06:00",
+      "end": "08:30",
+      "startMinOfTvDay": 360,
+      "endMinOfTvDay": 510,
+      "title": "Guten Morgen mit SAT 1",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "08:30",
+      "end": "08:35",
+      "startMinOfTvDay": 510,
+      "endMinOfTvDay": 515,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "08:35",
+      "end": "09:00",
+      "startMinOfTvDay": 515,
+      "endMinOfTvDay": 540,
+      "title": "Nachbarn",
+      "description": "Serie (Wh.)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "09:00",
+      "end": "09:05",
+      "startMinOfTvDay": 540,
+      "endMinOfTvDay": 545,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "09:05",
+      "end": "09:50",
+      "startMinOfTvDay": 545,
+      "endMinOfTvDay": 590,
+      "title": "General Hospital",
+      "description": "Serie (Wh.)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "09:50",
+      "end": "10:05",
+      "startMinOfTvDay": 590,
+      "endMinOfTvDay": 605,
+      "title": "SAT 1 Teleshop",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "10:05",
+      "end": "10:10",
+      "startMinOfTvDay": 605,
+      "endMinOfTvDay": 610,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "10:10",
+      "end": "10:35",
+      "startMinOfTvDay": 610,
+      "endMinOfTvDay": 635,
+      "title": "Bingo (Wh.)",
+      "description": "Spielshow"
+    },
+    {
+      "channel": "sat-1",
+      "start": "10:35",
+      "end": "12:20",
+      "startMinOfTvDay": 635,
+      "endMinOfTvDay": 740,
+      "title": "Barracuda",
+      "description": "Katastrophenfilm, USA 1977 (Wh.)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "12:20",
+      "end": "13:00",
+      "startMinOfTvDay": 740,
+      "endMinOfTvDay": 780,
+      "title": "Glücksrad (Wh.)",
+      "description": "Gewinnspiel"
+    },
+    {
+      "channel": "sat-1",
+      "start": "13:00",
+      "end": "14:00",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 840,
+      "title": "Tele-Börse",
+      "description": "Live aus Frankfurt"
+    },
+    {
+      "channel": "sat-1",
+      "start": "14:00",
+      "end": "14:25",
+      "startMinOfTvDay": 840,
+      "endMinOfTvDay": 865,
+      "title": "Nachbarn",
+      "description": "„Selbstmitleid“ · Serie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "14:25",
+      "end": "15:10",
+      "startMinOfTvDay": 865,
+      "endMinOfTvDay": 910,
+      "title": "General Hospital",
+      "description": "„Geplante Rache“ · Serie (Wh.)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "15:10",
+      "end": "15:35",
+      "startMinOfTvDay": 910,
+      "endMinOfTvDay": 935,
+      "title": "Der Wind in den Weiden",
+      "description": "Puppentrickserie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "15:35",
+      "end": "15:50",
+      "startMinOfTvDay": 935,
+      "endMinOfTvDay": 950,
+      "title": "SAT 1 Teleshop",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "15:50",
+      "end": "16:45",
+      "startMinOfTvDay": 950,
+      "endMinOfTvDay": 1005,
+      "title": "Verrückter Wilder Westen",
+      "description": "„Die Nacht der Vipern“ · Western-Comedy-Serie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "16:45",
+      "end": "17:40",
+      "startMinOfTvDay": 1005,
+      "endMinOfTvDay": 1060,
+      "title": "Unter der Sonne Kaliforniens",
+      "description": "„Die große Ungewissheit“ · Serie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "17:40",
+      "end": "17:45",
+      "startMinOfTvDay": 1060,
+      "endMinOfTvDay": 1065,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "17:45",
+      "end": "17:50",
+      "startMinOfTvDay": 1065,
+      "endMinOfTvDay": 1070,
+      "title": "Programmvorschau",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "17:50",
+      "end": "18:15",
+      "startMinOfTvDay": 1070,
+      "endMinOfTvDay": 1095,
+      "title": "Mr. Belvedere",
+      "description": "„Meuterei“ · Comedyserie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "18:15",
+      "end": "18:45",
+      "startMinOfTvDay": 1095,
+      "endMinOfTvDay": 1125,
+      "title": "Bingo",
+      "description": "Spielshow mit Wolf-Dieter Herrmann"
+    },
+    {
+      "channel": "sat-1",
+      "start": "18:45",
+      "end": "19:15",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1155,
+      "title": "Guten Abend, Deutschland",
+      "description": "Nachrichten mit Dieter Kronzucker"
+    },
+    {
+      "channel": "sat-1",
+      "start": "19:15",
+      "end": "20:00",
+      "startMinOfTvDay": 1155,
+      "endMinOfTvDay": 1200,
+      "title": "Glücksrad",
+      "description": "Gewinnspiel"
+    },
+    {
+      "channel": "sat-1",
+      "start": "20:00",
+      "end": "20:55",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1255,
+      "title": "Booker",
+      "description": "„Tödliche Geburtstagsfeier“ · Krimiserie, 15. Folge"
+    },
+    {
+      "channel": "sat-1",
+      "start": "20:55",
+      "end": "21:00",
+      "startMinOfTvDay": 1255,
+      "endMinOfTvDay": 1260,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "21:00",
+      "end": "22:30",
+      "startMinOfTvDay": 1260,
+      "endMinOfTvDay": 1350,
+      "title": "Hochzeitsnacht im Geisterschloß",
+      "description": "Gruselkomödie, USA 1986 · Deutsche Fernsehpremiere"
+    },
+    {
+      "channel": "sat-1",
+      "start": "22:30",
+      "end": "22:45",
+      "startMinOfTvDay": 1350,
+      "endMinOfTvDay": 1365,
+      "title": "SAT 1 Blick",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "22:45",
+      "end": "23:35",
+      "startMinOfTvDay": 1365,
+      "endMinOfTvDay": 1415,
+      "title": "Erben des Fluchs",
+      "description": "„Blutige Stachel“ · Horrorserie"
+    },
+    {
+      "channel": "sat-1",
+      "start": "23:35",
+      "end": "23:50",
+      "startMinOfTvDay": 1415,
+      "endMinOfTvDay": 1430,
+      "title": "Stunde der Filmemacher",
+      "description": "Filmgeschichte(n)"
+    },
+    {
+      "channel": "sat-1",
+      "start": "23:50",
+      "end": "00:40",
+      "startMinOfTvDay": 1430,
+      "endMinOfTvDay": 1480,
+      "title": "Booker (Wh.)",
+      "description": null
+    },
+    {
+      "channel": "sat-1",
+      "start": "00:40",
+      "end": "00:45",
+      "startMinOfTvDay": 1480,
+      "endMinOfTvDay": 1485,
+      "title": "Programmvorschau",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "06:20",
+      "end": "07:05",
+      "startMinOfTvDay": 380,
+      "endMinOfTvDay": 425,
+      "title": "Agentur Maxwell",
+      "description": "„Gefährlichster Auftrag“ · Unterhaltungsserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "07:05",
+      "end": "07:30",
+      "startMinOfTvDay": 425,
+      "endMinOfTvDay": 450,
+      "title": "Rascal, der Waschbär",
+      "description": "Zeichentrickserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "07:30",
+      "end": "07:55",
+      "startMinOfTvDay": 450,
+      "endMinOfTvDay": 475,
+      "title": "Flipper",
+      "description": "Abenteuerserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "07:55",
+      "end": "08:40",
+      "startMinOfTvDay": 475,
+      "endMinOfTvDay": 520,
+      "title": "Tarzan",
+      "description": "Abenteuerserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "08:40",
+      "end": "09:30",
+      "startMinOfTvDay": 520,
+      "endMinOfTvDay": 570,
+      "title": "Big Valley",
+      "description": "Westernserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "09:30",
+      "end": "10:20",
+      "startMinOfTvDay": 570,
+      "endMinOfTvDay": 620,
+      "title": "Diamonds",
+      "description": "Krimiserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "10:20",
+      "end": "10:45",
+      "startMinOfTvDay": 620,
+      "endMinOfTvDay": 645,
+      "title": "Jede Menge Familie",
+      "description": "Comedyserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "10:45",
+      "end": "11:15",
+      "startMinOfTvDay": 645,
+      "endMinOfTvDay": 675,
+      "title": "Imbiss mit Biss",
+      "description": "Comedyserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "11:15",
+      "end": "12:00",
+      "startMinOfTvDay": 675,
+      "endMinOfTvDay": 720,
+      "title": "Ein Colt für alle Fälle",
+      "description": "Actionserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "12:00",
+      "end": "13:35",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 815,
+      "title": "Ein idealer Gatte",
+      "description": "Komödie, England 1947 (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "13:35",
+      "end": "14:30",
+      "startMinOfTvDay": 815,
+      "endMinOfTvDay": 870,
+      "title": "Big Valley",
+      "description": "„Jarrod für Keno“ · Westernserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "14:30",
+      "end": "14:55",
+      "startMinOfTvDay": 870,
+      "endMinOfTvDay": 895,
+      "title": "Rascal, der Waschbär",
+      "description": "Zeichentrickserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "14:55",
+      "end": "15:20",
+      "startMinOfTvDay": 895,
+      "endMinOfTvDay": 920,
+      "title": "Die Peanuts",
+      "description": "Zeichentrickserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "15:20",
+      "end": "15:30",
+      "startMinOfTvDay": 920,
+      "endMinOfTvDay": 930,
+      "title": "Nachrichten, Wetter",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "15:30",
+      "end": "15:55",
+      "startMinOfTvDay": 930,
+      "endMinOfTvDay": 955,
+      "title": "Flipper",
+      "description": "„Flipper alarmiert seine Truppe“"
+    },
+    {
+      "channel": "pro-7",
+      "start": "15:55",
+      "end": "16:45",
+      "startMinOfTvDay": 955,
+      "endMinOfTvDay": 1005,
+      "title": "Das Haus am Eaton Place",
+      "description": "„Bis dass der Tod euch scheidet“ · Dramaserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "16:45",
+      "end": "17:10",
+      "startMinOfTvDay": 1005,
+      "endMinOfTvDay": 1030,
+      "title": "Jede Menge Familie",
+      "description": "„Hotel Keaton“ · Comedyserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "17:10",
+      "end": "17:35",
+      "startMinOfTvDay": 1030,
+      "endMinOfTvDay": 1055,
+      "title": "Harrys wundersames Strafgericht",
+      "description": "„Quon Le und die Einbürgerung“ · Comedyserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "17:35",
+      "end": "17:50",
+      "startMinOfTvDay": 1055,
+      "endMinOfTvDay": 1070,
+      "title": "Nachrichten, Wetter",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "17:50",
+      "end": "18:45",
+      "startMinOfTvDay": 1070,
+      "endMinOfTvDay": 1125,
+      "title": "Endstation Gerechtigkeit",
+      "description": "„Polizistenmord“ · Krimiserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "18:45",
+      "end": "19:15",
+      "startMinOfTvDay": 1125,
+      "endMinOfTvDay": 1155,
+      "title": "Die Peanuts",
+      "description": "Zeichentrickserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "19:15",
+      "end": "20:15",
+      "startMinOfTvDay": 1155,
+      "endMinOfTvDay": 1215,
+      "title": "Ein Colt für alle Fälle",
+      "description": "„Eine Insel für zwei“ · Actionserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "20:15",
+      "end": "22:00",
+      "startMinOfTvDay": 1215,
+      "endMinOfTvDay": 1320,
+      "title": "Yukon",
+      "description": "Abenteuerfilm, USA 1980"
+    },
+    {
+      "channel": "pro-7",
+      "start": "22:00",
+      "end": "22:55",
+      "startMinOfTvDay": 1320,
+      "endMinOfTvDay": 1375,
+      "title": "Operation Maskerade",
+      "description": "„Die Pokerkönige von Monte Carlo“ · Krimiserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "22:55",
+      "end": "00:35",
+      "startMinOfTvDay": 1375,
+      "endMinOfTvDay": 1475,
+      "title": "Ausbruch der Verdammten",
+      "description": "Krimi, USA 1968"
+    },
+    {
+      "channel": "pro-7",
+      "start": "00:35",
+      "end": "00:45",
+      "startMinOfTvDay": 1475,
+      "endMinOfTvDay": 1485,
+      "title": "Nachrichten, Wetter",
+      "description": null
+    },
+    {
+      "channel": "pro-7",
+      "start": "00:45",
+      "end": "01:35",
+      "startMinOfTvDay": 1485,
+      "endMinOfTvDay": 1535,
+      "title": "Kobra, übernehmen Sie",
+      "description": "Krimiserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "01:35",
+      "end": "02:45",
+      "startMinOfTvDay": 1535,
+      "endMinOfTvDay": 1605,
+      "title": "Fort Laramie",
+      "description": "Western, USA 1956"
+    },
+    {
+      "channel": "pro-7",
+      "start": "02:45",
+      "end": "03:10",
+      "startMinOfTvDay": 1605,
+      "endMinOfTvDay": 1630,
+      "title": "Geschichten aus der Schattenwelt",
+      "description": "Horror-Anthologieserie (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "03:10",
+      "end": "04:35",
+      "startMinOfTvDay": 1630,
+      "endMinOfTvDay": 1715,
+      "title": "Eine glückliche Scheidung",
+      "description": "Komödie, USA 1954 (Wh.)"
+    },
+    {
+      "channel": "pro-7",
+      "start": "04:35",
+      "end": "05:30",
+      "startMinOfTvDay": 1715,
+      "endMinOfTvDay": 1770,
+      "title": "Gefrier-Schocker",
+      "description": "„Die Rache der Ungeliebten“"
+    },
+    {
+      "channel": "pro-7",
+      "start": "05:30",
+      "end": "05:55",
+      "startMinOfTvDay": 1770,
+      "endMinOfTvDay": 1795,
+      "title": "Kein Pardon für Schutzengel",
+      "description": "„Der Doppelgänger“ · Krimiserie"
+    },
+    {
+      "channel": "pro-7",
+      "start": "05:55",
+      "end": "06:20",
+      "startMinOfTvDay": 1795,
+      "endMinOfTvDay": 1820,
+      "title": "Das Geheimnis der blauen Tropfen",
+      "description": "„Apfelclub“ · Comedyserie"
+    },
+    {
+      "channel": "tele-5",
+      "start": "06:05",
+      "end": "06:30",
+      "startMinOfTvDay": 365,
+      "endMinOfTvDay": 390,
+      "title": "WNT Worldnews",
+      "description": "in englischer Sprache"
+    },
+    {
+      "channel": "tele-5",
+      "start": "06:30",
+      "end": "08:50",
+      "startMinOfTvDay": 390,
+      "endMinOfTvDay": 530,
+      "title": "Guten Morgen, Bino",
+      "description": "Die Schlümpfe · Die Bluffers · Cool McCool · Alvin und die Chipmunks · Ghostbusters"
+    },
+    {
+      "channel": "tele-5",
+      "start": "08:50",
+      "end": "09:45",
+      "startMinOfTvDay": 530,
+      "endMinOfTvDay": 585,
+      "title": "Zuhause",
+      "description": "Unterhaltungsmagazin mit Dorothea May und Mike Carl"
+    },
+    {
+      "channel": "tele-5",
+      "start": "09:45",
+      "end": "10:35",
+      "startMinOfTvDay": 585,
+      "endMinOfTvDay": 635,
+      "title": "Texas",
+      "description": "Serie"
+    },
+    {
+      "channel": "tele-5",
+      "start": "10:35",
+      "end": "11:05",
+      "startMinOfTvDay": 635,
+      "endMinOfTvDay": 665,
+      "title": "Spiel mit dem Feuer",
+      "description": "Telenovela (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "11:05",
+      "end": "11:30",
+      "startMinOfTvDay": 665,
+      "endMinOfTvDay": 690,
+      "title": "Wildcat",
+      "description": "Telenovela (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "11:30",
+      "end": "12:00",
+      "startMinOfTvDay": 690,
+      "endMinOfTvDay": 720,
+      "title": "Hopp oder Top",
+      "description": "Super-Quiz (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "12:00",
+      "end": "12:30",
+      "startMinOfTvDay": 720,
+      "endMinOfTvDay": 750,
+      "title": "Ruck Zuck (Wh.)",
+      "description": "Gewinnshow"
+    },
+    {
+      "channel": "tele-5",
+      "start": "12:30",
+      "end": "13:00",
+      "startMinOfTvDay": 750,
+      "endMinOfTvDay": 780,
+      "title": "Vor Ort in Deutschland",
+      "description": "Aktuelle Lokalmagazine · mit Judith Stein"
+    },
+    {
+      "channel": "tele-5",
+      "start": "13:00",
+      "end": "13:30",
+      "startMinOfTvDay": 780,
+      "endMinOfTvDay": 810,
+      "title": "Stadt, Land, Fluß",
+      "description": "Ratespiel (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "13:30",
+      "end": "14:45",
+      "startMinOfTvDay": 810,
+      "endMinOfTvDay": 885,
+      "title": "Zeichentrickserien",
+      "description": "Flash Gordon · Max und sein Kuschelmonster · Alvin und die Chipmunks"
+    },
+    {
+      "channel": "tele-5",
+      "start": "14:45",
+      "end": "15:30",
+      "startMinOfTvDay": 885,
+      "endMinOfTvDay": 930,
+      "title": "Bitte lächeln",
+      "description": "Home-Videos (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "15:30",
+      "end": "16:00",
+      "startMinOfTvDay": 930,
+      "endMinOfTvDay": 960,
+      "title": "Wildcat",
+      "description": "„Das Geständnis“ · Telenovela"
+    },
+    {
+      "channel": "tele-5",
+      "start": "16:00",
+      "end": "16:30",
+      "startMinOfTvDay": 960,
+      "endMinOfTvDay": 990,
+      "title": "Spiel mit dem Feuer",
+      "description": "Telenovela"
+    },
+    {
+      "channel": "tele-5",
+      "start": "16:30",
+      "end": "16:35",
+      "startMinOfTvDay": 990,
+      "endMinOfTvDay": 995,
+      "title": "Fazit",
+      "description": null
+    },
+    {
+      "channel": "tele-5",
+      "start": "16:35",
+      "end": "19:20",
+      "startMinOfTvDay": 995,
+      "endMinOfTvDay": 1160,
+      "title": "Bim Bam Bino",
+      "description": "Die Schlümpfe · Cool McCool · Die Bluffers · Ghostbusters · Flash Gordon"
+    },
+    {
+      "channel": "tele-5",
+      "start": "19:20",
+      "end": "19:30",
+      "startMinOfTvDay": 1160,
+      "endMinOfTvDay": 1170,
+      "title": "Fazit",
+      "description": "Nachrichten, Sport und Wetter"
+    },
+    {
+      "channel": "tele-5",
+      "start": "19:30",
+      "end": "20:00",
+      "startMinOfTvDay": 1170,
+      "endMinOfTvDay": 1200,
+      "title": "Ruck Zuck",
+      "description": "Gewinnshow mit Werner Schulze-Erdel"
+    },
+    {
+      "channel": "tele-5",
+      "start": "20:00",
+      "end": "20:25",
+      "startMinOfTvDay": 1200,
+      "endMinOfTvDay": 1225,
+      "title": "Stadt, Land, Fluß",
+      "description": "Ratespiel mit Viktor Worms"
+    },
+    {
+      "channel": "tele-5",
+      "start": "20:25",
+      "end": "21:00",
+      "startMinOfTvDay": 1225,
+      "endMinOfTvDay": 1260,
+      "title": "Hopp oder Top",
+      "description": "Super-Quiz mit Andreas Similia"
+    },
+    {
+      "channel": "tele-5",
+      "start": "21:00",
+      "end": "21:25",
+      "startMinOfTvDay": 1260,
+      "endMinOfTvDay": 1285,
+      "title": "Bagdad Café",
+      "description": "„Meine Liebe, deine Liebe“ · Comedyserie"
+    },
+    {
+      "channel": "tele-5",
+      "start": "21:25",
+      "end": "21:50",
+      "startMinOfTvDay": 1285,
+      "endMinOfTvDay": 1310,
+      "title": "Das Tollhaus",
+      "description": "„Der Zwillingsbruder“ · Comedyserie"
+    },
+    {
+      "channel": "tele-5",
+      "start": "21:50",
+      "end": "22:00",
+      "startMinOfTvDay": 1310,
+      "endMinOfTvDay": 1320,
+      "title": "Fazit",
+      "description": null
+    },
+    {
+      "channel": "tele-5",
+      "start": "22:00",
+      "end": "23:35",
+      "startMinOfTvDay": 1320,
+      "endMinOfTvDay": 1415,
+      "title": "Ursus, Rächer der Sklaven",
+      "description": "Abenteuerfilm, Italien/Spanien 1960"
+    },
+    {
+      "channel": "tele-5",
+      "start": "23:35",
+      "end": "00:25",
+      "startMinOfTvDay": 1415,
+      "endMinOfTvDay": 1465,
+      "title": "Die Waffen des Gesetzes",
+      "description": "Krimiserie (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "00:25",
+      "end": "00:40",
+      "startMinOfTvDay": 1465,
+      "endMinOfTvDay": 1480,
+      "title": "Ruck Zuck '88",
+      "description": "Erste Staffel der Gameshow"
+    },
+    {
+      "channel": "tele-5",
+      "start": "00:40",
+      "end": "01:35",
+      "startMinOfTvDay": 1480,
+      "endMinOfTvDay": 1535,
+      "title": "Cinemathek",
+      "description": "Kinomagazin (Wh.)"
+    },
+    {
+      "channel": "tele-5",
+      "start": "01:35",
+      "end": "02:15",
+      "startMinOfTvDay": 1535,
+      "endMinOfTvDay": 1575,
+      "title": "Ngane Khamba",
+      "description": "Musik aus den frühen Goldgräberstädten Afrikas"
+    },
+    {
+      "channel": "tele-5",
+      "start": "02:15",
+      "end": "06:05",
+      "startMinOfTvDay": 1575,
+      "endMinOfTvDay": 1805,
+      "title": "Video nonstop",
+      "description": "bis 06:05 Uhr"
+    }
+  ],
+  "media": [
+    {
+      "matchTitle": "Eiskunstlauf-WM live",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=L9j0jrUADG0",
+      "note": "Kür der Paare, WM München 1991 – Mishkutenok/Dmitriev, US-Übertragung mit englischem Kommentar (nicht die ARD-Sendung)",
+      "alt": null,
+      "durationS": 399
+    },
+    {
+      "matchTitle": "Eiskunstlauf-WM",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=BMoOcjumTpo",
+      "note": "WM München 1991 – Kurzprogramm der Paare, kanadische Übertragung (CBC) mit englischem Kommentar",
+      "alt": null,
+      "durationS": 2132
+    },
+    {
+      "matchTitle": "Tagesschau",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=o7CEtMS7xxA",
+      "note": "Tagesschau vom 03.03.1991 (Franz Laake) – 10 Tage vorher",
+      "alt": null,
+      "durationS": 320
+    },
+    {
+      "matchTitle": "Die Schwarzwaldklinik",
+      "level": "exact",
+      "url": "https://www.zdf.de/video/serien/die-schwarzwaldklinik-198/sturz-mit-folgen-100",
+      "note": "Genau die Folge „Sturz mit Folgen“ – kostenlos in der ZDF-Mediathek",
+      "alt": null
+    },
+    {
+      "matchTitle": "Die Schwarzwaldklinik (Fortsetzung)",
+      "level": "exact",
+      "url": "https://www.zdf.de/video/serien/die-schwarzwaldklinik-198/sturz-mit-folgen-100",
+      "note": "Zweiter Teil von „Sturz mit Folgen“ (ZDF teilte die Folge um die Lottoziehung)",
+      "alt": null
+    },
+    {
+      "matchTitle": "Der Preis ist heiß",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=DZVDuuJ0Zl8",
+      "note": "„Superpreis-Monat“ März 1991 – Finale mit Harry Wijnvoord",
+      "alt": {
+        "url": "https://www.youtube.com/watch?v=qdQxlyNGb7M",
+        "label": "Ganze Folge 1991"
+      },
+      "durationS": 573
+    },
+    {
+      "matchTitle": "Gottschalk",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=uC_H-0L0Kh0",
+      "note": "Ausschnitt aus „Gottschalk“ 1991 (RTL plus)",
+      "alt": {
+        "url": "https://www.youtube.com/watch?v=rNTeVVctHqw",
+        "label": "Bonnie Tyler bei Gottschalk 1991"
+      },
+      "durationS": 176
+    },
+    {
+      "matchTitle": "Glücksrad",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=LgCQhetSXDI",
+      "note": "Komplette Folge vom 05.12.1991 inkl. Ansage und Werbung",
+      "alt": null,
+      "durationS": 2350
+    },
+    {
+      "matchTitle": "Glücksrad (Wh.)",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=LgCQhetSXDI",
+      "note": "Komplette Folge vom 05.12.1991 inkl. Ansage und Werbung",
+      "alt": null,
+      "durationS": 2350
+    },
+    {
+      "matchTitle": "Ruck Zuck",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=kY1gOV0J-yY",
+      "note": "Komplette Folge mit Werner Schulze-Erdel",
+      "alt": {
+        "url": "https://www.youtube.com/watch?v=V5HV4HvpFdw",
+        "label": "Ausschnitt Aug. 1991"
+      },
+      "durationS": 1484
+    },
+    {
+      "matchTitle": "Ruck Zuck (Wh.)",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=kY1gOV0J-yY",
+      "note": "Komplette Folge mit Werner Schulze-Erdel",
+      "alt": null,
+      "durationS": 1484
+    },
+    {
+      "matchTitle": "Die glückliche Familie",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=XA4obJNW1Xg",
+      "note": "„Familienchaos“ – Aufnahme der Ausstrahlung vom 13.03.1991",
+      "alt": null,
+      "durationS": 2997
+    },
+    {
+      "matchTitle": "Medizin nach Noten",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=JJNmLIzh4w0",
+      "note": "Ausschnitt der Gymnastiksendung des DDR-Fernsehens",
+      "alt": null,
+      "durationS": 582
+    },
+    {
+      "matchTitle": "Willy Bogner – Feuer und Eis",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=mhts2cI6Yes",
+      "note": "Deutscher Kinotrailer, nicht der ganze Film",
+      "alt": null,
+      "durationS": 154
+    },
+    {
+      "matchTitle": "Presseschau",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=Q6XRkurNEPM",
+      "note": "Presseschau vom 7. März 1991, sechs Tage vorher",
+      "alt": null,
+      "durationS": 316
+    },
+    {
+      "matchTitle": "ARD-Mittagsmagazin",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=VNZlTnz2Iaw",
+      "note": "Beitrag aus dem Mittagsmagazin von 1991",
+      "alt": null,
+      "durationS": 162
+    },
+    {
+      "matchTitle": "Sesamstraße",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=HnVpYIdNqKQ",
+      "note": "Ende einer Sesamstraße-Folge von 1991 (Ausschnitt)",
+      "alt": null,
+      "durationS": 129
+    },
+    {
+      "matchTitle": "Ein Hamster im Nachthemd",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=0vDBXQlGGhA",
+      "note": "Folge 3 statt Folge 4, deutsche Fassung",
+      "alt": null,
+      "durationS": 1705
+    },
+    {
+      "matchTitle": "Flip Flop",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=4P2nctqLGQg",
+      "note": "Komplette Folge von 1991 mit Ansage (ARD)",
+      "alt": null,
+      "durationS": 1573
+    },
+    {
+      "matchTitle": "Geschichten aus der Heimat",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=CxPvruM0pZk",
+      "note": "Andere Folge von 1992",
+      "alt": null,
+      "durationS": 1031
+    },
+    {
+      "matchTitle": "Tagesthemen",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=pzGijJ9l0lc",
+      "note": "Tagesthemen-Vorspann vom 4.1.1991 (Ausschnitt)",
+      "alt": null,
+      "durationS": 72
+    },
+    {
+      "matchTitle": "Regionales",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=feeuJ0-wPB8",
+      "note": "Beitrag aus „buten un binnen“ (Radio Bremen) von 1990",
+      "alt": null,
+      "durationS": 237
+    },
+    {
+      "matchTitle": "Ein Fall für TKKG",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=Tqu-w7Z2co4",
+      "note": "Genau diese Folge (5. Folge, ZDF-Serie von 1985)",
+      "alt": null,
+      "durationS": 1402
+    },
+    {
+      "matchTitle": "Schachnovelle",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=XPGPFOyYkYU",
+      "note": "Der Film von 1960 mit Curd Jürgens",
+      "alt": null,
+      "durationS": 152
+    },
+    {
+      "matchTitle": "heute",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=b7pEIWHSRJM",
+      "note": "heute-Ausgabe vom 31.01.1991 mit Heinz Wolf",
+      "alt": null,
+      "durationS": 857
+    },
+    {
+      "matchTitle": "Wickie und die starken Männer",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=b3BLFp9BL14",
+      "note": "„Der Kampf von Tjurre und Snorre“ – womöglich dieselbe Folge unter anderem Titel",
+      "alt": null,
+      "durationS": 1378
+    },
+    {
+      "matchTitle": "logo",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=06TU4AyV1ds",
+      "note": "logo-Bericht aus dem Jahr 1991 (Golfkrieg), Ausschnitt",
+      "alt": null,
+      "durationS": 407
+    },
+    {
+      "matchTitle": "Löwenzahn",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=6lcvMP4SDBY",
+      "note": "Genau diese Folge: „Peter wird rot“",
+      "alt": null,
+      "durationS": 1419
+    },
+    {
+      "matchTitle": "Wie würden Sie entscheiden?",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=MkE9WSQOk1s",
+      "note": "Andere Folge (1993)",
+      "alt": null,
+      "durationS": 2931
+    },
+    {
+      "matchTitle": "heute-journal",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=7--AdmXNXEw",
+      "note": "Ausgabe vom 13.02.1990",
+      "alt": null,
+      "durationS": 1691
+    },
+    {
+      "matchTitle": "Eleni",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=oYtl17EQYE8",
+      "note": "Kompletter Film, englische Fassung mit griechischen Untertiteln (keine deutsche Fassung gefunden)",
+      "alt": null,
+      "durationS": 6736
+    },
+    {
+      "matchTitle": "Hallo Europa – Guten Morgen Deutschland",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=oqwwTkEwma4",
+      "note": "Beginn der Sendung vom 06.05.1992 (RTL plus)",
+      "alt": null,
+      "durationS": 997
+    },
+    {
+      "matchTitle": "Riskant!",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=M67tr0iEAng",
+      "note": "Komplette Folge von 1991 (RTL plus)",
+      "alt": null,
+      "durationS": 1523
+    },
+    {
+      "matchTitle": "Riskant! (Wh.)",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=M67tr0iEAng",
+      "note": "Komplette Folge von 1991 (RTL plus)",
+      "alt": null,
+      "durationS": 1523
+    },
+    {
+      "matchTitle": "California Clan",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=YsEh6APbnIc",
+      "note": "Frühe Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 737
+    },
+    {
+      "matchTitle": "RTL aktuell",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=AJwZRN0lyZM",
+      "note": "Spätausgabe vom 07.02.1991 (RTL plus)",
+      "alt": null,
+      "durationS": 753
+    },
+    {
+      "matchTitle": "CHiPs",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=wsbe4j1sOTg",
+      "note": "Nur der deutsche Vorspann, keine ganze Folge",
+      "alt": null,
+      "durationS": 121
+    },
+    {
+      "matchTitle": "Sterntaler",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=fLE0EzpeE8Y",
+      "note": "Ausgabe vom 20.09.1990 (RTL plus)",
+      "alt": null,
+      "durationS": 650
+    },
+    {
+      "matchTitle": "Der Sechs-Millionen-Dollar-Mann",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=c8y2nmb9oB4",
+      "note": "Ausschnitt aus einer anderen Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 146
+    },
+    {
+      "matchTitle": "Die Heimatmelodie",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=bGmAnQJukdg",
+      "note": "Ausschnitt aus einer Ausgabe von 1991",
+      "alt": null,
+      "durationS": 2431
+    },
+    {
+      "matchTitle": "stern TV",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=R5-RpH56Ovw",
+      "note": "stern TV vom 13.11.1991 mit Günther Jauch (RTL plus)",
+      "alt": null,
+      "durationS": 2272
+    },
+    {
+      "matchTitle": "Tarzan",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=Dg1f0_rrnVQ",
+      "note": "Andere Folge, englische Originalfassung",
+      "alt": null,
+      "durationS": 235
+    },
+    {
+      "matchTitle": "Diamonds",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=hwZXJS0rgLo",
+      "note": "Andere Folge, englisch (US-TV-Aufnahme von 1990)",
+      "alt": null,
+      "durationS": 3582
+    },
+    {
+      "matchTitle": "Jede Menge Familie",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=66fEMzBcvcc",
+      "note": "Doku über die Serie („Family Ties“), keine Folge",
+      "alt": null,
+      "durationS": 2471
+    },
+    {
+      "matchTitle": "Ein Colt für alle Fälle",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=qv9jFaesyso",
+      "note": "Komplette Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 2694
+    },
+    {
+      "matchTitle": "Ein idealer Gatte",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=UGrSF6N72kI",
+      "note": "Kompletter Film, englische Originalfassung",
+      "alt": null,
+      "durationS": 5557
+    },
+    {
+      "matchTitle": "Nachrichten, Wetter",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=TJBWzOHfheY",
+      "note": "PRO 7 Nachrichten vom Oktober 1991",
+      "alt": null,
+      "durationS": 638
+    },
+    {
+      "matchTitle": "Ausbruch der Verdammten",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=HSxaS0vJDwI",
+      "note": "Kompletter Film, englische Originalfassung („Riot“)",
+      "alt": null,
+      "durationS": 5594
+    },
+    {
+      "matchTitle": "Kobra, übernehmen Sie",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=6HOFmWfwWGQ",
+      "note": "Andere Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 77
+    },
+    {
+      "matchTitle": "Eine glückliche Scheidung",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=8NycayVWB9A",
+      "note": "Kompletter Film, englische Originalfassung („Phffft“)",
+      "alt": null,
+      "durationS": 5311
+    },
+    {
+      "matchTitle": "Gefrier-Schocker",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=Zyqq7dBR20g",
+      "note": "Deutscher DVD-Trailer zur Serie („Hammer House of Horror“)",
+      "alt": null,
+      "durationS": 105
+    },
+    {
+      "matchTitle": "Guten Morgen mit SAT 1",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=Vkg4GFzbN7s",
+      "note": "SAT.1-Frühstücksfernsehen, vermutlich vom 11.11.1991",
+      "alt": null,
+      "durationS": 105
+    },
+    {
+      "matchTitle": "SAT 1 Blick",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=oJMjg3leKC4",
+      "note": "SAT 1 Blick mit Andrea Scherell vom 21.03.1991",
+      "alt": null,
+      "durationS": 282
+    },
+    {
+      "matchTitle": "Nachbarn",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=dRPvwa_QDnc",
+      "note": "Nur der deutsche Vorspann der Serie",
+      "alt": null,
+      "durationS": 36
+    },
+    {
+      "matchTitle": "General Hospital",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=FbguFFAZMTs",
+      "note": "Andere Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 2557
+    },
+    {
+      "matchTitle": "SAT 1 Teleshop",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=DNsm0X3H9T0",
+      "note": "Teleshop mit Susanne Holst von 1989",
+      "alt": null,
+      "durationS": 282
+    },
+    {
+      "matchTitle": "Bingo",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=wyEu-RIiM-g",
+      "note": "Andere Folge mit Wolf-Dieter Herrmann (1991/92)",
+      "alt": null,
+      "durationS": 1415
+    },
+    {
+      "matchTitle": "Bingo (Wh.)",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=wyEu-RIiM-g",
+      "note": "Andere Folge mit Wolf-Dieter Herrmann (1991/92)",
+      "alt": null,
+      "durationS": 1415
+    },
+    {
+      "matchTitle": "Barracuda",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=rS2QSasvKmM",
+      "note": "Nur der deutsche Trailer",
+      "alt": null,
+      "durationS": 252
+    },
+    {
+      "matchTitle": "Tele-Börse",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=rWsXx-vxv9Q",
+      "note": "Telebörse vom 28.07.1992",
+      "alt": null,
+      "durationS": 110
+    },
+    {
+      "matchTitle": "Der Wind in den Weiden",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=WZiHmvmG1T4",
+      "note": "Deutscher DVD-Trailer der Cosgrove-Hall-Serie",
+      "alt": null,
+      "durationS": 111
+    },
+    {
+      "matchTitle": "Verrückter Wilder Westen",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=4gvrN5lFI0I",
+      "note": "Vor- und Abspann aus der SAT.1-Zeit, keine ganze Folge",
+      "alt": null,
+      "durationS": 311
+    },
+    {
+      "matchTitle": "Unter der Sonne Kaliforniens",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=b0vokEMDQ60",
+      "note": "Ausschnitt in deutscher Fassung",
+      "alt": null,
+      "durationS": 484
+    },
+    {
+      "matchTitle": "Programmvorschau",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=_lS-bwBW3Ig",
+      "note": "SAT.1-Programmansage vom 04.08.1991",
+      "alt": null,
+      "durationS": 162
+    },
+    {
+      "matchTitle": "Mr. Belvedere",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=UY23kaAHtWE",
+      "note": "Nur der Vorspann",
+      "alt": null,
+      "durationS": 62
+    },
+    {
+      "matchTitle": "Hochzeitsnacht im Geisterschloß",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=c2YCNHDXWzQ",
+      "note": "Nur der deutsche Trailer",
+      "alt": null,
+      "durationS": 130
+    },
+    {
+      "matchTitle": "Stunde der Filmemacher",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=DHJLBcaiRMc",
+      "note": "Bruchstück einer Ausgabe vom März 1990",
+      "alt": null,
+      "durationS": 476
+    },
+    {
+      "matchTitle": "Guten Morgen, Bino",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=4j4zkkFO7fk",
+      "note": "Vorspann von Bim Bam Bino (Tele 5, 1990)",
+      "alt": null,
+      "durationS": 67
+    },
+    {
+      "matchTitle": "Spiel mit dem Feuer",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=zlSkV64CBbU",
+      "note": "Andere Folge, deutsche Fassung",
+      "alt": null,
+      "durationS": 781
+    },
+    {
+      "matchTitle": "Hopp oder Top",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=jeFgXx_UqqA",
+      "note": "Komplette Folge mit Andreas Similia (Tele 5)",
+      "alt": null,
+      "durationS": 1479
+    },
+    {
+      "matchTitle": "Stadt, Land, Fluß",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=j2tXNpZa6EM",
+      "note": "Ausschnitt von 1990 mit Viktor Worms (Tele 5)",
+      "alt": null,
+      "durationS": 276
+    },
+    {
+      "matchTitle": "Zeichentrickserien",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=TUwilqIhknw",
+      "note": "Flash Gordon, Folgen 1–7, deutsche Fassung",
+      "alt": null,
+      "durationS": 9969
+    },
+    {
+      "matchTitle": "Bim Bam Bino",
+      "level": "same",
+      "url": "https://www.youtube.com/watch?v=NHyN51GNPV8",
+      "note": "Ausschnitt von 1991 (Tele 5)",
+      "alt": null,
+      "durationS": 501
+    },
+    {
+      "matchTitle": "Das Tollhaus",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=hJO7AMklKqo",
+      "note": "Rückblick auf die deutsche Fassung von „Maniac Mansion“",
+      "alt": null,
+      "durationS": 1590
+    },
+    {
+      "matchTitle": "Ursus, Rächer der Sklaven",
+      "level": "exact",
+      "url": "https://www.youtube.com/watch?v=D5aC4kvHWp4",
+      "note": "Kompletter Film, deutsche Fassung",
+      "alt": null,
+      "durationS": 5308
+    },
+    {
+      "matchTitle": "Detektiv Rockford: Anruf genügt",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8frej8",
+      "note": "Andere Folge (Staffel 7), deutsche Fassung",
+      "alt": null,
+      "durationS": 457
+    },
+    {
+      "matchTitle": "Kennzeichen D",
+      "level": "sim",
+      "url": "https://archive.org/details/zdf-kennzeichen-d-1992.08.24-das-pogrom-in-rostock-lichtenhagen/ZDF%20Kennzeichen%20D%20-%201992.08.24%20-%20Das%20Pogrom%20in%20Rostock-Lichtenhagen.mp4",
+      "note": "Ausgabe vom 24.08.1992 (Rostock-Lichtenhagen)",
+      "alt": null,
+      "durationS": 2156
+    },
+    {
+      "matchTitle": "Dezernat M",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x5fjw8a",
+      "note": "Andere Folge (Teil 2), deutsche Fassung",
+      "alt": null,
+      "durationS": 534
+    },
+    {
+      "matchTitle": "Springfield Story",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=qECWg5dJhxE",
+      "note": "Kurzer RTL-Beitrag zur 1000. Folge, keine ganze Folge",
+      "alt": {
+        "url": "https://www.dailymotion.com/video/x23t4do",
+        "label": "Komplette Folge bei Dailymotion"
+      },
+      "durationS": 520
+    },
+    {
+      "matchTitle": "Die wilde Rose",
+      "level": "sim",
+      "url": "https://www.youtube.com/watch?v=qUvhif5omMw",
+      "note": "Ganze Folge auf Deutsch, andere Episode",
+      "alt": {
+        "url": "https://www.dailymotion.com/video/x8c8mah",
+        "label": "Komplette Folge bei Dailymotion"
+      },
+      "durationS": 903
+    },
+    {
+      "matchTitle": "Erben des Fluchs",
+      "level": "sim",
+      "url": "https://archive.org/details/erben-des-fluchs-11.-die-vogescheuche-sat-1-29.03.1990/Erben%20des%20Fluchs%20-%20SAT.1%20-%2029.03.1990%20-%2023.30%20Uhr.mp4",
+      "note": "Folge „Die Vogelscheuche“, SAT.1-Ausstrahlung vom 29.03.1990",
+      "alt": null,
+      "durationS": 3385
+    },
+    {
+      "matchTitle": "Imbiss mit Biss",
+      "level": "same",
+      "url": "https://archive.org/details/139.-das-grosse-los-18.07.1991-fernsehpremiere/139.%20das%20gro%C3%9Fe%20los%2018.07.1991%20fernsehpremiere.mp4",
+      "note": "Folge „Das große Los“, deutsche Erstausstrahlung vom 18.07.1991",
+      "alt": null,
+      "durationS": 1515
+    },
+    {
+      "matchTitle": "Harrys wundersames Strafgericht",
+      "level": "sim",
+      "url": "https://www.dailymotion.com/video/x8f7kzy",
+      "note": "Andere Folge (Staffel 7), deutsche Fassung",
+      "alt": null,
+      "durationS": 1439
+    }
+  ],
+  "adBreaks": [
+    {
+      "channel": "rtl-plus",
+      "url": "https://www.youtube.com/watch?v=Uclokv3iEnw",
+      "note": "RTL plus · Werbung und Sendeschluss vom Dienstag, 12.03.1991 – einen Tag vorher.",
+      "alternatives": [
+        "https://www.youtube.com/watch?v=BEIv0Ukpdh8",
+        "https://www.youtube.com/watch?v=WZ_DepKtSaI"
+      ]
+    },
+    {
+      "channel": "sat-1",
+      "url": "https://www.youtube.com/watch?v=nzhm7uLZpCk",
+      "note": "SAT 1 · Werbeblock 1991: Sandeman, Du darfst, Fiat Tipo, Mentos, Pfanni …",
+      "alternatives": []
+    },
+    {
+      "channel": "tele-5",
+      "url": "https://www.youtube.com/watch?v=Qcpo_coMX2Q",
+      "note": "Werbung und Tele 5 „Ruck Zuck“ – Aufnahme aus 1991.",
+      "alternatives": []
+    },
+    {
+      "channel": "pro-7",
+      "url": "https://www.youtube.com/watch?v=we-PLuMsTwo",
+      "note": "Für PRO 7 1991 ist noch kein Werbeblock gefunden – hier ersatzweise RTL plus Werbung 1991.",
+      "alternatives": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@zdz/ingest",
+  "license": "AGPL-3.0-only",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@zdz/core": "workspace:*",
+    "@zdz/db": "workspace:*",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

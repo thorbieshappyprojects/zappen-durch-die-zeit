@@ -1,0 +1,2397 @@
+{
+  "about": "Researched regular slots of 1990s German TV (show, channel, weekdays, start, length, run period, source). Used by .data/archive/tvprogramme.net-data/to_seed.py to fill days without programme data (assumed programme, completeness series_only) – only within the documented run, never on real programme days or holidays. Notes say when a start time is estimated.",
+  "slots": [
+    {
+      "show": "Disney Club",
+      "titles": [
+        "Disney Club"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "16:00",
+      "minutes": 90,
+      "from": "1991-01-05",
+      "to": "1993-12-31",
+      "source": "https://www.fernsehserien.de/disneys-gummibaerenbande/im-tv",
+      "note": "ARD-Samstagnachmittag (Gummibärenbande, DuckTales, Chip & Chap, Käpt'n Balu, Darkwing Duck). Zeit lt. fernsehserien.de 'samstags 16:00 Uhr (Wdh. Sonntag vormittags)'; Start lt. de.wikipedia 05.01.1991."
+    },
+    {
+      "show": "Disney Club",
+      "titles": [
+        "Disney Club"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "16:05",
+      "minutes": 90,
+      "from": "1994-01-01",
+      "to": "1995-12-30",
+      "source": "https://www.fernsehserien.de/kaeptn-balu-und-seine-tollkuehne-crew/im-tv",
+      "note": "Lt. fernsehserien.de 'samstags 16:05 Uhr (Wdh. Sonntag vormittags)' (belegt 06/1994–12/1995). Letzte Ausgabe 30.12.1995 (de.wikipedia)."
+    },
+    {
+      "show": "Disney Club (Wdh.)",
+      "titles": [
+        "Disney Club"
+      ],
+      "channel": "ard",
+      "weekdays": "So",
+      "start": "08:30",
+      "minutes": 90,
+      "from": "1991-01-06",
+      "to": "1995-12-31",
+      "source": "https://de.wikipedia.org/wiki/Disney_Club",
+      "note": "Sonntagvormittags-Wiederholung lt. Wikipedia; 08:30 nur aus Zuschauerkommentar, unsicher."
+    },
+    {
+      "show": "Tigerenten Club",
+      "titles": [
+        "Tigerenten Club",
+        "Tigerentenclub"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "15:30",
+      "minutes": 60,
+      "from": "1996-01-06",
+      "to": "1999-11-13",
+      "source": "https://www.fernsehserien.de/tigerenten-club/im-tv",
+      "note": "Nachfolger des Disney Club (de.wikipedia: Start 06.01.1996, ca. 60 Min.). Anfangs mit DuckTales/Isnogud. fernsehserien.de nennt 15:30, DuckTales-Chronik 'gg. 15:00'."
+    },
+    {
+      "show": "Tigerenten Club",
+      "titles": [
+        "Tigerenten Club",
+        "Tigerentenclub"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "11:03",
+      "minutes": 60,
+      "from": "1999-11-20",
+      "to": "2000-11-18",
+      "source": "https://www.fernsehserien.de/tigerenten-club/im-tv",
+      "note": "Verlegung auf Samstagvormittag."
+    },
+    {
+      "show": "Käpt'n Blaubär Club",
+      "titles": [
+        "Käpt'n Blaubär Club",
+        "Käpt’n Blaubär Club"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "09:03",
+      "minutes": 45,
+      "from": "1993-10-02",
+      "to": "1995-06-24",
+      "source": "https://www.fernsehserien.de/kaeptn-blaubaer-club/im-tv",
+      "note": "Erstausstrahlung 02.10.1993 (de.wikipedia), anfangs 45 Min., mit Zeichentrick (z. B. DuckTales)."
+    },
+    {
+      "show": "Käpt'n Blaubär Club",
+      "titles": [
+        "Käpt'n Blaubär Club",
+        "Käpt’n Blaubär Club"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "09:03",
+      "minutes": 60,
+      "from": "1995-07-01",
+      "to": "1997-04-05",
+      "source": "https://www.fernsehserien.de/kaeptn-blaubaer-club/im-tv",
+      "note": "Ab 07/1995 Wiederholungen, ab 23.12.1995 neue Folgen; Länge später 60 Min. (de.wikipedia)."
+    },
+    {
+      "show": "Käpt'n Blaubär Club",
+      "titles": [
+        "Käpt'n Blaubär Club",
+        "Käpt’n Blaubär Club"
+      ],
+      "channel": "ard",
+      "weekdays": "Sa",
+      "start": "08:30",
+      "minutes": 30,
+      "from": "1999-01-02",
+      "to": "1999-03-27",
+      "source": "https://www.fernsehserien.de/kaeptn-blaubaer-club/im-tv",
+      "note": "Neue Staffel, 30 Min."
+    },
+    {
+      "show": "Die Sendung mit der Maus",
+      "titles": [
+        "Die Sendung mit der Maus",
+        "Lach- und Sachgeschichten"
+      ],
+      "channel": "ard",
+      "weekdays": "So",
+      "start": "11:30",
+      "minutes": 30,
+      "from": "1990-01-07",
+      "to": "1999-12-26",
+      "source": "https://de.wikipedia.org/wiki/Die_Sendung_mit_der_Maus",
+      "note": "Seit 1971 sonntags; 11:30 im Ersten bis zur Verlegung auf 9:30 im Okt. 2015 (Wikipedia nennt nur die neue Zeit; 11:30 für die 90er aus allgemeiner Kenntnis, KiKA ab 1997 ebenfalls 11:30)."
+    },
+    {
+      "show": "Sesamstraße",
+      "titles": [
+        "Sesamstraße"
+      ],
+      "channel": "ard",
+      "weekdays": "Mi,Fr",
+      "start": "14:02",
+      "minutes": 25,
+      "from": "1993-01-06",
+      "to": "1994-02-23",
+      "source": "https://www.fernsehserien.de/sesamstrasse/im-tv",
+      "note": "Folgen 1506–1588 im Ersten."
+    },
+    {
+      "show": "Sesamstraße",
+      "titles": [
+        "Sesamstraße"
+      ],
+      "channel": "ard",
+      "weekdays": "So",
+      "start": "07:55",
+      "minutes": 25,
+      "from": "1994-03-06",
+      "to": "1995-12-31",
+      "source": "https://www.fernsehserien.de/sesamstrasse/im-tv",
+      "note": "'sonntags gg. 7:55 Uhr'."
+    },
+    {
+      "show": "Sesamstraße",
+      "titles": [
+        "Sesamstraße"
+      ],
+      "channel": "ard",
+      "weekdays": "So",
+      "start": "08:30",
+      "minutes": 25,
+      "from": "1996-01-07",
+      "to": "1999-12-26",
+      "source": "https://www.fernsehserien.de/sesamstrasse/im-tv",
+      "note": "'sonntags gg. 8:30 Uhr' (bis 2001)."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "13:50",
+      "minutes": 25,
+      "from": "1989-12-10",
+      "to": "1990-03-25",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "Staffelweise (Winterhalbjahr)."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "13:30",
+      "minutes": 25,
+      "from": "1990-11-04",
+      "to": "1991-03-17",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "Staffelweise."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "13:30",
+      "minutes": 25,
+      "from": "1991-11-03",
+      "to": "1992-06-21",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "Staffelweise."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "13:30",
+      "minutes": 25,
+      "from": "1992-11-08",
+      "to": "1993-06-13",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "Staffelweise."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "11:05",
+      "minutes": 25,
+      "from": "1993-10-24",
+      "to": "1994-05-29",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": ""
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "10:35",
+      "minutes": 25,
+      "from": "1994-09-04",
+      "to": "1999-12-26",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "Läuft so bis 2002 (ggf. Wdh. samstags)."
+    },
+    {
+      "show": "Siebenstein",
+      "titles": [
+        "Siebenstein"
+      ],
+      "channel": "3sat",
+      "weekdays": "Di",
+      "start": "17:30",
+      "minutes": 25,
+      "from": "1990-11-06",
+      "to": "1991-04-02",
+      "source": "https://www.fernsehserien.de/siebenstein/im-tv",
+      "note": "3sat-Wiederholung."
+    },
+    {
+      "show": "Löwenzahn",
+      "titles": [
+        "Löwenzahn"
+      ],
+      "channel": "zdf",
+      "weekdays": "So",
+      "start": "13:00",
+      "minutes": 30,
+      "from": "1990-01-07",
+      "to": "1999-12-26",
+      "source": "https://de.wikipedia.org/wiki/Löwenzahn_(Fernsehsendung)",
+      "note": "ZDF sonntags (oft Wh. mittwochs), staffelweise mit Pausen; ab 1998 teils Sa/So. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "1, 2 oder 3",
+      "titles": [
+        "1, 2 oder 3",
+        "1,2 oder 3"
+      ],
+      "channel": "zdf",
+      "weekdays": "Sa",
+      "start": "09:00",
+      "minutes": 25,
+      "from": "1998-01-03",
+      "to": "1998-12-19",
+      "source": "https://www.fernsehserien.de/1-2-oder-3/im-tv",
+      "note": "Moderation Gregor Steinbrenner (ab 1995)."
+    },
+    {
+      "show": "1, 2 oder 3",
+      "titles": [
+        "1, 2 oder 3",
+        "1,2 oder 3"
+      ],
+      "channel": "zdf",
+      "weekdays": "Sa",
+      "start": "08:30",
+      "minutes": 25,
+      "from": "1999-01-30",
+      "to": "1999-12-31",
+      "source": "https://www.fernsehserien.de/1-2-oder-3/im-tv",
+      "note": "'samstags gg. 8:30 Uhr' (bis 2004)."
+    },
+    {
+      "show": "Tabaluga tivi",
+      "titles": [
+        "Tabaluga tivi",
+        "Tabaluga Tivi"
+      ],
+      "channel": "zdf",
+      "weekdays": "Sa",
+      "start": "13:30",
+      "minutes": 90,
+      "from": "1997-10-04",
+      "to": "2000-09-30",
+      "source": "https://de.wikipedia.org/wiki/Tabaluga_tivi",
+      "note": "Samstagnachmittag 13:30 (später 14:00), 90 Min., mit Zeichentrick."
+    },
+    {
+      "show": "Hallo Spencer",
+      "titles": [
+        "Hallo Spencer"
+      ],
+      "channel": "n3",
+      "weekdays": "So",
+      "start": "07:30",
+      "minutes": 30,
+      "from": "1998-01-11",
+      "to": "1999-12-26",
+      "source": "https://www.fernsehserien.de/hallo-spencer/im-tv",
+      "note": "NDR sonntags 7:30 (Wiederholungen)."
+    },
+    {
+      "show": "Hallo Spencer",
+      "titles": [
+        "Hallo Spencer"
+      ],
+      "channel": "n3",
+      "weekdays": "Fr",
+      "start": "17:30",
+      "minutes": 30,
+      "from": "1995-01-06",
+      "to": "1996-12-27",
+      "source": "https://www.fernsehserien.de/hallo-spencer/im-tv",
+      "note": "fernsehserien.de: 1995– 'freitags 17:30 Uhr' ohne Sendername; N3 angenommen, Daten nur Jahresgenau."
+    },
+    {
+      "show": "Li-La-Launebär",
+      "titles": [
+        "Li-La-Launebär",
+        "Lilalaunebär"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "So",
+      "start": "07:30",
+      "minutes": 90,
+      "from": "1990-01-07",
+      "to": "1992-03-29",
+      "source": "https://www.fernsehserien.de/li-la-launebaer/im-tv",
+      "note": "RTL plus sonntags im Frühprogramm (1989–1994) mit Metty Krings, bis Frühjahr 1992 mit Zeichentrick ca. 90 Min. (de.wikipedia). Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Li-La-Launebär",
+      "titles": [
+        "Li-La-Launebär",
+        "Lilalaunebär"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "So",
+      "start": "07:30",
+      "minutes": 30,
+      "from": "1992-04-05",
+      "to": "1994-11-27",
+      "source": "https://www.fernsehserien.de/li-la-launebaer/im-tv",
+      "note": "Ab Frühjahr 1992 ohne Cartoons, 30 Min.; letzte Sendung 27.11.1994. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Bim Bam Bino",
+      "titles": [
+        "Bim Bam Bino"
+      ],
+      "channel": "tele-5",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 180,
+      "from": "1990-01-01",
+      "to": "1992-12-31",
+      "source": "https://de.wikipedia.org/wiki/Bim_Bam_Bino",
+      "note": "Tele-5-Kinderblock mit Maus Bino (Saber Rider, Schlümpfe, Captain Future …); bis 1992 auf 4–5 Std. vor- und nachmittags ausgebaut, Ende 31.12.1992. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Bim Bam Bino",
+      "titles": [
+        "Bim Bam Bino"
+      ],
+      "channel": "tele-5",
+      "weekdays": "Sa-So",
+      "start": "08:00",
+      "minutes": 180,
+      "from": "1990-01-06",
+      "to": "1992-12-27",
+      "source": "https://de.wikipedia.org/wiki/Bim_Bam_Bino",
+      "note": "Wochenend-Vormittagsblock. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Bim Bam Bino",
+      "titles": [
+        "Bim Bam Bino"
+      ],
+      "channel": "kabel-1",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 180,
+      "from": "1993-01-16",
+      "to": "1998-03-29",
+      "source": "https://de.wikipedia.org/wiki/Bim_Bam_Bino",
+      "note": "Vom Kabelkanal (ab 24.12.1994 Kabel 1) nahezu unverändert übernommen, morgens und nachmittags. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Bim Bam Bino",
+      "titles": [
+        "Bim Bam Bino"
+      ],
+      "channel": "kabel-1",
+      "weekdays": "Sa-So",
+      "start": "08:00",
+      "minutes": 180,
+      "from": "1993-01-16",
+      "to": "1998-03-29",
+      "source": "https://de.wikipedia.org/wiki/Bim_Bam_Bino",
+      "note": "Wochenendblock. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Vampy",
+      "titles": [
+        "Vampy"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 180,
+      "from": "1993-09-13",
+      "to": "1999-12-31",
+      "source": "https://www.fernsehserien.de/vampy/im-tv",
+      "note": "RTL-II-Kinderprogramm mit Puppe Vampy (Früh- und Nachmittagsprogramm, bis 21.12.2001), rahmt Cartoons/Anime. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Saber Rider und die Star Sheriffs",
+      "titles": [
+        "Saber Rider und die Star Sheriffs",
+        "Saber Rider"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "17:00",
+      "minutes": 25,
+      "from": "1994-01-03",
+      "to": "1994-12-30",
+      "source": "https://www.fernsehserien.de/saber-rider-und-die-star-sheriffs/im-tv",
+      "note": "RTL II 1993–1995 (davor Tele 5/Bim Bam Bino); 1994 nur jahresgenau belegt, Sender aus Seitentext abgeleitet."
+    },
+    {
+      "show": "Saber Rider und die Star Sheriffs",
+      "titles": [
+        "Saber Rider und die Star Sheriffs",
+        "Saber Rider"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "16:50",
+      "minutes": 25,
+      "from": "1995-09-04",
+      "to": "1995-11-15",
+      "source": "https://www.fernsehserien.de/saber-rider-und-die-star-sheriffs/im-tv",
+      "note": "Sender abgeleitet (RTL II 1993–1995)."
+    },
+    {
+      "show": "Teenage Mutant Hero Turtles",
+      "titles": [
+        "Teenage Mutant Hero Turtles",
+        "Turtles"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Sa",
+      "start": "12:00",
+      "minutes": 25,
+      "from": "1990-07-21",
+      "to": "1994-04-09",
+      "source": "https://www.fernsehserien.de/teenage-mutant-hero-turtles/im-tv",
+      "note": "RTL 'Samstag mittags'; genaue Uhrzeit geschätzt."
+    },
+    {
+      "show": "Teenage Mutant Hero Turtles",
+      "titles": [
+        "Teenage Mutant Hero Turtles",
+        "Turtles"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Sa",
+      "start": "07:35",
+      "minutes": 25,
+      "from": "1994-07-16",
+      "to": "1994-11-19",
+      "source": "https://www.fernsehserien.de/teenage-mutant-hero-turtles/im-tv",
+      "note": "Sender nicht genannt, RTL angenommen."
+    },
+    {
+      "show": "Teenage Mutant Hero Turtles",
+      "titles": [
+        "Teenage Mutant Hero Turtles",
+        "Turtles"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "11:55",
+      "minutes": 25,
+      "from": "1999-09-01",
+      "to": "1999-11-18",
+      "source": "https://www.fernsehserien.de/teenage-mutant-hero-turtles/im-tv",
+      "note": "'montags–freitags gg. 11:55 Uhr'."
+    },
+    {
+      "show": "Captain Planet",
+      "titles": [
+        "Captain Planet",
+        "Captain Planet und die Planeteers"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Sa",
+      "start": "12:30",
+      "minutes": 25,
+      "from": "1992-04-11",
+      "to": "1994-03-12",
+      "source": "https://www.fernsehserien.de/captain-planet/im-tv",
+      "note": "RTL-Samstagmittag (1992 im Block 'Marvel Universum'), dt. EA 11.04.1992; Uhrzeit geschätzt."
+    },
+    {
+      "show": "Darkwing Duck",
+      "titles": [
+        "Darkwing Duck"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Sa",
+      "start": "18:50",
+      "minutes": 25,
+      "from": "1995-04-28",
+      "to": "1995-12-30",
+      "source": "https://www.fernsehserien.de/darkwing-duck/im-tv",
+      "note": "Super-RTL-Start 28.04.1995; Ende offen ('…'), Enddatum geschätzt."
+    },
+    {
+      "show": "Disney Club (RTL)",
+      "titles": [
+        "Disney Club",
+        "Disneys Große Pause",
+        "Abenteuer mit Timon und Pumbaa"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Sa-So",
+      "start": "08:00",
+      "minutes": 120,
+      "from": "1997-12-13",
+      "to": "2002-04-06",
+      "source": "https://www.fernsehserien.de/disney-club-1997/im-tv",
+      "note": "RTL 'Samstag/Sonntag vormittags' (de.wikipedia: RTL 1997–2002), u. a. Disneys Große Pause (21.11.1998–27.06.1999). Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "zdf",
+      "weekdays": "Fr",
+      "start": "18:20",
+      "minutes": 25,
+      "from": "1991-09-13",
+      "to": "1991-12-13",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": "Deutsche Free-TV-Premiere im ZDF."
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "zdf",
+      "weekdays": "Fr",
+      "start": "17:50",
+      "minutes": 25,
+      "from": "1991-12-20",
+      "to": "1992-06-19",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": "Staffel 2."
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "18:25",
+      "minutes": 25,
+      "from": "1994-10-31",
+      "to": "1994-12-16",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": ""
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Sa",
+      "start": "19:25",
+      "minutes": 25,
+      "from": "1995-01-21",
+      "to": "1995-06-10",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": ""
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Sa",
+      "start": "17:20",
+      "minutes": 25,
+      "from": "1995-06-17",
+      "to": "1995-12-30",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": "Ende offen, Enddatum geschätzt."
+    },
+    {
+      "show": "Die Simpsons",
+      "titles": [
+        "Die Simpsons",
+        "Simpsons"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "18:30",
+      "minutes": 25,
+      "from": "1996-01-02",
+      "to": "1999-12-31",
+      "source": "https://www.fernsehserien.de/die-simpsons/im-tv",
+      "note": "Ab 1996 Vorabend mit wechselnden Zeiten (GamePro), ab 2000 Mo–Fr 19:00. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Sailor Moon",
+      "titles": [
+        "Sailor Moon",
+        "Sailor Moon – Das Mädchen mit den Zauberkräften"
+      ],
+      "channel": "zdf",
+      "weekdays": "Fr",
+      "start": "15:05",
+      "minutes": 25,
+      "from": "1995-10-13",
+      "to": "1996-09-07",
+      "source": "https://de.wikipedia.org/wiki/Sailor_Moon",
+      "note": "ZDF Staffel 1, eine Folge pro Woche (freitags) im Zeichentrickblock. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Sailor Moon",
+      "titles": [
+        "Sailor Moon"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 25,
+      "from": "1997-05-05",
+      "to": "1997-12-31",
+      "source": "https://de.wikipedia.org/wiki/Sailor_Moon",
+      "note": "RTL II ab Mai 1997 werktäglich; Start-/Enddatum geschätzt. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Sailor Moon",
+      "titles": [
+        "Sailor Moon"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 25,
+      "from": "1998-01-20",
+      "to": "1998-04-24",
+      "source": "https://www.fernsehserien.de/sailor-moon/im-tv",
+      "note": "Staffel 2/3. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Sailor Moon",
+      "titles": [
+        "Sailor Moon"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 25,
+      "from": "1998-09-22",
+      "to": "1998-12-15",
+      "source": "https://www.fernsehserien.de/sailor-moon/im-tv",
+      "note": "Staffel 4/5. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Dragon Ball",
+      "titles": [
+        "Dragon Ball",
+        "Dragonball"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "15:15",
+      "minutes": 25,
+      "from": "1999-08-30",
+      "to": "2000-08-23",
+      "source": "https://de.wikipedia.org/wiki/Dragon_Ball_(Anime)",
+      "note": "RTL II-Nachmittagsblock mit Pokémon/Sailor Moon. Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Pokémon",
+      "titles": [
+        "Pokémon",
+        "Pokemon"
+      ],
+      "channel": "rtl-2",
+      "weekdays": "Mo-Fr",
+      "start": "15:45",
+      "minutes": 25,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "https://de.wikipedia.org/wiki/Pokémon_(Anime)",
+      "note": "Dt. Erstausstrahlung 01.09.1999 auf RTL II (nicht RTL). Uhrzeit geschätzt (keine belegte Quelle)."
+    },
+    {
+      "show": "Nickelodeon",
+      "titles": [
+        "Nickelodeon",
+        "Nick"
+      ],
+      "channel": "nickelodeon",
+      "weekdays": "Mo-So",
+      "start": "13:00",
+      "minutes": 360,
+      "from": "1995-07-05",
+      "to": "1995-09-30",
+      "source": "https://de.wikipedia.org/wiki/Nickelodeon_(Deutschland)",
+      "note": "Start 05.07.1995 13:00, sechsstündiger Testbetrieb."
+    },
+    {
+      "show": "Nickelodeon",
+      "titles": [
+        "Nickelodeon",
+        "Nick"
+      ],
+      "channel": "nickelodeon",
+      "weekdays": "Mo-So",
+      "start": "06:00",
+      "minutes": 840,
+      "from": "1995-10-01",
+      "to": "1998-05-31",
+      "source": "https://de.wikipedia.org/wiki/Nickelodeon_(Deutschland)",
+      "note": "Ab Okt. 1995 täglich 6–20 Uhr (Rugrats, Hey Arnold!, Rockos modernes Leben, Doug, Ren & Stimpy …), zeitweise verkürzt wg. Arte-Kanalteilung; Ende 31.05.1998 20:00."
+    },
+    {
+      "show": "Disneys Gummibärenbande",
+      "titles": [
+        "Disneys Gummibärenbande",
+        "Gummibärenbande"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Do",
+      "start": "14:30",
+      "minutes": 25,
+      "from": "1990-03-15",
+      "to": "1990-12-31",
+      "source": "https://www.fernsehserien.de/disneys-gummibaerenbande/im-tv",
+      "note": "Enddatum nur als '1990' angegeben."
+    },
+    {
+      "show": "Disneys Gummibärenbande",
+      "titles": [
+        "Disneys Gummibärenbande",
+        "Gummibärenbande"
+      ],
+      "channel": "ard",
+      "weekdays": "Do",
+      "start": "17:30",
+      "minutes": 25,
+      "from": "1991-08-29",
+      "to": "1992-01-23",
+      "source": "https://www.fernsehserien.de/disneys-gummibaerenbande/im-tv",
+      "note": ""
+    },
+    {
+      "show": "Hans Meiser",
+      "titles": [
+        "Hans Meiser"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "16:00",
+      "minutes": 60,
+      "from": "1992-09-14",
+      "to": "2000-09-01",
+      "source": "https://de.wikipedia.org/wiki/Hans_Meiser_(Talkshow)",
+      "confidence": "high",
+      "note": "Erste deutsche Daily-Talkshow."
+    },
+    {
+      "show": "Ilona Christen",
+      "titles": [
+        "Ilona Christen"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 60,
+      "from": "1993-09-13",
+      "to": "1999-02-28",
+      "source": "https://www.fernsehserien.de/ilona-christen",
+      "confidence": "medium",
+      "note": "Slot-Tausch mit Bärbel Schäfer 'Anfang/Frühjahr 1999' – genaues Wechseldatum unbekannt (Ende Feb. angenommen). Quelle auch https://de.wikipedia.org/wiki/Talkshow#Deutschland"
+    },
+    {
+      "show": "Ilona Christen",
+      "titles": [
+        "Ilona Christen"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "13:00",
+      "minutes": 60,
+      "from": "1999-03-01",
+      "to": "1999-08-20",
+      "source": "https://www.fernsehserien.de/ilona-christen",
+      "confidence": "medium",
+      "note": "Letzte Erstausstrahlung Ende Juni 1999 (30.06.), danach bis 20.08.1999 Wiederholungen; Wechseldatum geschätzt."
+    },
+    {
+      "show": "Bärbel Schäfer",
+      "titles": [
+        "Bärbel Schäfer"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 60,
+      "from": "1995-09-04",
+      "to": "1998-09-11",
+      "source": "https://www.fernsehserien.de/baerbel-schaefer",
+      "confidence": "high",
+      "note": "Premiere 04.09.1995; ab Start von Birte Karalus (14.09.1998) auf 13 Uhr."
+    },
+    {
+      "show": "Bärbel Schäfer",
+      "titles": [
+        "Bärbel Schäfer"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "13:00",
+      "minutes": 60,
+      "from": "1998-09-14",
+      "to": "1999-02-28",
+      "source": "https://www.fernsehserien.de/baerbel-schaefer",
+      "confidence": "medium",
+      "note": "Tauschdatum mit Ilona Christen Anfang 1999 geschätzt."
+    },
+    {
+      "show": "Bärbel Schäfer",
+      "titles": [
+        "Bärbel Schäfer"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 60,
+      "from": "1999-03-01",
+      "to": "2000-09-01",
+      "source": "https://www.fernsehserien.de/baerbel-schaefer",
+      "confidence": "medium",
+      "note": "Ab Herbst 2000 wieder 14 Uhr (bis Aug. 2002)."
+    },
+    {
+      "show": "Birte Karalus",
+      "titles": [
+        "Birte Karalus"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 60,
+      "from": "1998-09-14",
+      "to": "2000-09-01",
+      "source": "https://www.fernsehserien.de/birte-karalus",
+      "confidence": "high",
+      "note": "Ende Sept. 2000 laut https://de.wikipedia.org/wiki/Talkshow#Deutschland; Enddatum ca."
+    },
+    {
+      "show": "Sabrina",
+      "titles": [
+        "Sabrina"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "10:00",
+      "minutes": 60,
+      "from": "1999-01-11",
+      "to": "2000-10-31",
+      "source": "https://www.fernsehserien.de/sabrina",
+      "confidence": "low",
+      "note": "Einzige RTL-Vormittagstalkshow (Sabrina Staubitz). Uhrzeit 10:00 nur aus Zuschauerkommentar, Ende 'Oktober 2000' laut Talkshow-Artikel. Uhrzeit geschätzt."
+    },
+    {
+      "show": "Die Oliver Geissen Show",
+      "titles": [
+        "Die Oliver Geissen Show",
+        "Oliver Geissen"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "13:00",
+      "minutes": 60,
+      "from": "1999-08-23",
+      "to": "2007-10-12",
+      "source": "https://de.wikipedia.org/wiki/Die_Oliver_Geissen_Show",
+      "confidence": "high",
+      "note": "Nachfolger von Ilona Christen; ab 15.10.2007 14 Uhr, Ende 28.08.2009."
+    },
+    {
+      "show": "Arabella",
+      "titles": [
+        "Arabella",
+        "Arabella Kiesbauer"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 60,
+      "from": "1994-06-06",
+      "to": "2004-06-04",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "medium",
+      "note": "Start 06.06.1994 um 14 Uhr (fernsehserien.de/arabella). Konstanz des 14-Uhr-Slots bis 2004 nicht im Detail belegt; zeitweise ab 1996 zusätzlich 'Arabella Night' spätabends."
+    },
+    {
+      "show": "Andreas Türck",
+      "titles": [
+        "Andreas Türck"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "15:00",
+      "minutes": 60,
+      "from": "1998-02-25",
+      "to": "2002-01-15",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Nicole – Entscheidung am Nachmittag",
+      "titles": [
+        "Nicole",
+        "Nicole – Entscheidung am Nachmittag"
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "16:00",
+      "minutes": 60,
+      "from": "1999-03-04",
+      "to": "2001-12-07",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "high",
+      "note": "Hinweis: 'Nicole – Entführung in den Tod?' aus der Anfrage ist vermutlich eine Verwechslung; die Talkshow hieß 'Nicole – Entscheidung am Nachmittag' (Nicole Noevers). Siehe auch https://de.wikipedia.org/wiki/Nicole_Noevers"
+    },
+    {
+      "show": "Kerner",
+      "titles": [
+        "Kerner",
+        "Johannes B. Kerner"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "11:00",
+      "minutes": 60,
+      "from": "1996-01-08",
+      "to": "1997-12-31",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "medium",
+      "note": "Premiere 08.01.1996 (fernsehserien.de/kerner-1996). Ende 'Ende 1997' (Wechsel zum ZDF), genaues Datum unbekannt."
+    },
+    {
+      "show": "Vera am Mittag",
+      "titles": [
+        "Vera am Mittag",
+        "Vera"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "12:00",
+      "minutes": 60,
+      "from": "1996-01-22",
+      "to": "2006-01-13",
+      "source": "https://de.wikipedia.org/wiki/Vera_am_Mittag",
+      "confidence": "high",
+      "note": "12-Uhr-Slot laut https://de.wikipedia.org/wiki/Talkshow#Deutschland"
+    },
+    {
+      "show": "Sonja",
+      "titles": [
+        "Sonja",
+        "Sonja Zietlow"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "13:00",
+      "minutes": 60,
+      "from": "1997-01-06",
+      "to": "2001-01-05",
+      "source": "https://de.wikipedia.org/wiki/Sonja_(Talkshow)",
+      "confidence": "medium",
+      "note": "Start 'Januar 1997' – 06.01. (erster Montag) angenommen; letzte Sendung 05.01.2001."
+    },
+    {
+      "show": "Jörg Pilawa",
+      "titles": [
+        "Jörg Pilawa"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "11:00",
+      "minutes": 60,
+      "from": "1998-01-05",
+      "to": "2000-07-31",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "medium",
+      "note": "Start 'Anfang 1998', Ende vor Franklin (Aug. 2000) – beide Daten geschätzt."
+    },
+    {
+      "show": "Ricky!",
+      "titles": [
+        "Ricky!",
+        "Ricky"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "14:00",
+      "minutes": 60,
+      "from": "1999-08-02",
+      "to": "2000-03-31",
+      "source": "https://de.wikipedia.org/wiki/Talkshow#Deutschland",
+      "confidence": "medium",
+      "note": "Start 'August 1999', ersetzt im März 2000 durch Peter Imhof – Daten geschätzt."
+    },
+    {
+      "show": "Fliege",
+      "titles": [
+        "Fliege",
+        "Fliege – Die Talkshow"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "16:00",
+      "minutes": 60,
+      "from": "1994-02-28",
+      "to": "2005-03-31",
+      "source": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Fliege",
+      "confidence": "medium",
+      "note": "'jeden Werktag um 16:00' (fernsehserien.de/fliege); ab April 2005 15 Uhr, Ende 15.09.2005. Ob freitags in allen Jahren erstausgestrahlt wurde, ist nicht sicher (2003 Fr teils nur nachts)."
+    },
+    {
+      "show": "Richterin Barbara Salesch",
+      "titles": [
+        "Richterin Barbara Salesch",
+        "Barbara Salesch"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1999-09-27",
+      "to": "2000-03-31",
+      "source": "https://de.wikipedia.org/wiki/Richterin_Barbara_Salesch",
+      "confidence": "medium",
+      "note": "Anfangs echte Schiedsgerichtsfälle, halbstündig am Vorabend. 'Im Frühjahr 2000' Verdopplung und Wechsel auf 15 Uhr – Datum geschätzt."
+    },
+    {
+      "show": "Der Preis ist heiß",
+      "titles": [
+        "Der Preis ist heiß"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "17:00",
+      "minutes": 30,
+      "from": "1989-05-02",
+      "to": "1992-12-31",
+      "source": "https://de.wikipedia.org/wiki/Der_Preis_ist_hei%C3%9F",
+      "confidence": "high",
+      "note": "Premiere 02.05.1989 (fernsehserien.de/der-preis-ist-heiss)."
+    },
+    {
+      "show": "Der Preis ist heiß",
+      "titles": [
+        "Der Preis ist heiß"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "10:30",
+      "minutes": 30,
+      "from": "1993-01-04",
+      "to": "1993-03-31",
+      "source": "https://de.wikipedia.org/wiki/Der_Preis_ist_hei%C3%9F",
+      "confidence": "low",
+      "note": "'Ende 1992 auf 10:30, kurz darauf 11:00' – Wechseldaten geschätzt."
+    },
+    {
+      "show": "Der Preis ist heiß",
+      "titles": [
+        "Der Preis ist heiß"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "11:00",
+      "minutes": 30,
+      "from": "1993-04-01",
+      "to": "1997-07-31",
+      "source": "https://de.wikipedia.org/wiki/Der_Preis_ist_hei%C3%9F",
+      "confidence": "medium",
+      "note": "Letzte (1873.) Folge 'im Sommer 1997', danach 2 Monate Wiederholungen."
+    },
+    {
+      "show": "Familien-Duell",
+      "titles": [
+        "Familien-Duell",
+        "Familienduell"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "12:00",
+      "minutes": 30,
+      "from": "1992-01-27",
+      "to": "1992-06-30",
+      "source": "https://de.wikipedia.org/wiki/Familien-Duell",
+      "confidence": "low",
+      "note": "Premiere Sonntag 26.01.1992; zunächst kurz 12:00 (Fernsehlexikon via fernsehserien.de/familien-duell-1992), Wechseldatum ca. Uhrzeit geschätzt."
+    },
+    {
+      "show": "Familien-Duell",
+      "titles": [
+        "Familien-Duell",
+        "Familienduell"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "11:30",
+      "minutes": 30,
+      "from": "1992-07-01",
+      "to": "2003-10-10",
+      "source": "https://de.wikipedia.org/wiki/Familien-Duell",
+      "confidence": "medium",
+      "note": "Dauerhaft 11:30 laut Fernsehlexikon (fernsehserien.de/familien-duell-1992)."
+    },
+    {
+      "show": "Jeopardy!",
+      "titles": [
+        "Jeopardy!",
+        "Jeopardy"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "17:00",
+      "minutes": 30,
+      "from": "1994-10-17",
+      "to": "1998-12-31",
+      "source": "https://www.fernsehserien.de/jeopardy",
+      "confidence": "high",
+      "note": "Frank Elstner; 'werktags gegen 17:00' (Fernsehlexikon). Danach tm3 (Gerriet Danz)."
+    },
+    {
+      "show": "Glücksrad",
+      "titles": [
+        "Glücksrad"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "19:30",
+      "minutes": 30,
+      "from": "1988-11-07",
+      "to": "1998-05-15",
+      "source": "https://de.wikipedia.org/wiki/Gl%C3%BCcksrad_(Spielshow)",
+      "confidence": "medium",
+      "note": "Zunächst Mo–Fr 19:30; 04/1991–1995 auch Sa und So. Spätere Feinverschiebungen der Uhrzeit nicht belegt ('immer nach 19:00')."
+    },
+    {
+      "show": "Glücksrad",
+      "titles": [
+        "Glücksrad"
+      ],
+      "channel": "kabel-1",
+      "weekdays": "Mo-Fr",
+      "start": "19:20",
+      "minutes": 30,
+      "from": "1998-05-18",
+      "to": "2002-10-31",
+      "source": "https://de.wikipedia.org/wiki/Gl%C3%BCcksrad_(Spielshow)",
+      "confidence": "low",
+      "note": "Nahtlos von Sat.1 übernommen. Uhrzeit nur abgeleitet (lief direkt nach Geh aufs Ganze, ab 1999 18:50). Uhrzeit geschätzt."
+    },
+    {
+      "show": "Geh aufs Ganze!",
+      "titles": [
+        "Geh aufs Ganze!",
+        "Geh aufs Ganze"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "17:05",
+      "minutes": 30,
+      "from": "1992-01-02",
+      "to": "1996-02-29",
+      "source": "https://de.wikipedia.org/wiki/Geh_aufs_Ganze!",
+      "confidence": "medium",
+      "note": "1992 Mo–Fr 17:05 belegt; ab 1993 zusätzlich Samstag (16:00–17:20 wechselnd). Dass 17:05 bis Feb. 1996 galt, ist angenommen."
+    },
+    {
+      "show": "Geh aufs Ganze!",
+      "titles": [
+        "Geh aufs Ganze!",
+        "Geh aufs Ganze"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1996-03-01",
+      "to": "1997-01-03",
+      "source": "https://de.wikipedia.org/wiki/Geh_aufs_Ganze!",
+      "confidence": "high",
+      "note": "Samstags bis 31.05.1997 (16:00 bzw. 17:00)."
+    },
+    {
+      "show": "Geh aufs Ganze!",
+      "titles": [
+        "Geh aufs Ganze!",
+        "Geh aufs Ganze"
+      ],
+      "channel": "kabel-1",
+      "weekdays": "Mo-Fr",
+      "start": "18:50",
+      "minutes": 30,
+      "from": "1999-02-01",
+      "to": "2001-12-28",
+      "source": "https://de.wikipedia.org/wiki/Geh_aufs_Ganze!",
+      "confidence": "medium",
+      "note": "Zunächst 18:50, dann 18:30, zuletzt 19:00 – Wechseldaten unbekannt."
+    },
+    {
+      "show": "Bube, Dame, Hörig",
+      "titles": [
+        "Bube, Dame, Hörig"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "10:30",
+      "minutes": 30,
+      "from": "1996-01-08",
+      "to": "1999-06-10",
+      "source": "https://de.wikipedia.org/wiki/Bube,_Dame,_H%C3%B6rig",
+      "confidence": "medium",
+      "note": "Laufzeit 08.01.1996–10.06.1999 aus Beschreibung des YouTube-Uploads (SPIEL 1), Uhrzeit aus Wikipedia."
+    },
+    {
+      "show": "Herzblatt",
+      "titles": [
+        "Herzblatt"
+      ],
+      "channel": "ard",
+      "weekdays": "Fr",
+      "start": "19:25",
+      "minutes": 30,
+      "from": "1987-10-09",
+      "to": "1998-12-31",
+      "source": "https://www.fernsehserien.de/herzblatt",
+      "confidence": "high",
+      "note": "'feste Sendeplatz freitags um 19:25' bis zur Verlängerung Anfang 1999 (Wechseldatum ca.). Saisonal (Staffelpausen)."
+    },
+    {
+      "show": "Herzblatt",
+      "titles": [
+        "Herzblatt"
+      ],
+      "channel": "ard",
+      "weekdays": "Fr",
+      "start": "18:55",
+      "minutes": 60,
+      "from": "1999-01-08",
+      "to": "2001-08-31",
+      "source": "https://www.fernsehserien.de/herzblatt",
+      "confidence": "medium",
+      "note": "Ab Anfang 1999 einstündig ab 18:55; Herbst 2001 kurz samstags. Daten ca."
+    },
+    {
+      "show": "Nur die Liebe zählt",
+      "titles": [
+        "Nur die Liebe zählt"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "So",
+      "start": "19:10",
+      "minutes": 65,
+      "from": "1993-09-12",
+      "to": "1993-10-17",
+      "source": "https://de.wikipedia.org/wiki/Nur_die_Liebe_z%C3%A4hlt",
+      "confidence": "high",
+      "note": "Staffel 2 (19.02.–23.04.1994) samstags zur gleichen Zeit."
+    },
+    {
+      "show": "Nur die Liebe zählt",
+      "titles": [
+        "Nur die Liebe zählt"
+      ],
+      "channel": "sat-1",
+      "weekdays": "So",
+      "start": "19:00",
+      "minutes": 60,
+      "from": "1995-01-01",
+      "to": "2004-12-19",
+      "source": "https://de.wikipedia.org/wiki/Nur_die_Liebe_z%C3%A4hlt",
+      "confidence": "low",
+      "note": "Ab 1995 bei Sat.1 in Staffeln unterschiedlicher Länge – nicht jeden Sonntag! Startdatum 1995 nicht genau. Uhrzeit geschätzt."
+    },
+    {
+      "show": "Gute Zeiten, schlechte Zeiten",
+      "titles": [
+        "Gute Zeiten, schlechte Zeiten",
+        "GZSZ"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "19:40",
+      "minutes": 25,
+      "from": "1992-05-11",
+      "to": "2026-12-31",
+      "source": "https://de.wikipedia.org/wiki/Gute_Zeiten,_schlechte_Zeiten",
+      "confidence": "high",
+      "note": "Seit Start unverändert 19:40–20:15 (inkl. Werbung, daher 35 Min. Slot)."
+    },
+    {
+      "show": "Marienhof",
+      "titles": [
+        "Marienhof"
+      ],
+      "channel": "ard",
+      "weekdays": "Di,Do",
+      "start": "17:35",
+      "minutes": 50,
+      "from": "1992-10-01",
+      "to": "1993-04-08",
+      "source": "https://de.wikipedia.org/wiki/Marienhof_(Fernsehserie)",
+      "confidence": "high",
+      "note": "Anfangs wöchentlich 2x, ca. 50 Min."
+    },
+    {
+      "show": "Marienhof",
+      "titles": [
+        "Marienhof"
+      ],
+      "channel": "ard",
+      "weekdays": "Di,Do",
+      "start": "18:25",
+      "minutes": 25,
+      "from": "1993-09-28",
+      "to": "1994-12-31",
+      "source": "https://de.wikipedia.org/wiki/Marienhof_(Fernsehserie)",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Marienhof",
+      "titles": [
+        "Marienhof"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "18:25",
+      "minutes": 25,
+      "from": "1995-01-02",
+      "to": "1999-12-31",
+      "source": "https://de.wikipedia.org/wiki/Marienhof_(Fernsehserie)",
+      "confidence": "medium",
+      "note": "Ab 02.01.1995 Daily Soap, Sendeplatz 18:25 beibehalten (18:25 für Feb. 1998 auch in https://de.wikipedia.org/wiki/Lindenstra%C3%9Fe/Episodenliste belegt). Enddatum = Recherchegrenze; Serie lief bis 15.06.2011 mit späteren Slotänderungen."
+    },
+    {
+      "show": "Verbotene Liebe",
+      "titles": [
+        "Verbotene Liebe"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "17:55",
+      "minutes": 25,
+      "from": "1995-01-02",
+      "to": "1999-12-31",
+      "source": "https://de.wikipedia.org/wiki/Verbotene_Liebe",
+      "confidence": "low",
+      "note": "Start 02.01.1995 zusammen mit Marienhof-Daily. Uhrzeit 17:55 NICHT per Quelle bestätigt (aus Erinnerung an damalige TV-Programme); Enddatum = Recherchegrenze (lief bis 2015). Uhrzeit geschätzt."
+    },
+    {
+      "show": "Unter uns",
+      "titles": [
+        "Unter uns"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "17:30",
+      "minutes": 30,
+      "from": "1994-11-28",
+      "to": "2026-12-31",
+      "source": "https://de.wikipedia.org/wiki/Unter_uns",
+      "confidence": "high",
+      "note": "Seit Start 17:30–18:00."
+    },
+    {
+      "show": "Lindenstraße",
+      "titles": [
+        "Lindenstraße"
+      ],
+      "channel": "ard",
+      "weekdays": "So",
+      "start": "18:40",
+      "minutes": 30,
+      "from": "1985-12-08",
+      "to": "2005-03-06",
+      "source": "https://de.wikipedia.org/wiki/Lindenstra%C3%9Fe/Episodenliste",
+      "confidence": "high",
+      "note": "Sonntags 18:40 bis 06.03.2005, danach 18:50 (bis 29.03.2020)."
+    },
+    {
+      "show": "Jede Menge Leben",
+      "titles": [
+        "Jede Menge Leben"
+      ],
+      "channel": "zdf",
+      "weekdays": "Di,Do",
+      "start": "18:30",
+      "minutes": 25,
+      "from": "1995-03-07",
+      "to": "1995-12-31",
+      "source": "https://de.wikipedia.org/wiki/Jede_Menge_Leben",
+      "confidence": "low",
+      "note": "Später Mo–Fr 16:35 – Wechseldatum unbekannt (hier Jahresende 1995 angenommen). Uhrzeit geschätzt."
+    },
+    {
+      "show": "Jede Menge Leben",
+      "titles": [
+        "Jede Menge Leben"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "16:35",
+      "minutes": 25,
+      "from": "1996-01-02",
+      "to": "1996-09-30",
+      "source": "https://de.wikipedia.org/wiki/Jede_Menge_Leben",
+      "confidence": "low",
+      "note": "Wechseldatum geschätzt."
+    },
+    {
+      "show": "Explosiv – Das Magazin",
+      "titles": [
+        "Explosiv",
+        "Explosiv – Das Magazin"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "19:10",
+      "minutes": 30,
+      "from": "1992-05-11",
+      "to": "2006-09-01",
+      "source": "https://de.wikipedia.org/wiki/Explosiv_%E2%80%93_Das_Magazin",
+      "confidence": "high",
+      "note": "Ab 1995 zusätzlich 'Explosiv Weekend' samstags (Uhrzeit nicht belegt)."
+    },
+    {
+      "show": "Exclusiv – Das Starmagazin",
+      "titles": [
+        "Exclusiv",
+        "Explosiv Telegramm"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "18:30",
+      "minutes": 15,
+      "from": "1994-05-02",
+      "to": "2026-12-31",
+      "source": "https://de.wikipedia.org/wiki/Exclusiv_%E2%80%93_Das_Starmagazin",
+      "confidence": "medium",
+      "note": "Bis 1995 als 'Explosiv Telegramm'. 18:30 ist der heutige Slot – für die 90er nicht explizit belegt."
+    },
+    {
+      "show": "taff",
+      "titles": [
+        "taff",
+        "taff."
+      ],
+      "channel": "pro-7",
+      "weekdays": "Mo-Fr",
+      "start": "19:00",
+      "minutes": 30,
+      "from": "1995-05-29",
+      "to": "1999-12-31",
+      "source": "https://de.wikipedia.org/wiki/Taff",
+      "confidence": "low",
+      "note": "Start 29.05.1995; Programmlisten 1998 zeigen 19:00–19:30, ab ca. 2000 17:00. Startzeit 1995–97 unbestätigt, Wechseldatum ca. Uhrzeit geschätzt."
+    },
+    {
+      "show": "Punkt 12",
+      "titles": [
+        "12.30",
+        "Punkt 12"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "12:30",
+      "minutes": 30,
+      "from": "1992-04-06",
+      "to": "1992-05-29",
+      "source": "https://de.wikipedia.org/wiki/Punkt_12",
+      "confidence": "high",
+      "note": "Start unter dem Titel '12.30'."
+    },
+    {
+      "show": "Punkt 12",
+      "titles": [
+        "Punkt 12"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "12:00",
+      "minutes": 30,
+      "from": "1992-06-01",
+      "to": "1999-02-26",
+      "source": "https://de.wikipedia.org/wiki/Punkt_12",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Punkt 12",
+      "titles": [
+        "Punkt 12"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "12:00",
+      "minutes": 60,
+      "from": "1999-03-01",
+      "to": "2007-10-12",
+      "source": "https://de.wikipedia.org/wiki/Punkt_12",
+      "confidence": "high",
+      "note": "Ab 01.03.1999 einstündig."
+    },
+    {
+      "show": "Brisant",
+      "titles": [
+        "Brisant"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "17:15",
+      "minutes": 30,
+      "from": "1994-01-03",
+      "to": "2007-12-31",
+      "source": "https://www.fernsehserien.de/brisant",
+      "confidence": "medium",
+      "note": "'montags bis freitags gegen 17:15', seit Mitte 1996 auch samstags. Ab 02.01.2008 45 Min. Siehe https://de.wikipedia.org/wiki/Brisant_(Fernsehmagazin)"
+    },
+    {
+      "show": "Blitz",
+      "titles": [
+        "Blitz",
+        "blitz!"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1997-01-06",
+      "to": "1999-08-31",
+      "source": "https://de.wikipedia.org/wiki/Blitz_(Fernsehsendung)",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Blitz",
+      "titles": [
+        "Blitz",
+        "blitz!"
+      ],
+      "channel": "sat-1",
+      "weekdays": "Mo-Fr",
+      "start": "19:00",
+      "minutes": 40,
+      "from": "1999-09-01",
+      "to": "2003-03-31",
+      "source": "https://de.wikipedia.org/wiki/Blitz_(Fernsehsendung)",
+      "confidence": "high",
+      "note": "Relaunch Sept. 1999 mit Caroline Beil (Datum ca.)."
+    },
+    {
+      "show": "Leute heute",
+      "titles": [
+        "Leute heute"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "17:40",
+      "minutes": 20,
+      "from": "1997-09-08",
+      "to": "2023-12-31",
+      "source": "https://de.wikipedia.org/wiki/Leute_heute",
+      "confidence": "medium",
+      "note": "Anfangs (1997) 18:45, ab 08.09.1997 gegen 17:40. Startdatum 1997 unbekannt."
+    },
+    {
+      "show": "hallo Deutschland",
+      "titles": [
+        "Hallo Deutschland",
+        "hallo deutschland"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "17:15",
+      "minutes": 30,
+      "from": "1997-06-16",
+      "to": "2011-12-31",
+      "source": "https://de.wikipedia.org/wiki/Hallo_deutschland",
+      "confidence": "high",
+      "note": "Enddatum = nur grobe Grenze."
+    },
+    {
+      "show": "drehscheibe Deutschland",
+      "titles": [
+        "Drehscheibe Deutschland",
+        "drehscheibe Deutschland"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "12:15",
+      "minutes": 45,
+      "from": "1998-01-07",
+      "to": "2011-12-30",
+      "source": "https://de.wikipedia.org/wiki/Drehscheibe_(Fernsehsendung)",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Talk im Turm",
+      "titles": [
+        "Talk im Turm"
+      ],
+      "channel": "sat-1",
+      "weekdays": "So",
+      "start": "22:00",
+      "minutes": 60,
+      "from": "1990-01-07",
+      "to": "1999-02-07",
+      "source": "https://de.wikipedia.org/wiki/Talk_im_Turm",
+      "confidence": "medium",
+      "note": "Politik-Talk (Erich Böhme). Daten 07.01.1990–07.02.1999 aus Upload-Beschreibung, Wikipedia nennt 1990–Anfang 1999."
+    },
+    {
+      "show": "ARD-Morgenmagazin",
+      "titles": [
+        "ARD-Morgenmagazin",
+        "Morgenmagazin"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "06:00",
+      "minutes": 180,
+      "from": "1992-07-13",
+      "to": "1995-08-25",
+      "source": "https://de.wikipedia.org/wiki/ARD-Morgenmagazin",
+      "confidence": "high",
+      "note": "WICHTIG: ARD und ZDF wechseln sich WÖCHENTLICH ab (ARD- bzw. ZDF-Morgenmagazin, beide Sender strahlen die jeweilige Ausgabe aus)."
+    },
+    {
+      "show": "ARD-Morgenmagazin",
+      "titles": [
+        "ARD-Morgenmagazin",
+        "Morgenmagazin"
+      ],
+      "channel": "ard",
+      "weekdays": "Mo-Fr",
+      "start": "05:30",
+      "minutes": 210,
+      "from": "1995-08-28",
+      "to": "2026-12-31",
+      "source": "https://de.wikipedia.org/wiki/ARD-Morgenmagazin",
+      "confidence": "high",
+      "note": "Wöchentlicher Wechsel mit dem ZDF-Morgenmagazin."
+    },
+    {
+      "show": "ZDF-Morgenmagazin",
+      "titles": [
+        "ZDF-Morgenmagazin",
+        "Morgenmagazin"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "06:00",
+      "minutes": 180,
+      "from": "1992-07-13",
+      "to": "1995-08-25",
+      "source": "https://de.wikipedia.org/wiki/ARD-Morgenmagazin",
+      "confidence": "high",
+      "note": "Gemeinschaftsprogramm, wöchentlich abwechselnd mit ARD produziert und in beiden Programmen gesendet."
+    },
+    {
+      "show": "ZDF-Morgenmagazin",
+      "titles": [
+        "ZDF-Morgenmagazin",
+        "Morgenmagazin"
+      ],
+      "channel": "zdf",
+      "weekdays": "Mo-Fr",
+      "start": "05:30",
+      "minutes": 210,
+      "from": "1995-08-28",
+      "to": "2026-12-31",
+      "source": "https://de.wikipedia.org/wiki/ARD-Morgenmagazin",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Punkt 6",
+      "titles": [
+        "Punkt 6"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "06:00",
+      "minutes": 60,
+      "from": "1997-09-01",
+      "to": "2009-02-27",
+      "source": "https://de.wikipedia.org/wiki/Punkt_6",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "show": "Guten Morgen Deutschland",
+      "titles": [
+        "Guten Morgen Deutschland",
+        "RTL-Frühstücksfernsehen"
+      ],
+      "channel": "rtl-plus",
+      "weekdays": "Mo-Fr",
+      "start": "06:30",
+      "minutes": 150,
+      "from": "1987-09-23",
+      "to": "1994-12-31",
+      "source": "https://de.wikipedia.org/wiki/Guten_Morgen_Deutschland",
+      "confidence": "low",
+      "note": "Erstauflage 1987–1994; Sendebeginn 6:30 nur für 1987 belegt, Ende 1994 ungenau. Lücke 1995–08/1997 ungeklärt. Uhrzeit geschätzt."
+    },
+    {
+      "show": "Mein Vater ist ein Außerirdischer",
+      "titles": [
+        "Mein Vater ist ein Außerirdischer"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "15:25",
+      "minutes": 25,
+      "from": "1995-09-01",
+      "to": "1996-02-29",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 16.–27.10.1995; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "PowWow",
+      "titles": [
+        "PowWow"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "15:50",
+      "minutes": 10,
+      "from": "1995-09-01",
+      "to": "1996-02-29",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 17.–27.10.1995; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Bea & Bruno",
+      "titles": [
+        "Bea & Bruno"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "16:55",
+      "minutes": 5,
+      "from": "1995-09-01",
+      "to": "1996-02-29",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 17.–27.10.1995; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Trickserien",
+      "titles": [
+        "Trickserien"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:55",
+      "minutes": 55,
+      "from": "1995-09-01",
+      "to": "1995-12-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 16.–27.10.1995; Zeitraum darüber hinaus angenommen. Danach Darkwing Duck (18:50)."
+    },
+    {
+      "show": "Mein Vater ist ein Außerirdischer",
+      "titles": [
+        "Mein Vater ist ein Außerirdischer"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1995-09-01",
+      "to": "1996-02-29",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 16.–27.10.1995; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Trickserien",
+      "titles": [
+        "Trickserien"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Sa-So",
+      "start": "17:55",
+      "minutes": 55,
+      "from": "1995-09-01",
+      "to": "1995-12-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1995-10-21",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 14./15./21./22.10.1995; Zeitraum darüber hinaus angenommen. Sonntags teils Spielfilm."
+    },
+    {
+      "show": "Disneys Gummibärenbande",
+      "titles": [
+        "Disneys Gummibärenbande",
+        "Gummibärenbande"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "17:05",
+      "minutes": 30,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-12-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 21.–31.12.1996; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Chip & Chap",
+      "titles": [
+        "Chip & Chap",
+        "Chip und Chap"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "17:35",
+      "minutes": 25,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-12-23",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 21.–31.12.1996; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Bonkers",
+      "titles": [
+        "Bonkers"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:00",
+      "minutes": 25,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-08-25",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 25.08. und 21.–31.12.1996; Zeitraum darüber hinaus angenommen. Bonkers-Start 02.03.1996 lt. de.wikipedia."
+    },
+    {
+      "show": "Käpt'n Balu und seine tollkühne Crew",
+      "titles": [
+        "Käpt'n Balu und seine tollkühne Crew",
+        "Käpt'n Balu",
+        "Käptn Balu"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:25",
+      "minutes": 30,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-08-25",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 25.08. und 21.–31.12.1996; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Darkwing Duck",
+      "titles": [
+        "Darkwing Duck"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:55",
+      "minutes": 25,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-08-26",
+      "confidence": "high",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–30.08. und 21.–31.12.1996; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Abenteuer mit Micky und Donald",
+      "titles": [
+        "Abenteuer mit Micky und Donald",
+        "Micky und Donald",
+        "Mickey und Donald"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:20",
+      "minutes": 25,
+      "from": "1996-03-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-08-26",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–26./30.08. und 21.–31.12.1996; Zeitraum darüber hinaus angenommen. An einigen Werktagen lief stattdessen „Mein Vater ist ein Außerirdischer“."
+    },
+    {
+      "show": "Harry und die Hendersons",
+      "titles": [
+        "Harry und die Hendersons"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1996-09-02",
+      "to": "1996-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1996-12-23",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 23.–31.12.1996; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Neue Abenteuer mit Winnie Puuh",
+      "titles": [
+        "Neue Abenteuer mit Winnie Puuh",
+        "Winnie Puuh"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:30",
+      "minutes": 35,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Bonkers",
+      "titles": [
+        "Bonkers"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "18:05",
+      "minutes": 20,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Marsupilami",
+      "titles": [
+        "Marsupilami"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "18:25",
+      "minutes": 30,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Goofy und Max",
+      "titles": [
+        "Goofy und Max",
+        "Goofy & Max"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "18:55",
+      "minutes": 25,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Die Dinos",
+      "titles": [
+        "Die Dinos"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "19:20",
+      "minutes": 25,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Harry und die Hendersons",
+      "titles": [
+        "Harry und die Hendersons"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1997-01-02",
+      "to": "1997-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-01-01",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 01.01.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Marsupilami",
+      "titles": [
+        "Marsupilami"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:55",
+      "minutes": 30,
+      "from": "1997-07-01",
+      "to": "1998-03-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-12-30",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 30.12.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Goofy und Max",
+      "titles": [
+        "Goofy und Max",
+        "Goofy & Max"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:25",
+      "minutes": 20,
+      "from": "1997-07-01",
+      "to": "1998-03-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-12-30",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 30.12.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Die Dinos",
+      "titles": [
+        "Die Dinos"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1997-07-01",
+      "to": "1998-03-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1997-12-30",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 30.12.1997; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Gargoyles",
+      "titles": [
+        "Gargoyles",
+        "Gargoyles - Auf den Schwingen der Gerechtigkeit"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1998-04-01",
+      "to": "1998-11-14",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-06-06",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 06.06.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Disneys Gummibärenbande",
+      "titles": [
+        "Disneys Gummibärenbande",
+        "Gummibärenbande"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:30",
+      "minutes": 30,
+      "from": "1998-04-01",
+      "to": "1998-11-14",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-06-06",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 06.06.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "DuckTales",
+      "titles": [
+        "DuckTales",
+        "Duck Tales"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:00",
+      "minutes": 25,
+      "from": "1998-04-01",
+      "to": "1998-11-14",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-06-06",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 06.06.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Goofy und Max",
+      "titles": [
+        "Goofy und Max",
+        "Goofy & Max"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:25",
+      "minutes": 20,
+      "from": "1998-04-01",
+      "to": "1998-11-14",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-06-06",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 06.06.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Die Dinos",
+      "titles": [
+        "Die Dinos"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1998-04-01",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-06-06",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 06.06. und 24.–31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Extreme Dinosaurs",
+      "titles": [
+        "Extreme Dinosaurs"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:05",
+      "minutes": 25,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24./25./31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Mummies Alive",
+      "titles": [
+        "Mummies Alive"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:30",
+      "minutes": 25,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24./25./31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Gargoyles",
+      "titles": [
+        "Gargoyles - Auf den Schwingen der Gerechtigkeit",
+        "Gargoyles"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Marsupilami",
+      "titles": [
+        "Marsupilami"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:30",
+      "minutes": 25,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Käpt'n Balu und seine tollkühne Crew",
+      "titles": [
+        "Käpt'n Balu und seine tollkühne Crew",
+        "Käpt'n Balu"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:55",
+      "minutes": 30,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "medium",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–31.12.1998; Zeitraum darüber hinaus angenommen. Wiederholung ab 15.11.1998 lt. de.wikipedia."
+    },
+    {
+      "show": "Darkwing Duck",
+      "titles": [
+        "Darkwing Duck"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:25",
+      "minutes": 20,
+      "from": "1998-11-15",
+      "to": "1999-06-30",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1998-12-24",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–31.12.1998; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Extreme Dinosaurs",
+      "titles": [
+        "Extreme Dinosaurs"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:05",
+      "minutes": 25,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-31",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 31.12.1999; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Mystic Knights",
+      "titles": [
+        "Mystic Knights"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-Fr",
+      "start": "17:30",
+      "minutes": 30,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-31",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 31.12.1999; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Hey Arnold!",
+      "titles": [
+        "Hey Arnold!"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "18:00",
+      "minutes": 30,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-25",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 25./26./31.12.1999; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Darkwing Duck",
+      "titles": [
+        "Darkwing Duck"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:00",
+      "minutes": 20,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-25",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–31.12.1999; Zeitraum darüber hinaus angenommen. Darkwing-Duck-Ausstrahlung bis 1999 lt. de.wikipedia."
+    },
+    {
+      "show": "Disneys Doug",
+      "titles": [
+        "Disneys Doug",
+        "Doug"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:20",
+      "minutes": 25,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-25",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–26.12.1999; Zeitraum darüber hinaus angenommen."
+    },
+    {
+      "show": "Goofy und Max",
+      "titles": [
+        "Goofy und Max",
+        "Goofy & Max"
+      ],
+      "channel": "super-rtl",
+      "weekdays": "Mo-So",
+      "start": "19:45",
+      "minutes": 30,
+      "from": "1999-09-01",
+      "to": "1999-12-31",
+      "source": "http://retro-media-tv.de/tvp/view_tag.php?tag=1999-12-25",
+      "confidence": "low",
+      "note": "Sendeplatz in den tvprogramme.net-Tagen 24.–26.12.1999; Zeitraum darüber hinaus angenommen."
+    }
+  ]
+}

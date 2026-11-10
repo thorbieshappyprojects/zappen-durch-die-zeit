@@ -1,0 +1,30 @@
+{
+  "name": "zappen-durch-die-zeit",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "author": "Thorben Hoepke <dev@thorbieshappyprojects.com>",
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @zdz/web dev",
+    "build": "pnpm --filter @zdz/web build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "db:migrate": "pnpm --filter @zdz/ingest ingest migrate",
+    "db:seed": "pnpm --filter @zdz/ingest ingest import seed",
+    "db:setup": "pnpm db:seed && pnpm ingest import archive && pnpm ingest interstitials && pnpm ingest snapshot",
+    "ingest": "pnpm --filter @zdz/ingest ingest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "16.4.5",
+    "prettier": "^3.9.10",
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
+  }
+}
