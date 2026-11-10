@@ -14,7 +14,8 @@ interface Props {
   durationS?: number | null;
   loop?: boolean;
   onEnded?: () => void;
-  onError?: () => void;
+  /** The provider gave up; YouTube passes its error code. */
+  onError?: (code?: number) => void;
   muted: boolean;
   onAutoplayBlocked?: () => void;
   /** "Wie damals" mode: linear TV, no controls, no pausing or skipping. Off: the provider's full controls. */

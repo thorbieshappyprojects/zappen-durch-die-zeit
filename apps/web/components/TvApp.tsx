@@ -11,10 +11,11 @@ import { useFormToken } from "@/lib/form-token";
 import { matchLabel } from "@/lib/labels";
 import { HelpOverlay } from "./HelpOverlay";
 import { OffTopicReport, reportFailedVideo, VideoReport } from "./VideoReport";
-import { ConsentOverlay, interstitialChip, InterstitialScreen, interstitialSkipLabel, NoSignal, OffAirScreen, PowerScreen, ProgrammeCard, TestCard } from "./Screen";
+import { ConsentOverlay, YouTubeRefused, interstitialChip, InterstitialScreen, interstitialSkipLabel, NoSignal, OffAirScreen, PowerScreen, ProgrammeCard, TestCard } from "./Screen";
 import { Teletext, TeletextChronik, TeletextOverview } from "./Teletext";
 import { YearTimeline } from "./YearTimeline";
 import { VideoPlayer } from "./VideoPlayer";
+import { REFUSED_ERRORS } from "./YouTubePlayer";
 
 /** Live: same Berlin wall-clock time as now. Manual: a chosen time that keeps running. */
 type Clock = { mode: "live" } | { mode: "manual"; anchorTvSeconds: number; anchorRealMs: number };
@@ -169,6 +170,8 @@ export function TvApp({
   const [skippedAdFor, setSkippedAdFor] = useState<string | null>(null);
   /** Videos that refused to play (removed, embedding disabled); skipped for the rest of the visit. */
   const [failedVideoIds, setFailedVideoIds] = useState<ReadonlySet<string>>(() => new Set());
+  /** YouTube videos it refused to embed (bot check, 101/150): a notice with "Nochmal versuchen" instead. */
+  const [refusedVideoIds, setRefusedVideoIds] = useState<ReadonlySet<string>>(() => new Set());
   /** The TV starts switched off: the power-on click is the user gesture that allows autoplay with sound. */
   const [powered, setPowered] = useState(false);
   const [switchingOn, setSwitchingOn] = useState(false);
@@ -748,6 +751,22 @@ export function TvApp({
     screen = (
       <TestCard channelName={channel.name} upcoming={upcomingBroadcast(broadcasts, tvMin) ?? broadcasts[0] ?? null} unknown={assumed} />
     );
+  } else if (videoActive && playing && refusedVideoIds.has(playing.videoId)) {
+    screen = (
+      <>
+        {programmeCard(current, true)}
+        <YouTubeRefused
+          url={playing.url}
+          onRetry={() =>
+            setRefusedVideoIds((prev) => {
+              const next = new Set(prev);
+              next.delete(playing.videoId);
+              return next;
+            })
+          }
+        />
+      </>
+    );
   } else if (videoActive && playing) {
     screen = (
       <>
@@ -768,9 +787,13 @@ export function TvApp({
           onEnded={freeChoice && next ? () => jumpTo(next.startMin) : undefined}
           onResolution={(_w, h) => noteResolution(playing.videoId, h)}
           onDrift={(drifted) => setDrift(drifted ? programmePlayerKey : null)}
-          onError={() => {
-            setFailedVideoIds((prev) => new Set(prev).add(playing.videoId));
-            if (reportContext) reportFailedVideo(reportContext, reportToken);
+          onError={(code) => {
+            // Refused by YouTube (mostly its bot check): the viewer can try again; the server only keeps
+            // the report if the video really can't be embedded (oEmbed), see app/melden/actions.ts.
+            if (playing.provider === "youtube" && code !== undefined && REFUSED_ERRORS.has(code))
+              setRefusedVideoIds((prev) => new Set(prev).add(playing.videoId));
+            else setFailedVideoIds((prev) => new Set(prev).add(playing.videoId));
+            if (reportContext) reportFailedVideo(reportContext, reportToken, code !== undefined ? `YouTube-Fehler ${code}` : undefined);
           }}
         />
       </>

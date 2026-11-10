@@ -19,6 +19,7 @@ export type { ReportInput };
 /**
  * "Video defekt / falsch". Always answers ok (no hints for bots). Reports never change what is
  * shown, except: ≥ 3 open "unavailable" reports within 7 days and a failed health check block the video.
+ * Automatic "YouTube refused" reports of a video oEmbed calls embeddable are dropped (bot check).
  */
 export async function reportVideo(raw: ReportInput): Promise<{ ok: true; expired?: true }> {
   // The argument comes from the network: check it at runtime (core parseReportInput).
@@ -38,6 +39,10 @@ export async function reportVideo(raw: ReportInput): Promise<{ ok: true; expired
   if ((await countRecentReportsByIp(handle, ipHash, new Date(Date.now() - 3600_000))) >= PER_HOUR) return { ok: true };
   // Only our own links: an unknown URL is never stored, shown to moderators or fetched.
   if (!(await isKnownVideoUrl(handle, input.url))) return { ok: true };
+
+  // The player's "YouTube refused" (101/150) is mostly YouTube's bot check for one viewer, not the video:
+  // keep it only if oEmbed says the video can't be embedded at all.
+  if (input.automatic && /^YouTube-Fehler (101|150)$/.test(input.note ?? "") && (await videoAvailable(input.url))) return { ok: true };
 
   const text = (v: string | undefined, max: number) => v?.trim().slice(0, max) || null;
   // "Passt nicht zum Ereignis" only makes sense for a known event.

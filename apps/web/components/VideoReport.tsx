@@ -132,7 +132,7 @@ export function OffTopicReport({ context, event, token, refreshToken }: { contex
 /** URLs reported automatically today (one small map; earlier days are dropped). */
 const REPORTED_KEY = "zdz-reported";
 
-export function reportFailedVideo(context: Context, token: string) {
+export function reportFailedVideo(context: Context, token: string, detail?: string) {
   try {
     const today = new Date().toISOString().slice(0, 10);
     // One report per video and day.
@@ -149,9 +149,10 @@ export function reportFailedVideo(context: Context, token: string) {
     return;
   }
   // Automatic reports have no minimum fill time: an expired token is simply renewed and sent again.
-  void reportVideo({ ...context, reason: "unavailable", automatic: true, token })
+  const note = detail ? { note: detail } : {};
+  void reportVideo({ ...context, ...note, reason: "unavailable", automatic: true, token })
     .then(async (res) => {
-      if (res.expired) await reportVideo({ ...context, reason: "unavailable", automatic: true, token: await fetchFormToken() });
+      if (res.expired) await reportVideo({ ...context, ...note, reason: "unavailable", automatic: true, token: await fetchFormToken() });
     })
     .catch(() => {});
 }

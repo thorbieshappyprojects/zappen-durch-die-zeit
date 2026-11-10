@@ -140,6 +140,30 @@ export function ProgrammeCard({
 }
 
 /** Click-to-load overlay: nothing is requested from a video provider before the user agrees. */
+/**
+ * YouTube refused to play the video here (error 101/150 after a few tries). Mostly that is YouTube's
+ * bot check for rarely watched videos, at random – not the video. Try again or watch it on YouTube.
+ */
+export function YouTubeRefused({ url, onRetry }: { url: string; onRetry: () => void }) {
+  return (
+    <div className="consent yt-refused" role="status">
+      <p className="yt-refused-title">YouTube spielt dieses Video gerade nicht im Fernseher ab.</p>
+      <p>
+        Meist steckt eine Prüfung von YouTube dahinter („Melde dich an, um zu bestätigen, dass du kein Bot bist“), die bei
+        selten gesehenen Videos zufällig kommt – am Video liegt es in der Regel nicht. Ein neuer Versuch klappt oft.
+      </p>
+      <div className="row-btns">
+        <button className="play" onClick={onRetry}>
+          ↻ Nochmal versuchen
+        </button>
+        <a className="play ghost" href={url} target="_blank" rel="noopener noreferrer">
+          Bei YouTube ansehen
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export function ConsentOverlay({ onGrant, url, label }: { onGrant: () => void; url: string; label: string }) {
   return (
     <div className="consent">

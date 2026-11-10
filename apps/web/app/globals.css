@@ -622,3 +622,6 @@ a.listing-match:hover { text-decoration: underline; }
   .programme-tabs button > span[aria-hidden] { display: none; }
 }
 @media (max-width: 350px) { .programme-tabs button { padding: 4px 2px; font-size: 11px; } }
+/* YouTube refused the embed (bot check): the notice sits on the programme card like the consent overlay. */
+.yt-refused { background: rgba(0,0,0,.72); justify-content: center; }
+.yt-refused .yt-refused-title { font-size: clamp(15px, 2vw, 20px); font-weight: 700; opacity: 1; color: var(--amber); }

@@ -13,6 +13,12 @@ const MAX_NUDGES = 3;
 const DRIFT_TOLERANCE_S = 20;
 /** YouTube error codes that mean the video can't play here at all: removed/private (100), embedding off (101, 150). */
 const FATAL_ERRORS = new Set([100, 101, 150]);
+/**
+ * 101/150 also come with YouTube's bot check ("Melde dich an, um zu bestätigen, dass du kein Bot bist"),
+ * which hits rarely watched videos at random, per request: try again a few times before giving up.
+ */
+export const REFUSED_ERRORS = new Set([101, 150]);
+const REFUSED_RETRY_MS = [2500, 5000];
 
 interface Props {
   videoId: string;
@@ -21,7 +27,8 @@ interface Props {
   /** Restart from the beginning when the recording ends (recordings shorter than the slot). */
   loop?: boolean;
   onEnded?: () => void;
-  onError?: () => void;
+  /** YouTube's error code when it gives up (undefined: the API didn't load). */
+  onError?: (code?: number) => void;
   /** TV-wide sound state; every new channel starts with it. */
   muted: boolean;
   /** The browser refused autoplay with sound (only possible before any user interaction). */
@@ -70,6 +77,8 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
     const mount = document.createElement("div");
     host?.appendChild(mount);
     let reloaded = false;
+    let refusedRetries = 0;
+    let retryTimer: ReturnType<typeof setTimeout> | undefined;
     let drifted = false;
     const checkDrift = (target: YTPlayer, paused: boolean) => {
       if (!live) return;
@@ -160,8 +169,14 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
                 reload(target);
                 return;
               }
+              if (REFUSED_ERRORS.has(data) && refusedRetries < REFUSED_RETRY_MS.length) {
+                retryTimer = setTimeout(() => {
+                  if (!cancelled) reload(target);
+                }, REFUSED_RETRY_MS[refusedRetries++]);
+                return;
+              }
               clearInterval(watchdog);
-              callbacks.current.onError?.();
+              callbacks.current.onError?.(data);
             },
           },
         });
@@ -171,6 +186,7 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
     return () => {
       cancelled = true;
       clearTimeout(autoplayTimer);
+      clearTimeout(retryTimer);
       clearInterval(watchdog);
       playerRef.current?.destroy();
       playerRef.current = null;
