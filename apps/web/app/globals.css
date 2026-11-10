@@ -52,30 +52,42 @@ button { font: inherit; }
 .tt-area { grid-area: tt; min-width: 0; }
 
 /* Wide screens: channels left, TV centre, teletext right. The TV is as large as a
-   4:3 screen that fits the viewport height (measured: ~95px above the screen,
-   ~65px set chrome below it, ~38px one-line info strip, ~55px timeline bar, a little air). */
+   4:3 screen that fits the viewport height; channels and teletext sit right next to it
+   and the whole group is centred, so spare width goes to the left and right edges. */
 @media (min-width: 1000px) and (orientation: landscape) {
   .layout {
-    grid-template-columns: 124px minmax(0, 1fr) minmax(260px, 330px);
+    /* The set's width: a 4:3 screen as tall as the viewport allows (236px: header, programme tabs,
+       set chrome above and below the screen, info strip, gaps) plus the frame left and right (60px). */
+    --tv-w: calc((100dvh - 236px - var(--timeline-h) - var(--fit-extra, 0px)) * 4 / 3 + 60px);
+    grid-template-columns: 124px minmax(0, var(--tv-w)) minmax(260px, 330px);
+    justify-content: center;
     /* Tabs above the set only; channel strip and guide take exactly the set's height (row 2). */
-    grid-template-areas: ". tabs ." "ch tv tt" ". ex .";
+    grid-template-areas: ". tabs ." "ch tv tt" "ex ex ex";
     align-items: start;
-    row-gap: 10px;
+    column-gap: 16px;
+    row-gap: 8px;
   }
+  .page-header { margin-bottom: 6px; }
+  /* Slimmer frame and bezel: more of the height goes to the picture. */
+  /* (.tv-area prefix: the base rules for the set come later in this file.) */
+  .tv-area .tv { padding: 16px 18px 12px; }
+  .tv-area .bezel { padding: 12px; }
+  .tv-area .panel { margin-top: 8px; }
   .programme-tabs { margin-bottom: 0; }
   /* contain: size – they don't make the row taller than the TV; their content scrolls inside. */
   .channels, .tt-area { align-self: stretch; contain: size; }
   .tt-area > .tt { height: 100%; max-height: none; box-sizing: border-box; }
-  /* 262px: header, programme tabs (46px), panel and info strip. */
-  .tv { width: min(100%, calc((100dvh - 262px - var(--timeline-h) - var(--fit-extra, 0px)) * 4 / 3 + 76px)); margin: 0 auto; }
-  /* The info strip uses the whole middle column: it must not shrink with the TV, or its links get cut off. */
+  .tv { width: 100%; margin: 0 auto; }
+  /* The info strip spans all three columns: it must not shrink with the TV, or its links get cut off. */
   .extras { width: 100%; }
   /* Own scroll area: with 15 slots the list is taller than the window, and scrolling it must not move the TV. */
   .channels {
     flex-direction: column; flex-wrap: nowrap; justify-content: flex-start;
     overflow-y: auto; overscroll-behavior: contain; padding: 0 6px 0 2px; scrollbar-gutter: stable;
   }
-  .channels .ch-divider { flex: 0 0 auto; width: auto; height: 2px; margin: 4px 2px; }
+  /* margin-top: auto – with fewer stations than the set is tall, divider and page links sit at its bottom
+     edge; when the list scrolls, the auto margin is 0 and they simply follow the stations. */
+  .channels .ch-divider { flex: 0 0 auto; width: auto; height: 2px; margin: auto 2px 4px; }
   .channels .ch.ch-link { font-size: 14px; padding: 7px 9px; justify-content: flex-start; }
   .channels .ch { flex-shrink: 0; }
   /* Always-visible scrollbar (WebKit/Blink draw these instead of overlay scrollbars). */
