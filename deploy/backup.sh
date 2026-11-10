@@ -33,7 +33,10 @@ if [ "$(date +%u)" = 7 ]; then
 fi
 
 # Removes all but the newest $2 dated folders.
-prune() { ls -1d "$1"/*/ 2>/dev/null | sort | awk -v keep="$2" '{ d[NR] = $0 } END { for (i = 1; i <= NR - keep; i++) print d[i] }' | xargs rm -rf; }
+# Keeps the newest $2 folders in $1. An empty folder (no weekly copy before the first Sunday) is fine.
+prune() {
+  { ls -1d "$1"/*/ 2>/dev/null || true; } | sort | awk -v keep="$2" '{ d[NR] = $0 } END { for (i = 1; i <= NR - keep; i++) print d[i] }' | xargs -r rm -rf
+}
 prune "$BACKUP_DIR/daily" "$KEEP_DAILY"
 prune "$BACKUP_DIR/weekly" "$KEEP_WEEKLY"
 
