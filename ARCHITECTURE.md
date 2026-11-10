@@ -57,7 +57,7 @@ Trigram indexes on normalised titles; unique keys `media_candidate(programme_id,
 - A **TV day** runs 06:00 → 06:00 Europe/Berlin. Broadcasts after midnight belong to the previous TV day; times are stored as minutes from 00:00 of the TV day (values above 1440 allowed) plus real timestamps. All time math goes through `packages/core/src/time.ts`.
 - The TV follows the **wall clock**: at 20:15 today it shows 20:15 on the chosen day. A deep link (`/tag/<date>?sender=&zeit=&programm=`) can set another time; 00:00–05:59 means the night after the date.
 - **Real days** come from the programme data; **assumed days** (`series_only`) are derived from regular slots (see `docs/DATA.md`). Assumed days are marked and never chosen as start, best or random day.
-- **Start page:** today's date in an earlier year (real days only); otherwise one of the best-covered days (core `pickStartDay`, `bestDays`; coverage score in `coverage.ts`).
+- **Start page:** today's date in an earlier year (real days only), live; otherwise one of the best-covered days in "Programm frei wählen", starting a show we have exactly (else the same show from that year) close to the current time of day, as a deep link with `sender`/`zeit` (core `pickStartDay`, `bestDays`, `pickStartBroadcast`; coverage score in `coverage.ts`).
 
 ## 4. Playback
 

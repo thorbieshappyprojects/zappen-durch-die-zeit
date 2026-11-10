@@ -1,4 +1,5 @@
 /** Which day the TV opens with: today's date in an earlier year, else the nearest calendar date we have. */
+import type { Broadcast, MatchLevel, TvDay } from "./types";
 
 /** Day of the year in a non-leap reference year (29 Feb counts as 28 Feb). */
 function dayOfYear(date: string): number {
@@ -29,4 +30,34 @@ export function pickStartDay(
     if (!best || distance < best.distance || (distance === best.distance && score > best.score)) best = { date, distance, score };
   }
   return best && { date: best.date, exact: best.distance === 0 };
+}
+
+/** Preference of the start show: the very broadcast first, then the same show from that year. */
+const START_LEVELS: readonly MatchLevel[] = ["exact", "same_show_period"];
+
+/**
+ * The show a fallback start opens with (another day than today's date anyway, so the TV starts in
+ * "Programm frei wählen"): a broadcast we have exactly, the one on air at `tvDayMin` or else the one
+ * starting nearest to it, on a station that isn't hidden. Without an exact match the same show from
+ * that year will do; null when the day has neither.
+ */
+export function pickStartBroadcast(
+  day: TvDay,
+  tvDayMin: number,
+  options: { hidden?: ReadonlySet<string>; playable?: (b: Broadcast) => boolean } = {},
+): { channelId: string; tvDayMin: number } | null {
+  const playable = options.playable ?? (() => true);
+  for (const level of START_LEVELS) {
+    const candidates = day.broadcasts.filter((b) => {
+      const m = day.media[b.id];
+      return m?.matchLevel === level && m.embeddable && m.providerVideoId && !options.hidden?.has(b.channelId) && playable(b);
+    });
+    if (!candidates.length) continue;
+    const onAir = candidates.filter((b) => b.startMin <= tvDayMin && tvDayMin < b.endMin);
+    const pick = onAir.length
+      ? onAir[Math.floor(Math.random() * onAir.length)]!
+      : candidates.reduce((a, b) => (Math.abs(b.startMin - tvDayMin) < Math.abs(a.startMin - tvDayMin) ? b : a));
+    return { channelId: pick.channelId, tvDayMin: pick.startMin };
+  }
+  return null;
 }

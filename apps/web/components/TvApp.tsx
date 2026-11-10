@@ -827,6 +827,7 @@ export function TvApp({
             new Date(`2001-${requested}T12:00:00Z`),
           )}{" "}
           haben wir kein Programm – hier ist einer unserer besten Tage: {formatTvDayDate(day.date).replace(/^\S+, /, "")}.
+          {share.tvDayMin !== undefined && " Du siehst eine Sendung von damals; im Programm kannst du frei wählen."}
           <button type="button" aria-label="Hinweis schließen" onClick={() => setShowFallback(false)}>
             ×
           </button>
