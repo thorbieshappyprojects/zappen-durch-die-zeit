@@ -55,7 +55,7 @@ export function themeGenreOf(theme: ThemeId, title: string): string | null {
 /** A station needs this many different shows of the theme to get a channel (two alternate). */
 export const THEME_MIN_TITLES = 2;
 
-const PUBLIC_STATIONS = new Set(["ard", "zdf", "3sat", "n3", "wdr", "mdr", "br", "hr", "swr", "orb", "kika", "arte", "phoenix"]);
+export const PUBLIC_STATIONS = new Set(["ard", "zdf", "3sat", "n3", "wdr", "mdr", "br", "hr", "swr", "orb", "kika", "arte", "phoenix"]);
 
 /**
  * The theme programme for a day: one channel per station with enough recordings of the theme,

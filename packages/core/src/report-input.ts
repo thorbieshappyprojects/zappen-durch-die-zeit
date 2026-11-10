@@ -2,7 +2,8 @@
  * "Video defekt melden" arrives as a server action argument: its TypeScript type is not checked at
  * runtime. `parseReportInput` accepts only a plain object with fields of the right kind and length.
  */
-export const REPORT_REASONS = ["unavailable", "wrong_programme", "wrong_offset", "other"] as const;
+/** off_topic: in the Chronik, the video doesn't report on the event (`event` names it). */
+export const REPORT_REASONS = ["unavailable", "wrong_programme", "wrong_offset", "other", "off_topic"] as const;
 export type ReportReason = (typeof REPORT_REASONS)[number];
 
 export interface ReportInput {
@@ -13,13 +14,15 @@ export interface ReportInput {
   channel?: string;
   start?: string;
   title?: string;
+  /** Chronik event id (core HISTORY_EVENTS) for "off_topic". */
+  event?: string;
   automatic?: boolean;
   token: string;
   /** Honeypot; people leave it empty. */
   website?: string;
 }
 
-const OPTIONAL_STRINGS: Record<string, number> = { note: 2000, tvDate: 10, channel: 40, start: 5, title: 300, website: 300 };
+const OPTIONAL_STRINGS: Record<string, number> = { note: 2000, tvDate: 10, channel: 40, start: 5, title: 300, event: 60, website: 300 };
 
 export function parseReportInput(raw: unknown): ReportInput | null {
   if (typeof raw !== "object" || raw === null || Array.isArray(raw)) return null;

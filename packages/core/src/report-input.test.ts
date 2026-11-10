@@ -7,6 +7,10 @@ describe("parseReportInput", () => {
   it("accepts a well-formed report", () => {
     expect(parseReportInput({ ...ok, note: "Ton fehlt", automatic: false, tvDate: "1991-03-13" })).toEqual({ ...ok, note: "Ton fehlt", automatic: false, tvDate: "1991-03-13" });
   });
+  it("accepts 'off_topic' with the Chronik event", () => {
+    expect(parseReportInput({ ...ok, reason: "off_topic", event: "golfkrieg-1991" })).toEqual({ ...ok, reason: "off_topic", event: "golfkrieg-1991" });
+    expect(parseReportInput({ ...ok, reason: "off_topic", event: { id: 1 } })).toBeNull();
+  });
   it("rejects wrong kinds instead of failing later", () => {
     expect(parseReportInput({ ...ok, note: { evil: true } })).toBeNull();
     expect(parseReportInput({ ...ok, automatic: "yes" })).toBeNull();

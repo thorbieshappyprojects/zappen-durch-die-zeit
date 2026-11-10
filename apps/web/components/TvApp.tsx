@@ -1,6 +1,6 @@
 "use client";
 
-import { advanceTvDaySeconds, broadcastsOf, findOnAir, formatClock, gapAround, formatTvDayDate, mediaFor, minutesSinceStart, offAirMessage, nextBroadcast, progressOf, PROVIDER_LABELS, searchUrlFor, seekOffsetSeconds, stationAtSlot, STATIONS, tvDaySecondsAt, upcomingBroadcast, type Broadcast, type TvDay, coverageHue, dayCoverage, stationStatus, formatTvDayShort, type ChannelDayHint, shareUrl, type ShareTarget, interstitialsFor, signOffFor, nearestVideoBroadcast, THEMES, type Channel, type ThemeId } from "@zdz/core";
+import { advanceTvDaySeconds, broadcastsOf, findOnAir, formatClock, gapAround, formatTvDayDate, mediaFor, minutesSinceStart, offAirMessage, nextBroadcast, progressOf, PROVIDER_LABELS, searchUrlFor, seekOffsetSeconds, stationAtSlot, STATIONS, tvDaySecondsAt, upcomingBroadcast, type Broadcast, type TvDay, coverageHue, dayCoverage, stationStatus, formatTvDayShort, type ChannelDayHint, shareUrl, type ShareTarget, interstitialsFor, signOffFor, nearestVideoBroadcast, THEMES, type Channel, type ThemeId, CHRONIK, eventById, eventsAround, nearestEvent, eventWindow } from "@zdz/core";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -10,9 +10,9 @@ import { playPowerOn, playSwitch } from "@/lib/sfx";
 import { useFormToken } from "@/lib/form-token";
 import { matchLabel } from "@/lib/labels";
 import { HelpOverlay } from "./HelpOverlay";
-import { reportFailedVideo, VideoReport } from "./VideoReport";
+import { OffTopicReport, reportFailedVideo, VideoReport } from "./VideoReport";
 import { ConsentOverlay, interstitialChip, InterstitialScreen, interstitialSkipLabel, NoSignal, OffAirScreen, PowerScreen, ProgrammeCard, TestCard } from "./Screen";
-import { Teletext, TeletextOverview } from "./Teletext";
+import { Teletext, TeletextChronik, TeletextOverview } from "./Teletext";
 import { YearTimeline } from "./YearTimeline";
 import { VideoPlayer } from "./VideoPlayer";
 
@@ -30,20 +30,22 @@ const TAB_KEY = "zdz-tab";
 const TV_MODE_KEY = "zdz-tv-mode";
 
 /**
- * What the TV shows: "Fernsehen" (the day's TV, in one of three modes) or a theme programme.
- * Themes play like live TV but any show can be picked from the guide.
+ * What the TV shows: "Fernsehen" (the day's TV, in one of three modes), a theme programme, or the
+ * Chronik (an event's reports, core events.ts). Themes and Chronik play like live TV but any show
+ * can be picked from the guide.
  */
-type Tab = "tv" | ThemeId;
+type Tab = "tv" | ThemeId | "chronik";
 /** "Fernsehen" modes: built from the videos we have, as it was, or free choice from the guide. */
 type TvMode = "seamless" | "live" | "free";
 /** Programmes built from the videos we have instead of the day's listing (see core seamless.ts, themes.ts). */
-type BuiltKind = "seamless" | ThemeId;
-const builtLabel = (kind: BuiltKind) => (kind === "seamless" ? "Lückenlos" : THEMES[kind].label);
+type BuiltKind = "seamless" | ThemeId | "chronik";
 const isTheme = (v: string | null | undefined): v is ThemeId => !!v && v in THEMES;
+const isTab = (v: string | null | undefined): v is Tab => v === "tv" || v === "chronik" || isTheme(v);
 const isTvMode = (v: string | null): v is TvMode => v === "seamless" || v === "live" || v === "free";
 const TABS: readonly { id: Tab; label: string; icon: string }[] = [
   { id: "tv", label: "Fernsehen", icon: "📺" },
   ...(Object.keys(THEMES) as ThemeId[]).map((id) => ({ id, label: THEMES[id].label, icon: THEMES[id].icon })),
+  { id: "chronik", label: CHRONIK.label, icon: CHRONIK.icon },
 ];
 const OSD_MS = 3000;
 
@@ -84,26 +86,33 @@ export function TvApp({
 }) {
   const [tab, setTab] = useState<Tab>("tv");
   const [tvMode, setTvMode] = useState<TvMode>("live");
+  /** Chronik: the event on screen (a shared link's, else the one nearest to this day). */
+  const [eventId, setEventId] = useState<string>(() => eventById(share.event)?.id ?? nearestEvent(realDay.date).id);
+  const event = eventById(eventId) ?? nearestEvent(realDay.date);
   /** "Lückenlos" or a theme programme instead of the listing, loaded on demand. */
   const built: BuiltKind | null = tab !== "tv" ? tab : tvMode === "seamless" ? "seamless" : null;
+  /** Which built programme is loaded: the kind, for the Chronik with its event. */
+  const builtKey = built === "chronik" ? `chronik:${event.id}` : built;
+  const builtLabel = (kind: BuiltKind) => (kind === "seamless" ? "Lückenlos" : kind === "chronik" ? `${CHRONIK.label} · ${event.title}` : THEMES[kind].label);
   const seamless = built !== null;
   /** Any show can be picked from the guide (and the player has its controls). */
   const freeChoice = tab !== "tv" || tvMode === "free";
-  const [builtData, setBuiltData] = useState<{ kind: BuiltKind; date: string; channels: Channel[]; broadcasts: Broadcast[]; media: TvDay["media"] } | null>(
+  const [builtData, setBuiltData] = useState<{ key: string; date: string; channels: Channel[]; broadcasts: Broadcast[]; media: TvDay["media"] } | null>(
     null,
   );
-  const seamlessReady = built !== null && builtData?.kind === built && builtData.date === realDay.date;
+  const seamlessReady = builtKey !== null && builtData?.key === builtKey && builtData.date === realDay.date;
   useEffect(() => {
-    if (!built || (builtData?.kind === built && builtData.date === realDay.date)) return;
+    if (!built || !builtKey || (builtData?.key === builtKey && builtData.date === realDay.date)) return;
     let cancelled = false;
     // Nothing to show (failed, or no station has enough material): back to the real programme.
     const giveUp = () => (built === "seamless" ? setTvMode("live") : setTab("tv"));
-    fetch(`/tag/${realDay.date}/lueckenlos${built === "seamless" ? "" : `?thema=${built}`}`)
+    const query = built === "seamless" ? "" : built === "chronik" ? `?ereignis=${event.id}` : `?thema=${built}`;
+    fetch(`/tag/${realDay.date}/lueckenlos${query}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d: { channels: Channel[]; broadcasts: Broadcast[]; media: TvDay["media"] }) => {
         if (cancelled) return;
         if (!d.channels.length) giveUp();
-        else setBuiltData({ kind: built, date: realDay.date, ...d });
+        else setBuiltData({ key: builtKey, date: realDay.date, ...d });
       })
       .catch(() => {
         if (!cancelled) giveUp();
@@ -111,7 +120,9 @@ export function TvApp({
     return () => {
       cancelled = true;
     };
-  }, [built, builtData?.kind, builtData?.date, realDay.date]);
+    // event.id is part of builtKey.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [built, builtKey, builtData?.key, builtData?.date, realDay.date]);
   // The day the TV plays: the real listing, or the built one with its own channels (only the filled ones).
   const day = useMemo(
     () => (seamlessReady ? { ...realDay, channels: builtData.channels, broadcasts: builtData.broadcasts, media: builtData.media } : realDay),
@@ -190,7 +201,7 @@ export function TvApp({
       // The viewer's last choice (a shared link may override it below, without saving).
       const savedTab = localStorage.getItem(TAB_KEY);
       const savedMode = localStorage.getItem(TV_MODE_KEY);
-      if (isTheme(savedTab)) setTab(savedTab);
+      if (isTab(savedTab) && savedTab !== "tv") setTab(savedTab);
       if (isTvMode(savedMode)) setTvMode(savedMode);
     } catch {}
   }, []);
@@ -301,7 +312,8 @@ export function TvApp({
     };
   }, []);
   /** Teletext page: the tuned channel (P301…) or the overview P300 (default on phones). */
-  const [ttView, setTtView] = useState<"channel" | "overview">("channel");
+  /** "chronik": the event list P400 (Chronik tab). */
+  const [ttView, setTtView] = useState<"channel" | "overview" | "chronik">("channel");
   useEffect(() => {
     if (window.matchMedia("(max-width: 900px)").matches) setTtView("overview");
   }, []);
@@ -468,16 +480,18 @@ export function TvApp({
     retune();
   }, [retune]);
 
-  /** Switch between "Fernsehen" and the theme programmes: each starts with what is on now. */
+  /** Switch between "Fernsehen", the theme programmes and the Chronik: each starts with what is on now. */
   const chooseTab = useCallback(
     (next: Tab) => {
       setTab(next);
+      // The Chronik opens with its event list; leaving it goes back to the channel guide.
+      setTtView((v) => (next === "chronik" ? "chronik" : v === "chronik" ? "channel" : v));
       try {
         localStorage.setItem(TAB_KEY, next);
       } catch {}
       if (clock.mode !== "live") goLive();
     },
-    [clock.mode, goLive],
+    [clock.mode, goLive, setTtView],
   );
   const chooseTvMode = useCallback(
     (mode: TvMode) => {
@@ -491,16 +505,29 @@ export function TvApp({
     [clock.mode, goLive],
   );
 
+  /** Chronik: show an event (from P400 or the hint on a day's TV). */
+  const pickEvent = useCallback(
+    (id: string) => {
+      setEventId(id);
+      if (tab !== "chronik") chooseTab("chronik");
+      setTtView("channel");
+    },
+    [tab, chooseTab, setTtView],
+  );
+  const dayEvents = useMemo(() => eventsAround(realDay.date), [realDay.date]);
+  const shortDate = (d: string) => d.split("-").reverse().join(".");
+
   // A shared link: its programme, and with a time a start there (in "Fernsehen" as free choice).
   // Not saved as the viewer's preference. Idempotent on purpose: React runs mount effects twice in development.
   useEffect(() => {
-    if (share.programme) setTab(share.programme);
+    if (share.event) setTab("chronik");
+    else if (share.programme) setTab(share.programme);
     else if (share.tvDayMin !== undefined) {
       setTab("tv");
       setTvMode("free");
     }
     if (share.tvDayMin !== undefined) jumpTo(share.tvDayMin);
-  }, [share.programme, share.tvDayMin, jumpTo]);
+  }, [share.programme, share.event, share.tvDayMin, jumpTo]);
 
   // "Programm frei wählen" (and the themes): a new day or another station opens a show we have a
   // video for – the one on air, else the next, else the last earlier one. A shared link's time is
@@ -533,19 +560,21 @@ export function TvApp({
       const url = shareUrl(day.date, {
         channelId: tunedSlug,
         tvDayMin: clock.mode === "manual" ? Math.floor(clock.anchorTvSeconds / 60) : undefined,
-        programme: tab !== "tv" ? tab : undefined,
+        programme: isTheme(tab) ? tab : undefined,
+        event: tab === "chronik" ? event.id : undefined,
       });
       if (window.location.pathname + window.location.search !== url) window.history.replaceState(window.history.state, "", url);
     }, 400);
     return () => clearTimeout(t);
-  }, [day.date, tunedSlug, clock, tab]);
+  }, [day.date, tunedSlug, clock, tab, event.id]);
 
   const [shareNote, setShareNote] = useState<string | null>(null);
   /** "Teilen" on a guide entry: that show (channel, start time, date, programme), via the share sheet or the clipboard. */
   const shareShow = useCallback(async (b: Broadcast) => {
-    const programme = tab !== "tv" ? tab : undefined;
-    const url = shareUrl(day.date, { channelId: channel.id, tvDayMin: b.startMin, programme }, window.location.origin);
-    const title = `${formatClock(b.startMin)} ${channel.name} – ${b.title} · ${programme ? THEMES[programme].label : formatTvDayDate(day.date)}`;
+    const programme = isTheme(tab) ? tab : undefined;
+    const chronik = tab === "chronik" ? event : undefined;
+    const url = shareUrl(day.date, { channelId: channel.id, tvDayMin: b.startMin, programme, event: chronik?.id }, window.location.origin);
+    const title = `${formatClock(b.startMin)} ${channel.name} – ${b.title} · ${programme ? THEMES[programme].label : chronik ? `${CHRONIK.label}: ${chronik.title}` : formatTvDayDate(day.date)}`;
     try {
       if (navigator.share) return await navigator.share({ title, url });
       await navigator.clipboard.writeText(url);
@@ -554,7 +583,7 @@ export function TvApp({
       setShareNote(null);
     }
     setTimeout(() => setShareNote(null), 2500);
-  }, [day.date, channel.id, channel.name, tab]);
+  }, [day.date, channel.id, channel.name, tab, event]);
 
   const commitDial = useCallback(
     (digits: string) => {
@@ -787,6 +816,13 @@ export function TvApp({
           ))}
         </div>
       )}
+      {tab === "chronik" && (
+        <div className="tt-modes">
+          <button type="button" onClick={() => setTtView("chronik")} title="Alle Ereignisse (Videotext-Seite 400)">
+            P400 Chronik: alle Ereignisse
+          </button>
+        </div>
+      )}
       {built && !seamlessReady && <p className="tt-note">Programm wird zusammengestellt …</p>}
       {freeChoice && clock.mode === "manual" && (
         <p className="tt-note">
@@ -807,7 +843,9 @@ export function TvApp({
         </h1>
         <div className="sub">
           {visibleChannels.length} Sender
-          {built ? (
+          {built === "chronik" ? (
+            ` · Berichte vom ${shortDate(eventWindow(event).from)} bis ${shortDate(eventWindow(event).to)}`
+          ) : built ? (
             " · Programm aus vorhandenen Aufnahmen"
           ) : assumed ? (
             <span title="Aus regelmäßigen Sendeplätzen anderer Tage hergeleitet: nur Serien, Talkshows, Nachrichten usw.">
@@ -817,8 +855,24 @@ export function TvApp({
           ) : (
             day.completeness !== "full" && " · Programm lückenhaft"
           )}
+
         </div>
       </header>
+
+      {tab === "tv" && dayEvents.length > 0 && (
+        <p className="day-events">
+          {CHRONIK.icon} In diesen Tagen:{" "}
+          {dayEvents.map((e, i) => (
+            <span key={e.id}>
+              {i > 0 && " · "}
+              <button type="button" className="chronik-hint" onClick={() => pickEvent(e.id)} title={`${e.summary} – Berichte in der ${CHRONIK.label}`}>
+                {e.title}
+              </button>
+            </span>
+          ))}{" "}
+          – Berichte in der {CHRONIK.label}
+        </p>
+      )}
 
       {showFallback && requested && (
         <div className="fallback-note" role="status">
@@ -884,7 +938,13 @@ export function TvApp({
               type="button"
               aria-pressed={tab === t.id}
               className={tab === t.id ? "on" : ""}
-              title={t.id === "tv" ? "Das Fernsehprogramm des Tages" : `${THEMES[t.id].description} Aus vorhandenen Aufnahmen; jede Sendung lässt sich im Programm wählen.`}
+              title={
+                t.id === "tv"
+                  ? "Das Fernsehprogramm des Tages"
+                  : t.id === "chronik"
+                    ? `${CHRONIK.description} Jede Sendung lässt sich im Programm wählen.`
+                    : `${THEMES[t.id].description} Aus vorhandenen Aufnahmen; jede Sendung lässt sich im Programm wählen.`
+              }
               onClick={() => chooseTab(t.id)}
             >
               <span aria-hidden>{t.icon}</span> {t.label}
@@ -995,6 +1055,9 @@ export function TvApp({
                 </a>
               )}
               {playing && <VideoReport context={reportContext!} token={reportToken} refreshToken={refreshReportToken} />}
+              {playing && tab === "chronik" && seamlessReady && (
+                <OffTopicReport context={reportContext!} event={event.id} token={reportToken} refreshToken={refreshReportToken} />
+              )}
               {suggestUrl && !seamless && ownVideo.matchLevel !== "exact" && (
                 <a className="strip-action" href={suggestUrl} title="Du kennst ein besseres Video zu dieser Sendung? Hier vorschlagen.">
                   ＋ Video vorschlagen
@@ -1006,14 +1069,16 @@ export function TvApp({
         </section>
 
         <div className="tt-area">
-          {ttView === "overview" ? (
+          {ttView === "chronik" && tab === "chronik" ? (
+            <TeletextChronik current={event.id} onPick={pickEvent} onChannelPage={() => setTtView("channel")} />
+          ) : ttView === "overview" ? (
             <TeletextOverview
               day={{ ...day, channels: visibleChannels }}
               tvMin={tvMin}
               tunedSlot={emptySlot ?? channel.displayNumber}
               onTune={tuneSlot}
               onChannelPage={() => setTtView("channel")}
-              label={built ? builtLabel(built) : undefined}
+              label={built === "chronik" ? CHRONIK.label : built ? builtLabel(built) : undefined}
               showMatch={!seamless}
               modes={modesBlock}
             />
@@ -1045,7 +1110,7 @@ export function TvApp({
               bestDayHref={channelHints[channel.id]?.best ? hintHref(channelHints[channel.id]!.best!.date, channel.id, channelHints[channel.id]) : undefined}
               assumed={assumed}
               onSelect={freeChoice ? (b) => jumpTo(b.startMin) : undefined}
-              label={built ? builtLabel(built) : undefined}
+              label={built === "chronik" ? CHRONIK.label : built ? builtLabel(built) : undefined}
               showMatch={!seamless}
               onShare={shareShow}
               // The day listing is the real programme: not for built ones.

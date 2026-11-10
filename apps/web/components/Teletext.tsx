@@ -1,6 +1,6 @@
 "use client";
 
-import { formatClock, formatTvDayShort, matchLevelOf, nowAndNextByChannel, type Broadcast, type Channel, type TvDay } from "@zdz/core";
+import { formatClock, formatTvDayShort, HISTORY_EVENTS, matchLevelOf, nowAndNextByChannel, type Broadcast, type Channel, type HistoryEvent, type TvDay } from "@zdz/core";
 import Link from "next/link";
 import { useEffect, useMemo, useRef } from "react";
 import { MATCH_HINT, MATCH_MARK } from "@/lib/labels";
@@ -234,6 +234,46 @@ export function TeletextOverview({
         })}
       </ul>
       {modes}
+    </section>
+  );
+}
+
+/** "1991-01-17" → "17.01.91" (teletext is short on room). */
+const shortDate = (d: string) => `${d.slice(8, 10)}.${d.slice(5, 7)}.${d.slice(2, 4)}`;
+const KIND_MARK: Record<HistoryEvent["kind"], string> = { politik: "", gesellschaft: "", pop: "♪" };
+
+/**
+ * Teletext P400 "Chronik": the events of the decade. A click opens the event's programme (every
+ * station with its reports); the current one is highlighted. Pop-culture events carry a ♪.
+ */
+export function TeletextChronik({ current, onPick, onChannelPage }: { current: string; onPick: (id: string) => void; onChannelPage: () => void }) {
+  return (
+    <section className="tt" aria-label="Videotext Chronik: Ereignisse der 90er">
+      <div className="tt-head">
+        <span>P400</span>
+        <span>Chronik</span>
+        <span>1990–1999</span>
+      </div>
+      <div className="tt-title">
+        Ereignisse
+        <button type="button" className="tt-tab" onClick={onChannelPage} title="Programm des eingestellten Senders">
+          ◂ Sender
+        </button>
+      </div>
+      <ul className="tt-list">
+        {HISTORY_EVENTS.map((e) => (
+          <li key={e.id}>
+            <button type="button" className={`tt-row tt-event${e.id === current ? " cur" : ""}`} onClick={() => onPick(e.id)} aria-pressed={e.id === current} title={e.summary}>
+              <span className="tm">{shortDate(e.date)}</span>
+              <span>
+                {e.title} {KIND_MARK[e.kind] && <span aria-label="Popkultur">{KIND_MARK[e.kind]}</span>}
+              </span>
+              <span className="sub2">{e.summary}</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+      <p className="tt-note">Berichte aus den Tagen um das Ereignis – jeder Sender mit seinen Aufnahmen.</p>
     </section>
   );
 }

@@ -41,7 +41,10 @@ export default async function InfoPage({ searchParams }: Props) {
           Werbung und Ansagen. Dann läuft auf jedem Sender immer etwas, aber eben nicht das echte Programm des Tages; im
           Programm steht bei jeder Sendung, von welchem Tag die Aufnahme stammt. Unter „Themen“ gibt es dasselbe für eine Sorte
           Programm aus dem ganzen Jahrzehnt: „Kinderprogramm“ (Zeichentrick und Kindersendungen) und „Talk Shows“
-          (Nachmittags-Talkshows und Gerichtsshows im Wechsel).
+          (Nachmittags-Talkshows und Gerichtsshows im Wechsel). Die „Chronik“ zeigt Ereignisse der 90er so, wie das
+          Fernsehen darüber berichtete: Jeder Sender bringt seine Nachrichten, Sondersendungen und Talkshows aus den Tagen
+          um das Ereignis. Die Auswahl geschieht automatisch nach Sendetag und Sendung – passt ein Video nicht, hilft
+          „✗ Passt nicht zum Ereignis“ unter dem Bild.
         </p>
         <KeyTable />
         <p>Am Handy: auf dem Bild nach links/rechts wischen zum Umschalten.</p>

@@ -11,7 +11,7 @@ const pickRandom = <T,>(items: T[]): T | undefined => items[Math.floor(Math.rand
 
 export const dynamic = "force-dynamic";
 
-type Search = { gesucht?: string; sender?: string; zeit?: string; programm?: string };
+type Search = { gesucht?: string; sender?: string; zeit?: string; programm?: string; ereignis?: string };
 type Props = { params: Promise<{ date: string }>; searchParams: Promise<Search> };
 
 const SITE = "Zappen durch die Zeit";

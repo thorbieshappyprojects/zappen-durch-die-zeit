@@ -24,6 +24,11 @@ describe("share links", () => {
     expect(parseShareParams({ sender: q.get("sender"), zeit: q.get("zeit") }, slugs)).toEqual({ channelId: "rtl-plus", tvDayMin: 1470 });
     expect(shareUrl("1991-03-13")).toBe("/tag/1991-03-13");
   });
+  it("carries a Chronik event, and ignores unknown ones", () => {
+    expect(shareUrl("1991-01-17", { channelId: "ard", tvDayMin: 1200, event: "golfkrieg-1991" })).toBe("/tag/1991-01-17?sender=ard&zeit=20%3A00&ereignis=golfkrieg-1991");
+    expect(parseShareParams({ ereignis: "golfkrieg-1991" }, slugs)).toEqual({ event: "golfkrieg-1991" });
+    expect(parseShareParams({ ereignis: "mondlandung" }, slugs)).toEqual({});
+  });
   it("carries a theme programme, and ignores unknown ones", () => {
     const url = shareUrl("1995-10-24", { channelId: "ard", programme: "kinder" });
     expect(url).toBe("/tag/1995-10-24?sender=ard&programm=kinder");

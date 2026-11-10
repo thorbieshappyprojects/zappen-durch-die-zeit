@@ -58,6 +58,8 @@ export interface ReportGroup {
   reports: number;
   automatic: number;
   reasons: Record<string, number>;
+  /** Open "off_topic" reports per Chronik event id. */
+  events: Record<string, number>;
   latest: MediaReportRow;
   notes: string[];
   blocked: boolean;
@@ -69,10 +71,11 @@ export async function listOpenReportGroups(db: Db): Promise<ReportGroup[]> {
   const blocked = await listBlockedUrls(db);
   const groups = new Map<string, ReportGroup>();
   for (const r of rows) {
-    const g = groups.get(r.url) ?? { url: r.url, reports: 0, automatic: 0, reasons: {}, latest: r, notes: [], blocked: blocked.has(r.url) };
+    const g = groups.get(r.url) ?? { url: r.url, reports: 0, automatic: 0, reasons: {}, events: {}, latest: r, notes: [], blocked: blocked.has(r.url) };
     g.reports++;
     if (r.automatic) g.automatic++;
     g.reasons[r.reason] = (g.reasons[r.reason] ?? 0) + 1;
+    if (r.reason === "off_topic" && r.eventId) g.events[r.eventId] = (g.events[r.eventId] ?? 0) + 1;
     if (r.note) g.notes.push(r.note);
     groups.set(r.url, g);
   }

@@ -23,3 +23,4 @@ export * from "./report-input";
 export * from "./csp";
 export * from "./retention";
 export * from "./notes";
+export * from "./events";

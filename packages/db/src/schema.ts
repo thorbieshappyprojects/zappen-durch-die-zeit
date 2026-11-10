@@ -297,7 +297,8 @@ export const contributionFile = pgTable(
   (t) => [index("contribution_file_contribution_idx").on(t.contributionId)],
 );
 
-export const mediaReportReason = pgEnum("media_report_reason", ["unavailable", "wrong_programme", "wrong_offset", "other"]);
+/** off_topic: in the Chronik, the video doesn't belong to the event (media_report.event_id names it). */
+export const mediaReportReason = pgEnum("media_report_reason", ["unavailable", "wrong_programme", "wrong_offset", "other", "off_topic"]);
 
 /**
  * "Video defekt / falsch" reports from viewers (and automatic ones when a player fails).
@@ -315,16 +316,32 @@ export const mediaReport = pgTable(
     channel: text("channel"),
     broadcastStart: text("broadcast_start"),
     broadcastTitle: text("broadcast_title"),
+    /** Chronik event (core HISTORY_EVENTS id) the video was seen in; set for "off_topic". */
+    eventId: text("event_id"),
     /** true when sent by the player after a load error, not by a person. */
     automatic: boolean("automatic").notNull().default(false),
     /** sha256 of (daily salt + IP); never the IP itself. */
     ipHash: text("ip_hash").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     handledAt: timestamp("handled_at", { withTimezone: true }),
-    /** "dead" | "ignored" | "review" */
+    /** "dead" | "ignored" | "review" | "excluded" (taken out of its Chronik event) */
     handledAction: text("handled_action"),
   },
   (t) => [index("media_report_url_idx").on(t.url, t.createdAt), index("media_report_ip_created_idx").on(t.ipHash, t.createdAt)],
+);
+
+/**
+ * Videos a moderator took out of one Chronik event (core events.ts) because they don't report on it.
+ * They stay on the TV everywhere else. Keyed by URL like blocked_video, so it survives re-imports.
+ */
+export const eventExclusion = pgTable(
+  "event_exclusion",
+  {
+    eventId: text("event_id").notNull(),
+    url: text("url").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.eventId, t.url] })],
 );
 
 /** Videos taken out of the TV (defective or wrong). Survives re-imports, unlike media_candidate.status. */

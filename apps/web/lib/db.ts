@@ -1,6 +1,6 @@
 import { cache } from "react";
-import { bestDays, channelDayHints, dayCoverageScore, seamlessDay, STATIONS, themeDay, tvDayDateOf, withStationNames, type ChannelDayHint, type PoolVideo, type ThemeId } from "@zdz/core";
-import { bestVideoStarts, computeStats, createDb, getSiteSettings as loadSiteSettings, listChannelDayCoverage, listStationVideoCounts, recordSnapshot, type DbStats, listHiddenStations, listDaySources, listSeamlessPool, listTvDayCoverage, listTvDays, loadTvDay, type DbHandle } from "@zdz/db";
+import { bestDays, channelDayHints, dayCoverageScore, eventDay, eventWindow, seamlessDay, STATIONS, themeDay, tvDayDateOf, withStationNames, type ChannelDayHint, type HistoryEvent, type PoolVideo, type ThemeId } from "@zdz/core";
+import { bestVideoStarts, computeStats, createDb, getSiteSettings as loadSiteSettings, listChannelDayCoverage, listEventExclusions, listEventPool, listStationVideoCounts, recordSnapshot, type DbStats, listHiddenStations, listDaySources, listSeamlessPool, listTvDayCoverage, listTvDays, loadTvDay, type DbHandle } from "@zdz/db";
 import type { TvDay } from "@zdz/core";
 import { canEmbed, withPlayableMedia } from "./providers";
 
@@ -128,6 +128,21 @@ export function getThemeDay(date: string, theme: ThemeId): Promise<TvDay | null>
   return cachedBuilt(`${date}|${theme}`, async () => {
     const day = await getTvDay(date);
     return day && themeDay(day, await themePool(), theme);
+  });
+}
+
+/**
+ * A Chronik event's programme (core `eventDay`) on the date the TV shows: the event decides the
+ * content, the date only the frame. Cached like the theme programmes; moderation clears it.
+ */
+export function getEventDay(date: string, event: HistoryEvent): Promise<TvDay | null> {
+  return cachedBuilt(`${date}|event:${event.id}`, async () => {
+    const day = await getTvDay(date);
+    if (!day) return null;
+    const { from, to } = eventWindow(event);
+    const h = await db();
+    const [pool, excluded] = await Promise.all([listEventPool(h.db, from, to), listEventExclusions(h.db, event.id)]);
+    return eventDay(day, event, pool.filter((v) => canEmbed(v.media.provider)), excluded);
   });
 }
 

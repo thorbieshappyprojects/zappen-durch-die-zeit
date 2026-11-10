@@ -1,6 +1,6 @@
 "use server";
 
-import { parseReportInput, type ReportInput } from "@zdz/core";
+import { eventById, parseReportInput, type ReportInput } from "@zdz/core";
 import { AUTO_BLOCK_DAYS, AUTO_BLOCK_REPORTS, blockVideo, countRecentReportsByIp, countUnavailableReports, createMediaReport, isKnownVideoUrl } from "@zdz/db";
 import { headers } from "next/headers";
 import { clientIp, formTokenAgeSeconds, hashIp } from "@/lib/contribution-security";
@@ -40,6 +40,9 @@ export async function reportVideo(raw: ReportInput): Promise<{ ok: true; expired
   if (!(await isKnownVideoUrl(handle, input.url))) return { ok: true };
 
   const text = (v: string | undefined, max: number) => v?.trim().slice(0, max) || null;
+  // "Passt nicht zum Ereignis" only makes sense for a known event.
+  const event = input.reason === "off_topic" ? eventById(input.event) : undefined;
+  if (input.reason === "off_topic" && !event) return { ok: true };
   await createMediaReport(handle, {
     url: input.url,
     reason: input.reason,
@@ -48,6 +51,7 @@ export async function reportVideo(raw: ReportInput): Promise<{ ok: true; expired
     channel: text(input.channel, 40),
     broadcastStart: input.start && /^\d{2}:\d{2}$/.test(input.start) ? input.start : null,
     broadcastTitle: text(input.title, 200),
+    eventId: event?.id ?? null,
     automatic: Boolean(input.automatic),
     ipHash,
   });

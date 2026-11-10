@@ -96,6 +96,37 @@ export function VideoReport({ context, token, refreshToken }: { context: Context
 }
 
 /**
+ * Chronik: "✗ Passt nicht zum Ereignis" – one click, no form. The video stays until a moderator takes
+ * it out of this event (/admin/meldungen); elsewhere on the TV it isn't affected.
+ */
+export function OffTopicReport({ context, event, token, refreshToken }: { context: Context; event: string; token: string; refreshToken: () => Promise<string> }) {
+  const [sent, setSent] = useState<string | null>(null);
+  // One report per video (the strip stays mounted while the channel plays on).
+  if (sent === context.url) return <span className="report-done">Danke – wir prüfen das.</span>;
+  return (
+    <button
+      type="button"
+      className="strip-action"
+      title="Dieses Video berichtet nicht über das Ereignis? Melde es – wir nehmen es dann aus der Chronik."
+      onClick={async () => {
+        setSent(context.url);
+        const send = (t: string) => reportVideo({ ...context, reason: "off_topic", event, token: t });
+        const first = await send(token).catch(() => null);
+        if (first?.expired) {
+          const fresh = await refreshToken().catch(() => null);
+          if (fresh) {
+            await new Promise((r) => setTimeout(r, MIN_FILL_MS));
+            await send(fresh).catch(() => {});
+          }
+        }
+      }}
+    >
+      ✗ Passt nicht zum Ereignis
+    </button>
+  );
+}
+
+/**
  * The player failed to load a video: report it anonymously, at most once per video, browser and day.
  */
 /** URLs reported automatically today (one small map; earlier days are dropped). */

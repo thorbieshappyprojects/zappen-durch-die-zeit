@@ -92,6 +92,13 @@
       "when": 1794315280287,
       "tag": "0012_admin_login_attempt",
       "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1794342773364,
+      "tag": "0013_chronik_events",
+      "breakpoints": true
     }
   ]
 }

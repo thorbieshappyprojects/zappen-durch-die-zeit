@@ -1,3 +1,4 @@
+import { eventById } from "@zdz/core";
 import { listOpenReportGroups } from "@zdz/db";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import { ConfirmButton } from "@/components/ConfirmButton";
 import { AdminGate } from "../AdminGate";
 import { AdminNav } from "../AdminNav";
 import { Pager, PAGE_SIZE, pageOf } from "../Pager";
-import { decideReports } from "./actions";
+import { decideReports, excludeFromChronik } from "./actions";
 
 export const metadata: Metadata = { title: "Video-Meldungen – Zappen durch die Zeit", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -17,6 +18,7 @@ const REASON_LABEL: Record<string, string> = {
   wrong_programme: "falsche Sendung",
   wrong_offset: "falsche Stelle/Zeit",
   other: "anderes",
+  off_topic: "passt nicht zum Ereignis",
 };
 
 export default async function AdminReports(props: Props) {
@@ -45,7 +47,8 @@ async function Inner({ searchParams }: Props) {
       </p>
       <p className="admin-flag">
         Meldungen ändern nichts automatisch – außer: ab 3 Meldungen „nicht verfügbar“ in 7 Tagen und fehlgeschlagener
-        Prüfung wird ein Video von selbst gesperrt.
+        Prüfung wird ein Video von selbst gesperrt. „Passt nicht zum Ereignis“ (Chronik): „Aus diesem Ereignis nehmen“
+        entfernt das Video nur aus diesem Ereignis, sonst bleibt es im Fernseher.
       </p>
       {all.length === 0 && <p>Keine offenen Meldungen.</p>}
       {pager}
@@ -79,6 +82,22 @@ async function Inner({ searchParams }: Props) {
             )}
           </p>
           {g.notes.length > 0 && <p className="admin-body">{g.notes.join("\n")}</p>}
+          {Object.entries(g.events).map(([id, n]) => {
+            const event = eventById(id);
+            return (
+              <div key={id} className="admin-actions">
+                <span>
+                  Chronik „{event?.title ?? id}“: {n}× passt nicht ·{" "}
+                  <Link href={`/tag/${g.latest.tvDate ?? event?.date ?? "1990-01-01"}?ereignis=${id}${g.latest.channel ? `&sender=${g.latest.channel}` : ""}`}>ansehen</Link>
+                </span>
+                <AdminForm action={excludeFromChronik}>
+                  <input type="hidden" name="url" value={g.url} />
+                  <input type="hidden" name="event" value={id} />
+                  <ConfirmButton className="play">Aus diesem Ereignis nehmen</ConfirmButton>
+                </AdminForm>
+              </div>
+            );
+          })}
           <div className="admin-actions">
             {(
               [
