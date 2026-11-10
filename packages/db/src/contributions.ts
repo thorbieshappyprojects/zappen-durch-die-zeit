@@ -4,6 +4,13 @@ import type { Db } from "./client";
 import { broadcast, channel, contribution, contributionFile, mediaCandidate, mediaReport, tvDay } from "./schema";
 import { removeUploadFiles } from "./upload-files";
 
+/**
+ * A Date as a parameter inside a raw `sql` expression. Without a column to map it, postgres-js would
+ * send Date.toString() ("Wed Aug 12 2026 … (Coordinated Universal Time)"), which PostgreSQL rejects
+ * (PGlite accepts it, so only production failed).
+ */
+const timestamp = (d: Date) => sql`${d.toISOString()}::timestamptz`;
+
 export type ContributionRow = typeof contribution.$inferSelect;
 
 /** Stores a submission. Spam-flagged ones are kept (status "spam") so the moderator can audit the filter. */
@@ -174,7 +181,7 @@ export async function purgeContributions(
     .where(
       or(
         and(eq(contribution.status, "spam"), lt(contribution.createdAt, ago(RETENTION_DAYS.spam))),
-        and(eq(contribution.status, "rejected"), lt(reviewed, ago(RETENTION_DAYS.rejected))),
+        and(eq(contribution.status, "rejected"), lt(reviewed, timestamp(ago(RETENTION_DAYS.rejected)))),
       ),
     );
   for (const c of doomed) await deleteContribution(db, c.id);
@@ -185,7 +192,7 @@ export async function purgeContributions(
       and(
         inArray(contribution.status, ["approved", "rejected"]),
         isNotNull(contribution.contributorEmail),
-        lt(reviewed, ago(RETENTION_DAYS.email)),
+        lt(reviewed, timestamp(ago(RETENTION_DAYS.email))),
       ),
     )
     .returning({ id: contribution.id });
@@ -206,7 +213,7 @@ export async function uploadedBytes(db: Db, since: Date): Promise<{ total: numbe
   const [row] = await db
     .select({
       total: sql<number>`coalesce(sum(${contributionFile.sizeBytes}), 0)::bigint`,
-      recent: sql<number>`coalesce(sum(${contributionFile.sizeBytes}) filter (where ${contributionFile.createdAt} >= ${since}), 0)::bigint`,
+      recent: sql<number>`coalesce(sum(${contributionFile.sizeBytes}) filter (where ${contributionFile.createdAt} >= ${timestamp(since)}), 0)::bigint`,
     })
     .from(contributionFile);
   return { total: Number(row?.total ?? 0), recent: Number(row?.recent ?? 0) };
