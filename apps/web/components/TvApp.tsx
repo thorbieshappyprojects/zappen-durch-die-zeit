@@ -1,6 +1,6 @@
 "use client";
 
-import { advanceTvDaySeconds, broadcastsOf, findOnAir, formatClock, gapAround, formatTvDayDate, mediaFor, minutesSinceStart, offAirMessage, nextBroadcast, progressOf, PROVIDER_LABELS, searchUrlFor, seekOffsetSeconds, stationAtSlot, STATIONS, tvDaySecondsAt, upcomingBroadcast, type Broadcast, type TvDay, coverageHue, dayCoverage, stationStatus, formatTvDayShort, type ChannelDayHint, shareUrl, type ShareTarget, interstitialsFor, signOffFor, nearestVideoBroadcast, THEMES, type Channel, type ThemeId, CHRONIK, eventById, eventsAround, nearestEvent, eventWindow } from "@zdz/core";
+import { advanceTvDaySeconds, broadcastsOf, findOnAir, formatClock, gapAround, formatTvDayDate, mediaFor, minutesSinceStart, offAirMessage, nextBroadcast, progressOf, PROVIDER_LABELS, searchUrlFor, seekOffsetSeconds, stationAtSlot, STATIONS, tvDaySecondsAt, upcomingBroadcast, type Broadcast, type TvDay, coverageHue, dayCoverage, stationStatus, formatTvDayShort, type ChannelDayHint, shareUrl, type ShareTarget, interstitialsFor, signOffFor, nearestVideoBroadcast, THEMES, type Channel, type ThemeId, CHRONIK, eventById, nearestEvent, eventWindow } from "@zdz/core";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -505,7 +505,7 @@ export function TvApp({
     [clock.mode, goLive],
   );
 
-  /** Chronik: show an event (from P400 or the hint on a day's TV). */
+  /** Chronik: show an event (from the list P400). */
   const pickEvent = useCallback(
     (id: string) => {
       setEventId(id);
@@ -514,7 +514,6 @@ export function TvApp({
     },
     [tab, chooseTab, setTtView],
   );
-  const dayEvents = useMemo(() => eventsAround(realDay.date), [realDay.date]);
   const shortDate = (d: string) => d.split("-").reverse().join(".");
 
   // A shared link: its programme, and with a time a start there (in "Fernsehen" as free choice).
@@ -858,21 +857,6 @@ export function TvApp({
 
         </div>
       </header>
-
-      {tab === "tv" && dayEvents.length > 0 && (
-        <p className="day-events">
-          {CHRONIK.icon} In diesen Tagen:{" "}
-          {dayEvents.map((e, i) => (
-            <span key={e.id}>
-              {i > 0 && " · "}
-              <button type="button" className="chronik-hint" onClick={() => pickEvent(e.id)} title={`${e.summary} – Berichte in der ${CHRONIK.label}`}>
-                {e.title}
-              </button>
-            </span>
-          ))}{" "}
-          – Berichte in der {CHRONIK.label}
-        </p>
-      )}
 
       {showFallback && requested && (
         <div className="fallback-note" role="status">

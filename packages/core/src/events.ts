@@ -184,14 +184,6 @@ export function eventWindow(event: HistoryEvent): { from: string; to: string } {
   return { from: addDays(event.date, -(event.daysBefore ?? 1)), to: addDays(event.date, event.daysAfter ?? 10) };
 }
 
-/** Events whose window includes a date (for the hint on that day's TV). */
-export function eventsAround(date: string): HistoryEvent[] {
-  return HISTORY_EVENTS.filter((e) => {
-    const w = eventWindow(e);
-    return date >= w.from && date <= w.to;
-  });
-}
-
 /** The event nearest to a date (the Chronik tab opens with it). */
 export function nearestEvent(date: string): HistoryEvent {
   const t = Date.parse(date);
@@ -237,8 +229,10 @@ const DEFAULT_LENGTH_MIN = 15;
 
 /**
  * The event's programme on `day` (only its date and source are kept): one channel per station with
- * recordings, each playing them in the order they aired, again and again from 06:00 to 06:00.
- * Every slot says when it really ran ("Gesendet: Mittwoch, 16. Januar 1991, 22:30 Uhr").
+ * recordings, each shown once at the time of day it aired. Recordings of the same slot from different
+ * days of the event (Tagesschau at 20:00 on three evenings) follow each other in airing order.
+ * Between them the channel is empty. Every slot says when it really ran
+ * ("Gesendet: Mittwoch, 16. Januar 1991, 22:30 Uhr").
  */
 export function eventDay(day: TvDay, event: HistoryEvent, pool: readonly PoolVideo[], excluded?: ReadonlySet<string>): TvDay {
   const videos = eventVideos(event, pool, excluded);
@@ -251,23 +245,26 @@ export function eventDay(day: TvDay, event: HistoryEvent, pool: readonly PoolVid
   const broadcasts: Broadcast[] = [];
   const media: Record<string, MediaCandidate> = {};
   for (const ch of channels) {
-    const own = videos.filter((v) => v.channelId === ch.id);
-    for (let t = TV_DAY_START_MIN, i = 0; t < TV_DAY_END_MIN; i++) {
-      const v = own[i % own.length]!;
+    const own = videos.filter((v) => v.channelId === ch.id).sort((a, b) => a.startMin - b.startMin || a.date.localeCompare(b.date));
+    let free = TV_DAY_START_MIN;
+    for (const v of own) {
+      const start = Math.max(v.startMin, free);
+      if (start >= TV_DAY_END_MIN) break;
       const len = Math.max(1, Math.round((v.media.durationS ?? DEFAULT_LENGTH_MIN * 60) / 60));
-      const end = Math.min(t + len, TV_DAY_END_MIN);
-      const id = `${ch.id}-${t}`;
+      const end = Math.min(start + len, TV_DAY_END_MIN);
+      const id = `${ch.id}-${start}`;
       broadcasts.push({
         id,
         channelId: ch.id,
-        startMin: t,
+        startMin: start,
         endMin: end,
         title: v.title,
         description: `Gesendet: ${formatTvDayDate(v.date)}, ${formatClock(v.startMin)} Uhr`,
       });
       media[id] = v.media;
-      t = end;
+      free = end;
     }
   }
-  return { ...day, channels, broadcasts, media };
+  // Complete by construction: a gap means nothing aired, not "programme unknown".
+  return { ...day, completeness: "full", channels, broadcasts, media };
 }

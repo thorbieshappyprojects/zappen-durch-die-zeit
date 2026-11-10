@@ -75,7 +75,7 @@ Trigram indexes on normalised titles; unique keys `media_candidate(programme_id,
 | Fernsehen · **Wie damals** | the real listing of the day | yes |
 | Fernsehen · **Programm frei wählen** | the listing; any show can be picked; the end of a video goes on to the next | no |
 | **Kinderprogramm**, **Talk Shows** | core `themes.ts`: one genre from the whole decade per station (title patterns), built like Lückenlos; any show can be picked | no |
-| **Chronik** | core `events.ts`: one event (`HISTORY_EVENTS`, list P400); per station its exact recordings of a reporting kind (news, specials, magazines, talk; title patterns) aired from a day before to ~10 days after, in airing order, looped; viewers flag unrelated ones (`off_topic` report), moderators take them out of that event (`event_exclusion`); see docs/EVENTS.md | no |
+| **Chronik** | core `events.ts`: one event (`HISTORY_EVENTS`, list P400); per station its exact recordings of a reporting kind (news, specials, magazines, talk; title patterns) aired from a day before to ~10 days after, each once at the time of day it aired (same-slot recordings of several days back to back); viewers flag unrelated ones (`off_topic` report), moderators take them out of that event (`event_exclusion`); see docs/EVENTS.md | no |
 
 ### Interstitials (core `interstitials.ts`)
 

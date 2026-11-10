@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { eventById, eventDay, eventGenreOf, eventsAround, eventVideos, eventWindow, HISTORY_EVENTS, nearestEvent } from "./events";
+import { eventById, eventDay, eventGenreOf, eventVideos, eventWindow, HISTORY_EVENTS, nearestEvent } from "./events";
 import type { PoolVideo } from "./seamless";
-import { TV_DAY_END_MIN, TV_DAY_START_MIN } from "./time";
 import type { MediaCandidate, TvDay } from "./types";
 
 const golf = eventById("golfkrieg-1991")!;
@@ -33,8 +32,6 @@ describe("events", () => {
   it("window: a day before to the days after (default 10)", () => {
     expect(eventWindow(golf)).toEqual({ from: "1991-01-16", to: "1991-01-31" });
     expect(eventWindow(eventById("eschede-1998")!)).toEqual({ from: "1998-06-02", to: "1998-06-13" });
-    expect(eventsAround("1991-01-20").map((e) => e.id)).toEqual(["golfkrieg-1991"]);
-    expect(eventsAround("1991-06-01")).toEqual([]);
     expect(nearestEvent("1991-02-10").id).toBe("golfkrieg-1991");
   });
   it("reporting shows count, other programmes don't", () => {
@@ -70,28 +67,29 @@ describe("events", () => {
     ]);
     expect(eventVideos(golf, pool, excluded).map((v) => v.channelId)).toEqual(["ard", "ard"]);
   });
-  it("builds one channel per station, looping its recordings through the TV day", () => {
+  it("builds one channel per station, each recording once at the time it aired", () => {
     const pool = [
-      video("ard", "1991-01-16", 1350, "Tagesthemen", { durationS: 1800 }),
       video("ard", "1991-01-17", 1200, "Tagesschau"),
+      video("ard", "1991-01-16", 1350, "Tagesthemen", { durationS: 1800 }),
+      video("ard", "1991-01-16", 1200, "Tagesschau"),
       video("rtl-plus", "1991-01-21", 1125, "RTL aktuell", { durationS: null }),
     ];
     const day = eventDay(base, golf, pool);
     expect(day.date).toBe("1991-03-13");
+    expect(day.completeness).toBe("full");
     expect(day.channels.map((c) => [c.id, c.isPrivate])).toEqual([
       ["ard", false],
       ["rtl-plus", true],
     ]);
     const ard = day.broadcasts.filter((b) => b.channelId === "ard");
-    expect(ard.slice(0, 3).map((b) => [b.title, b.startMin, b.endMin])).toEqual([
-      ["Tagesthemen", TV_DAY_START_MIN, TV_DAY_START_MIN + 30],
-      ["Tagesschau", TV_DAY_START_MIN + 30, TV_DAY_START_MIN + 45],
-      ["Tagesthemen", TV_DAY_START_MIN + 45, TV_DAY_START_MIN + 75],
+    // Two Tagesschau at 20:00 (16 and 17 Jan): back to back, in airing order; Tagesthemen at 22:30.
+    expect(ard.map((b) => [b.title, b.startMin, b.endMin, b.description])).toEqual([
+      ["Tagesschau", 1200, 1215, "Gesendet: Mittwoch, 16. Januar 1991, 20:00 Uhr"],
+      ["Tagesschau", 1215, 1230, "Gesendet: Donnerstag, 17. Januar 1991, 20:00 Uhr"],
+      ["Tagesthemen", 1350, 1380, "Gesendet: Mittwoch, 16. Januar 1991, 22:30 Uhr"],
     ]);
-    expect(ard[0]!.description).toBe("Gesendet: Mittwoch, 16. Januar 1991, 22:30 Uhr");
-    expect(ard.at(-1)!.endMin).toBe(TV_DAY_END_MIN);
     // Unknown length: a 15-minute slot.
-    expect(day.broadcasts.find((b) => b.channelId === "rtl-plus")!.endMin).toBe(TV_DAY_START_MIN + 15);
+    expect(day.broadcasts.find((b) => b.channelId === "rtl-plus")).toMatchObject({ startMin: 1125, endMin: 1140 });
     for (const b of day.broadcasts) expect(day.media[b.id]).toBeDefined();
   });
   it("has no channels without material", () => {

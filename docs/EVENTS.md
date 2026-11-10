@@ -1,7 +1,8 @@
 # Chronik – events and their material
 
 The **Chronik** tab shows one event at a time as its own programme: every station that has recordings
-from the days around the event gets a channel and plays them in the order they aired (looped). Code:
+from the days around the event gets a channel and shows each of them once, at the time of day it aired
+(recordings of the same slot from several days follow each other, in airing order). Code:
 core `packages/core/src/events.ts` (`HISTORY_EVENTS`, `eventVideos`, `eventDay`), database
 `packages/db/src/events.ts`, route `/tag/<date>/lueckenlos?ereignis=<id>`, list page P400 in the teletext.
 
