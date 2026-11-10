@@ -3080,7 +3080,8 @@
   {
    "channel": "pro-7",
    "titles": [
-    "CinemaTV"
+    "CinemaTV",
+    "Cinema TV"
    ],
    "url": "https://archive.org/download/cinema-tv-das-fuenfte-element-matthias-hues-mr-bean-prosieben-1997/CinemaTV%20-%20Das%20f%C3%BCnfte%20Element%2C%20Matthias%20Hues%2C%20Mr%20Bean%20%281997%29.mp4",
    "year": 1997,
@@ -3227,7 +3228,8 @@
   {
    "channel": "sat-1",
    "titles": [
-    "Goldene Hitparade der Volksmusik"
+    "Goldene Hitparade der Volksmusik",
+    "Die goldene Hitparade der Volksmusik"
    ],
    "url": "https://archive.org/download/goldene-hitparade-der-volks-musik/Goldene%20Hitparade%20Der%20Volks%20Musik.mp4",
    "year": 1993,
@@ -3703,7 +3705,8 @@
   {
    "channel": "viva",
    "titles": [
-    "House Frau"
+    "House Frau",
+    "Housefrau"
    ],
    "url": "https://archive.org/download/viva-housefrau-1.-sendung-vom-06-05-1994/VIVA%20HOUSEFRAU%201.Sendung%20vom%2006-05-1994.ia.mp4",
    "year": 1994,
@@ -3714,7 +3717,8 @@
   {
    "channel": "viva",
    "titles": [
-    "House Frau Nr. 3"
+    "House Frau Nr. 3",
+    "Housefrau"
    ],
    "url": "https://archive.org/download/viva-housefrau-nr.-3-20-05-1994/VIVA%20HOUSEFRAU%20Nr.3%20-%2020-05%20-1994.ia.mp4",
    "year": 1994,
@@ -3725,7 +3729,8 @@
   {
    "channel": "viva",
    "titles": [
-    "House Frau Nr. 45"
+    "House Frau Nr. 45",
+    "Housefrau"
    ],
    "url": "https://archive.org/download/viva-housefrau-nr.-45-10-03-1995-ultrahigh/VIVA%20HOUSEFRAU%20Nr.%2045%20%20%2010-03-1995%20Ultrahigh.ia.mp4",
    "year": 1995,
@@ -3736,13 +3741,14 @@
   {
    "channel": "super-rtl",
    "titles": [
-    "Goofy"
+    "Goofy",
+    "Goofy und Max"
    ],
    "url": "https://archive.org/download/walt-disney-gooffy-vhsrip-super-rtl-dezember-1997/Walt%20Disney%20Gooffy%20VHSRip%20SuperRTL%20Dezember%201997.mp4",
    "year": 1997,
    "full": true,
    "kind": "show",
-   "note": "Walt Disney Gooffy VHSRip Super RTL, Dezember 1997, German Dub (Internet Archive)"
+   "note": "Goofy und Max – VHS-Aufnahme von Super RTL, Dezember 1997, mit Kinotrailer davor (Internet Archive)"
   },
   {
    "channel": "pro-7",
@@ -3914,7 +3920,8 @@
    "channel": null,
    "titles": [
     "Chip und Chap – Die Ritter des Rechts",
-    "Chip und Chap"
+    "Chip und Chap",
+    "Die Ritter des Rechts"
    ],
    "url": "https://www.youtube.com/watch?v=Hd21tc0XlKY",
    "year": null,
@@ -45019,6 +45026,186 @@
    "note": "ARD-Dokumentation",
    "kind": "show",
    "review": "ia-ufo-1994"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1281,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2001.Das.vermisste.Kaetzchen.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 01: „Das vermisste Kätzchen“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1284,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2002.Drei.Maenner.und.ein.Ei.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 02: „Drei Männer und ein Ei“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1283,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2003.Die.ausserirdischen.Teppiche.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 03: „Die ausserirdischen Teppiche“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1279,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2004.Das.verwuenschte.Piratenschiff.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 04: „Das verwünschte Piratenschiff“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1283,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2005.Der.Chip.und.Chap.Step.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 05: „Der Chip und Chap Step“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1281,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2006.Flash.der.Wunderhund.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 06: „Flash der Wunderhund“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1277,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2007.Das.verschwundene.Testament.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 07: „Das verschwundene Testament“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1287,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2008.Samsons.Vater.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 08: „Samsons Vater“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1282,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2009.Die.Bienenkoenigin.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 09: „Die Bienenkönigin“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1280,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2010.Baby.in.Gefahr.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 10: „Baby in Gefahr“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1285,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2011.Chap.im.All.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 11: „Chap im All“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
+  },
+  {
+   "channel": "super-rtl",
+   "titles": [
+    "Chip & Chap",
+    "Chip & Chap - Die Ritter des Rechts",
+    "Chip und Chap",
+    "Die Ritter des Rechts"
+   ],
+   "kind": "series",
+   "year": null,
+   "full": true,
+   "durationS": 1285,
+   "url": "https://archive.org/download/ritter_des-rechts/Folge%2012.Ausserirdische.Doppelgaenger.mp4",
+   "note": "Chip & Chap – Die Ritter des Rechts, Folge 12: „Ausserirdische Doppelgänger“ (deutsche Fassung, keine TV-Aufnahme; Internet Archive)"
   }
  ]
 }
