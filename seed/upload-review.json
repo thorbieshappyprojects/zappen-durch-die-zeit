@@ -6883,6 +6883,35 @@
       "durationS": 4462,
       "outS": 180
      }
+    },
+    {
+     "target": "library",
+     "covered": false,
+     "entry": {
+      "channel": "vox",
+      "titles": [
+       "Wa(h)re Liebe"
+      ],
+      "url": "https://www.youtube.com/watch?v=JAWSLkzK0fg",
+      "year": 1994,
+      "full": true,
+      "kind": "show",
+      "note": "Wa(h)re Liebe vom 25.08.1994 – Lilo Wanders mit Elisabeth Volkmann und Uta Ranke-Heinemann (Einspieler aus Jugendschutzgründen entfernt)",
+      "date": "1994-08-25",
+      "durationS": 1638
+     }
+    },
+    {
+     "target": "interstitial",
+     "covered": false,
+     "entry": {
+      "channel": "rtl-plus",
+      "kind": "ad_break",
+      "url": "https://www.youtube.com/watch?v=pDbD3TljIzI",
+      "note": "22.11.1991 RTL: Werbung nach „Twin Peaks“, „Anpfiff“ komplett und „Tutti Frutti“ (74 Minuten)",
+      "airedOn": "1991-11-22",
+      "durationS": 4462
+     }
     }
    ]
   }

@@ -45318,6 +45318,115 @@
    "durationS": 1499,
    "url": "https://www.youtube.com/watch?v=MlZU2P6LT9s",
    "note": "Die Biene Maja, Folge 2 „Maja lernt fliegen“ (Originalserie von 1975, keine TV-Aufnahme)"
+  },
+  {
+   "channel": "ard",
+   "titles": [
+    "Tagesschau"
+   ],
+   "url": "https://www.youtube.com/watch?v=ImZFeK3Jh5k",
+   "year": 1998,
+   "full": true,
+   "kind": "show",
+   "note": "Tagesschau vom 09.12.1998, VHS-Aufnahme",
+   "date": "1998-12-09",
+   "durationS": 1002,
+   "start": "20:00"
+  },
+  {
+   "channel": "ard",
+   "titles": [
+    "Tigerenten Club"
+   ],
+   "url": "https://www.youtube.com/watch?v=8Sw3RqclDxE",
+   "year": 1996,
+   "full": false,
+   "kind": "show",
+   "note": "Tigerenten Club, Folge 51 vom 21.12.1996 – Ausschnitt ohne die Serien",
+   "date": "1996-12-21",
+   "durationS": 888,
+   "start": "15:30"
+  },
+  {
+   "channel": "ard",
+   "titles": [
+    "Tigerenten Club"
+   ],
+   "url": "https://www.youtube.com/watch?v=uxYzpxxbOSs",
+   "year": 1996,
+   "full": false,
+   "kind": "show",
+   "note": "Tigerenten Club, Folge 22 vom 02.06.1996 – Ausschnitt",
+   "date": "1996-06-02",
+   "durationS": 472
+  },
+  {
+   "channel": "rtl-plus",
+   "titles": [
+    "Formel 1"
+   ],
+   "url": "https://www.youtube.com/watch?v=zbyq7f1Q8VU",
+   "year": 1998,
+   "full": true,
+   "kind": "show",
+   "note": "Formel 1: GP von Belgien, RTL 30.08.1998 – Vorberichte, Rennen, Highlights, mit Werbung",
+   "date": "1998-08-30",
+   "durationS": 14763
+  },
+  {
+   "channel": "rtl-plus",
+   "titles": [
+    "Spiegel TV - Magazin",
+    "Spiegel TV"
+   ],
+   "url": "https://www.youtube.com/watch?v=72Sh_luz9Jo",
+   "year": 1998,
+   "full": false,
+   "kind": "show",
+   "note": "Spiegel TV Magazin, RTL 03.05.1998 – Ausschnitt mit Werbung",
+   "date": "1998-05-03",
+   "durationS": 2146
+  },
+  {
+   "channel": "tele-5",
+   "titles": [
+    "Ruck Zuck"
+   ],
+   "url": "https://www.youtube.com/watch?v=MKBaSfcvBOg",
+   "year": 1991,
+   "full": false,
+   "kind": "show",
+   "note": "Ruck Zuck, Tele 5 28.02.1991 – Ausschnitt, danach Vorschau und „video nonstop“",
+   "date": "1991-02-28",
+   "durationS": 1570,
+   "start": "12:00"
+  },
+  {
+   "channel": "tele-5",
+   "titles": [
+    "Ruck Zuck"
+   ],
+   "url": "https://www.youtube.com/watch?v=aZ8ghVBD6kk",
+   "year": 1991,
+   "full": false,
+   "kind": "show",
+   "note": "Ruck Zuck, Tele 5 07.03.1991 – Ausschnitt, danach Vorschau und „video nonstop“",
+   "date": "1991-03-07",
+   "durationS": 1746,
+   "start": "12:00"
+  },
+  {
+   "channel": "tele-5",
+   "titles": [
+    "P.O.P."
+   ],
+   "url": "https://www.youtube.com/watch?v=kQweXcInIVg",
+   "year": 1992,
+   "full": false,
+   "kind": "show",
+   "note": "P.O.P., Tele 5 18.05.1992 – mit Werbung und Sendeschluss (zwei Musikvideos entfernt)",
+   "date": "1992-05-18",
+   "durationS": 4901
   }
  ]
 }

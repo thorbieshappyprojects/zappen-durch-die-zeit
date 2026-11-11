@@ -26292,6 +26292,126 @@
    "airedOn": "1998-04-08",
    "note": "VIVA - Commercial Break (08.04.1998)",
    "durationS": 181
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=Nb46DvzhyD8",
+   "note": "SuperRTL 25.03.1996 Werbung bei Doogie Howser, M.D. 3x11 (Probleme mit Blut)",
+   "airedOn": "1996-03-25",
+   "durationS": 256
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=ZGtO9L91_F4",
+   "note": "SuperRTL 09.06.1997 Infobanner/Werbung bei Die Hexe und der Zauberer",
+   "airedOn": "1997-06-09",
+   "durationS": 293
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=p6ubD52t600",
+   "note": "RTL - Werbeblöcke & Promos während Interview mit einem Vampir, 31.10.1997 (Halloween)",
+   "airedOn": "1997-10-31",
+   "durationS": 1851
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=lMswUrPlg50",
+   "note": "RTL 19.09.1997 Werbung bei 7 Tage, 7 Köpfe - Folge 43",
+   "airedOn": "1997-09-19",
+   "durationS": 611
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=YN-rSOt4ECY",
+   "note": "SuperRTL Werbung & DuckTales Intro Fr. 04.09.1998",
+   "airedOn": "1998-09-04",
+   "durationS": 353
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=48EyTlYmz8Y",
+   "note": "SuperRTL 28.02.1998 Werbung bei Enid Blyton – Die verwegenen Vier F05 (halten zusammen)",
+   "airedOn": "1998-02-28",
+   "durationS": 955
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=hM7YTUmf-jU",
+   "note": "SuperRTL 11.04.1998 Werbung bei Fünf Freunde (1977) 1x03 (auf neunen Abenteuern)",
+   "airedOn": "1998-04-11",
+   "durationS": 390
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=-f7eSI6BiuU",
+   "note": "SuperRTL 25.09.1998 Werbung bei Disneys tollkühne Flieger",
+   "airedOn": "1998-09-25",
+   "durationS": 788
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=t9Q3MRuHkTg",
+   "note": "Super RTL Werbung vom 8.1.1999",
+   "airedOn": "1999-01-08",
+   "durationS": 366
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=IG0D5r_V29k",
+   "note": "SuperRTL 20.10.1999 Werbung bei Was diese Frau so alles treibt",
+   "airedOn": "1999-10-20",
+   "durationS": 1353
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=m80hPBTs-0A",
+   "note": "Super RTL Werbung Sa 6.2.1999",
+   "airedOn": "1999-02-06",
+   "durationS": 227
+  },
+  {
+   "channel": "super-rtl",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=_SJ4wW27FDo",
+   "note": "Super RTL 10.12.1999 Werbung bei Muppets Tonight 1x06 (Tony Bennett)",
+   "airedOn": "1999-12-10",
+   "durationS": 431
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=zhbX63HtdRE",
+   "note": "RTL | 22.01.1996 | Werbung (Die Besucher)",
+   "airedOn": "1996-01-22",
+   "durationS": 1813
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=QBhzfsUBp3E",
+   "note": "RTL 31.12.1996 Werbung bei Vier Fäuste für ein Halleluja",
+   "airedOn": "1996-12-31",
+   "durationS": 342
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=HaGn8HQY7SI",
+   "note": "RTL - Werbeblock (x2) und Programmvorschauen - 17.09.1994",
+   "airedOn": "1994-09-17",
+   "durationS": 364
   }
  ]
 }
