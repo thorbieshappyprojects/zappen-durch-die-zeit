@@ -14,3 +14,21 @@ export async function loadUploadReview(): Promise<UploadReviewFile> {
     return { about: "", groups: [] };
   }
 }
+
+/**
+ * Links already in the seed files next to the review file (media-library.json, interstitials.json):
+ * an included entry found there has been applied (review-apply, then a data update).
+ */
+export async function loadSeedUrls(): Promise<Set<string>> {
+  const dir = path.dirname(uploadReviewFile());
+  const urls = new Set<string>();
+  for (const name of ["media-library.json", "interstitials.json"]) {
+    try {
+      const file = JSON.parse(await readFile(path.join(dir, name), "utf8")) as { entries?: { url?: string }[] };
+      for (const e of file.entries ?? []) if (e.url) urls.add(e.url);
+    } catch {
+      // Missing file: nothing counts as applied.
+    }
+  }
+  return urls;
+}

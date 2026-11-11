@@ -9,6 +9,10 @@ export interface DbStats {
   broadcastsReal: number;
   broadcastsWithVideo: number;
   broadcastsExact: number;
+  /** The same on assumed days (regular slots only; most cartoons and series live there). */
+  broadcastsAssumed: number;
+  broadcastsAssumedWithVideo: number;
+  broadcastsAssumedExact: number;
   /** Distinct approved video URLs linked to broadcasts. */
   videos: number;
   interstitials: number;
@@ -37,6 +41,9 @@ export async function computeStats(db: Db): Promise<DbStats> {
       (select count(*)::int from best where tv_day_id in (select id from real_days)) as "broadcastsReal",
       (select count(*)::int from best where tv_day_id in (select id from real_days) and lvl > 0) as "broadcastsWithVideo",
       (select count(*)::int from best where tv_day_id in (select id from real_days) and lvl = 3) as "broadcastsExact",
+      (select count(*)::int from best where tv_day_id not in (select id from real_days)) as "broadcastsAssumed",
+      (select count(*)::int from best where tv_day_id not in (select id from real_days) and lvl > 0) as "broadcastsAssumedWithVideo",
+      (select count(*)::int from best where tv_day_id not in (select id from real_days) and lvl = 3) as "broadcastsAssumedExact",
       (select count(distinct url)::int from media_candidate where status = 'approved') as "videos",
       (select count(*)::int from interstitial where status = 'approved') as "interstitials",
       (select count(*)::int from contribution where status = 'pending') as "contributionsPending",

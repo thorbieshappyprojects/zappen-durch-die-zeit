@@ -26412,6 +26412,120 @@
    "note": "RTL - Werbeblock (x2) und Programmvorschauen - 17.09.1994",
    "airedOn": "1994-09-17",
    "durationS": 364
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=t2SpkIF9gqM",
+   "airedOn": "1990-03-31",
+   "note": "RTLplus 31.03.1990 - Werbung / Programmansage / Erotisches Nachtprogramm · Upload: Schnipp08",
+   "durationS": 3593,
+   "outS": 180,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-2",
+   "kind": "trailer",
+   "url": "https://www.youtube.com/watch?v=hGZJWhdl4I0",
+   "airedOn": "1995-10-29",
+   "note": "RTL2: Vorschau „Dr. Quinn“ und „peep!“ (29.10.1995) · Upload: telenostalgiker",
+   "durationS": 42,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=r9UCwjclRks",
+   "airedOn": "1991-01-10",
+   "note": "RTLplus: Werbeblock und Vorschau „Tutti Frutti“ (10.01.1991) · Upload: telenostalgiker",
+   "durationS": 160,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=pTUM3_4_aQg",
+   "airedOn": "1991-03-15",
+   "note": "RTLplus: Programmansage „Tutti Frutti“ 3D-Premiere (15.03.1991) · Upload: telenostalgiker",
+   "durationS": 26,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=ux6clIEMvmc",
+   "airedOn": "1991-06-07",
+   "note": "RTLplus 07.06.1991 - Ansage zu \"Eis am Stiel\" sowie der Beginn, inklusive Werbung · Upload: Nostalgie_Fan",
+   "durationS": 313,
+   "outS": 180,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=Pb439A3IHl0",
+   "airedOn": "1990-07-15",
+   "note": "RTLplus Tutti Frutti (Teilweise) 15.07.1990, inklusive Programmvorschau und Ansage · Upload: Nostalgie_Fan",
+   "durationS": 334,
+   "outS": 120,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=8W0XUHFmvFs",
+   "airedOn": "1990-01-01",
+   "note": "RTLplus Jahreswechsel 1989/90 -  Männermagazin - Ansage von Michel Weber (01.01.1990) · Upload: 4:3 RetroTV Archiv",
+   "durationS": 98,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=TKz3d_qEtDc",
+   "airedOn": "1990-08-25",
+   "note": "RTLplus \"Emmanuelle\" Filmansage von Martina Menningen + Interview (25.08.1990) · Upload: 4:3 RetroTV Archiv",
+   "durationS": 408,
+   "outS": 120,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=A-o4hbo0gr0",
+   "airedOn": "1990-09-11",
+   "note": "RTLplus \"Null Null Sex\" Filmansage von Martina Menningen (RTLplus 11.09.1990) · Upload: 4:3 RetroTV Archiv",
+   "durationS": 88,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "swr",
+   "kind": "announcer",
+   "url": "https://www.youtube.com/watch?v=kTkx5_A2WT8",
+   "airedOn": "1997-07-11",
+   "note": "Verführungen - Filmansage von Ruth Köppler (Südwest3 11.07.1997) · Upload: 4:3 RetroTV Archiv",
+   "durationS": 170,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=drAfKT4zVwg",
+   "airedOn": "1992-02-02",
+   "note": "02.02.1992 RTL Ende \"Playboy Late Night\" Werbung, \"Kanal 4\" und Anfang \"Mord und Totschlag\" · Upload: TV Zeitmaschine reloaded",
+   "durationS": 1299,
+   "outS": 180,
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "kind": "ad_break",
+   "url": "https://www.youtube.com/watch?v=pDbD3TljIzI",
+   "airedOn": "1991-11-22",
+   "note": "22.11.1991 RTL Werbung nach \"Twin Peaks\", \"Anpfiff\" komplett und \"Tutti Frutti\" Fragment · Upload: TV Zeitmaschine reloaded",
+   "durationS": 4462,
+   "outS": 180,
+   "review": "erotik-90er"
   }
  ]
 }

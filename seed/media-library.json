@@ -45427,6 +45427,72 @@
    "note": "P.O.P., Tele 5 18.05.1992 – mit Werbung und Sendeschluss (zwei Musikvideos entfernt)",
    "date": "1992-05-18",
    "durationS": 4901
+  },
+  {
+   "channel": "ard",
+   "titles": [
+    "Crazy Horse"
+   ],
+   "url": "https://archive.org/download/ard-crazyhorse_19901231/19901231%20XXXX%20-%20ARD%20-%20Crazy%20Horse.mp4",
+   "year": 1990,
+   "date": "1990-12-31",
+   "full": true,
+   "durationS": 3418,
+   "note": "ARD-Silvesterprogramm: Crazy Horse (Paris)",
+   "kind": "show",
+   "review": "ia-adultvhs-crazyhorse"
+  },
+  {
+   "channel": "rtl-plus",
+   "titles": [
+    "Tutti Frutti"
+   ],
+   "url": "https://www.youtube.com/watch?v=itjJfQafKjo",
+   "year": 1990,
+   "full": true,
+   "kind": "show",
+   "note": "Mitschnitt RTLplus 03.06.1990 mit Programmansage, für YouTube auf FSK 12 geschnitten",
+   "date": "1990-06-03",
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "titles": [
+    "Tutti Frutti"
+   ],
+   "url": "https://archive.org/download/rtl_tutti_frutti-1992-11/1992xxxx%20xxxx%20-%20RTL%20-%20Tutti%20Frutti.mp4",
+   "year": 1992,
+   "full": true,
+   "kind": "show",
+   "note": "RTL - 1992-11-XX [1h20m VHS SP] (Internet Archive)",
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "rtl-plus",
+   "titles": [
+    "Playboy Late Night Show"
+   ],
+   "url": "https://www.youtube.com/watch?v=qztCAf_5F00",
+   "year": 1991,
+   "date": "1991-12-29",
+   "full": false,
+   "durationS": 2631,
+   "note": "29.12.1991 RTL Ende \"Playboy Late Night Show\" und \"Kanal 4 Kabarett\" Fragment · Upload: TV Zeitmaschine reloaded",
+   "review": "erotik-90er"
+  },
+  {
+   "channel": "vox",
+   "titles": [
+    "Wa(h)re Liebe"
+   ],
+   "url": "https://www.youtube.com/watch?v=JAWSLkzK0fg",
+   "year": 1994,
+   "full": true,
+   "kind": "show",
+   "note": "Wa(h)re Liebe vom 25.08.1994 – Lilo Wanders mit Elisabeth Volkmann und Uta Ranke-Heinemann (Einspieler aus Jugendschutzgründen entfernt)",
+   "date": "1994-08-25",
+   "durationS": 1638,
+   "review": "erotik-90er"
   }
  ]
 }

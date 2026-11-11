@@ -88,6 +88,11 @@ async function Dashboard({ searchParams }: Props) {
           <Tile label="Sendungen (echte Tage)" value={num(stats.broadcastsReal)} />
           <Tile label="davon mit Video" value={pct(share)} sub={`${num(stats.broadcastsWithVideo)} Sendungen`} />
           <Tile label="genau diese Sendung" value={pct(exactShare)} sub={`${num(stats.broadcastsExact)} Sendungen`} />
+          <Tile
+            label="Sendungen (angenommene Tage)"
+            value={num(stats.broadcastsAssumed)}
+            sub={`${pct(stats.broadcastsAssumed ? stats.broadcastsAssumedWithVideo / stats.broadcastsAssumed : 0)} mit Video · ${num(stats.broadcastsAssumedExact)} genau`}
+          />
           <Tile label="verlinkte Videos" value={num(stats.videos)} sub={`${num(stats.blockedVideos)} gesperrt`} />
           <Tile label="Zwischenspiele" value={num(stats.interstitials)} />
         </div>
@@ -101,6 +106,12 @@ async function Dashboard({ searchParams }: Props) {
         <div className="trend-grid">
           <Trend title="Tage mit Programm" points={snapshots.map((s) => [s.day, s.data.daysReal])} format={num} />
           <Trend title="Sendungen mit Video" points={snapshots.map((s) => [s.day, s.data.broadcastsWithVideo])} format={num} />
+          {/* Measured since 11 Nov 2026: older snapshots don't have it. */}
+          <Trend
+            title="… auf angenommenen Tagen"
+            points={snapshots.filter((s) => s.data.broadcastsAssumedWithVideo !== undefined).map((s) => [s.day, s.data.broadcastsAssumedWithVideo])}
+            format={num}
+          />
           <Trend
             title="Anteil mit Video"
             points={snapshots.map((s) => [s.day, s.data.broadcastsReal ? s.data.broadcastsWithVideo / s.data.broadcastsReal : 0])}

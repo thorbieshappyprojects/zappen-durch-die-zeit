@@ -6,7 +6,9 @@
  *   pnpm ingest interstitials           import seed/interstitials.json (idents, announcers, sign-off, ad spots)
  *   pnpm ingest snapshot                store today's key figures (admin dashboard trend)
  *   pnpm ingest purge                   apply the retention rules (spam, rejected, e-mails, old reports); also part of snapshot
- *   pnpm ingest review-apply            put uploads the admin included at /admin/aussortiert into the seed files
+ *   pnpm ingest review-export           print the decisions of /admin/aussortiert as JSON (run where the decisions live: the server)
+ *   pnpm ingest review-apply [--decisions <file>]   put uploads the admin included into the seed files; with --decisions
+ *                                       from a review-export (the server's decisions), else from this database
  *   pnpm ingest admin-totp [--print]    set up two-factor login for /admin (writes apps/web/.env.local; --print only prints)
  *   pnpm ingest import <adapter> [dates…]
  *   pnpm ingest sources                 list sources and their license status
@@ -119,10 +121,18 @@ async function main(argv: string[]) {
         if (removed) console.log(`${removed} interstitials removed (left out by the upload review)`);
         break;
       }
+      case "review-export": {
+        // The admin decides on the server; the seed files live in the repository on the owner's machine.
+        const decisions = await listUploadDecisions(handle.db);
+        console.log(JSON.stringify(Object.fromEntries(Object.entries(decisions).map(([id, d]) => [id, { decision: d.decision, note: d.note }]))));
+        break;
+      }
       case "review-apply": {
         const seed = (name: string) => path.join(repoRoot(), "seed", name);
         const review = JSON.parse(await readFile(seed("upload-review.json"), "utf8")) as UploadReviewFile;
-        const decisions = await listUploadDecisions(handle.db);
+        const from = args.indexOf("--decisions");
+        const decisions: Record<string, { decision: string }> =
+          from >= 0 ? JSON.parse(await readFile(args[from + 1]!, "utf8")) : await listUploadDecisions(handle.db);
         const included = new Set(Object.entries(decisions).filter(([, d]) => d.decision === "include").map(([id]) => id));
         const lib = JSON.parse(await readFile(seed("media-library.json"), "utf8"));
         const inter = JSON.parse(await readFile(seed("interstitials.json"), "utf8"));

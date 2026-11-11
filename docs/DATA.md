@@ -62,7 +62,7 @@ Limits: an assumed day only knows regular programmes (series, news, talk shows, 
 
 - A matching title is not enough: check the uploader and what the video actually is.
 - What aired on TV is linked, whatever its topic (conspiracy or UFO shows included); the uploader is checked only for whether the recording is genuine and from the right era.
-- Erotic programmes, and announcements or trailers for them, are left out for now: they go to `seed/upload-review.json` (group `erotik-90er`); plain ad breaks from such programmes stay.
+- Erotic programmes that aired (Tutti Frutti, Playboy Late Night Show, Wa(h)re Liebe …), and announcements or trailers for them, are linked like any other programme (owner decision 11 Nov 2026; until then they waited in the review group `erotik-90er`). Material that never aired on these stations stays out.
 - Exception: a right-wing channel that frames or comments the content and was active in the last five years → not linked; the find goes to `seed/upload-review.json` for the admin.
 - Material that never aired (lectures, rallies, internet shows, propaganda) is never linked; neither are spam re-uploads or recordings from the wrong era.
 - Verify technically: YouTube via oEmbed; Internet Archive only if the file itself plays (items can look public while every file is private).
