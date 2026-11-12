@@ -29,6 +29,8 @@ interface Props {
   onEnded?: () => void;
   /** YouTube's error code when it gives up (undefined: the API didn't load). */
   onError?: (code?: number) => void;
+  /** The video never started, even after reloading (no error from YouTube): offer "try again" instead of looping. */
+  onStalled?: () => void;
   /** TV-wide sound state; every new channel starts with it. */
   muted: boolean;
   /** The browser refused autoplay with sound (only possible before any user interaction). */
@@ -51,15 +53,23 @@ export function hasUserActivation(): boolean {
 }
 
 /**
+ * Phones and tablets (iOS above all) block autoplay with sound in an embedded player even after a tap:
+ * the tap happened on our page, not in YouTube's frame. There the muted fallback is always needed.
+ */
+function strictAutoplay(): boolean {
+  return window.matchMedia?.("(pointer: coarse)").matches ?? false;
+}
+
+/**
  * YouTube IFrame player (privacy-enhanced host) that autoplays at the live
  * position and follows the TV's sound switch. If the browser blocks autoplay
  * with sound, it plays muted and reports it. Mount with a new `key` to retune.
  */
-export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, muted, onAutoplayBlocked, live, endSeconds, title, onDrift }: Props) {
+export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, onStalled, muted, onAutoplayBlocked, live, endSeconds, title, onDrift }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
-  const callbacks = useRef({ startSeconds, loop, onEnded, onError, muted, onAutoplayBlocked, onDrift });
-  callbacks.current = { startSeconds, loop, onEnded, onError, muted, onAutoplayBlocked, onDrift };
+  const callbacks = useRef({ startSeconds, loop, onEnded, onError, onStalled, muted, onAutoplayBlocked, onDrift });
+  callbacks.current = { startSeconds, loop, onEnded, onError, onStalled, muted, onAutoplayBlocked, onDrift };
 
   // Follow the TV's sound switch without reloading the video.
   useEffect(() => {
@@ -77,6 +87,8 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
     const mount = document.createElement("div");
     host?.appendChild(mount);
     let reloaded = false;
+    /** The video reached "playing" at least once: from then on a stall is buffering, never a failure. */
+    let started = false;
     let refusedRetries = 0;
     let retryTimer: ReturnType<typeof setTimeout> | undefined;
     let drifted = false;
@@ -124,9 +136,10 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
               // Re-seek: loading took time and the duration is now known (short recordings wrap).
               target.seekTo(callbacks.current.startSeconds(target.getDuration()), true);
               target.playVideo();
-              // Muted fallback only where the browser really blocks sound: before any user interaction.
-              // A slow load is no reason to mute (that used to mute the TV on some channel switches).
-              if (!hasUserActivation() && !callbacks.current.muted) {
+              // Muted fallback only where the browser really blocks sound: before any user interaction, and
+              // always on touch devices. A slow load on desktop is no reason to mute (that used to mute the TV
+              // on some channel switches).
+              if ((strictAutoplay() || !hasUserActivation()) && !callbacks.current.muted) {
                 autoplayTimer = setTimeout(() => {
                   const state = target.getPlayerState();
                   if (state === -1 || state === 5) {
@@ -141,12 +154,21 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
               watchdog = setInterval(() => {
                 const state = target.getPlayerState();
                 if (state === YT.PlayerState.PLAYING || state === YT.PlayerState.PAUSED) {
+                  started = true;
                   nudges = 0;
                   checkDrift(target, state === YT.PlayerState.PAUSED);
                   return;
                 }
                 if (++nudges > MAX_NUDGES) {
                   nudges = 0;
+                  // Never started (unstarted/cued, not buffering) even after a fresh load: YouTube shows its own
+                  // notice in the frame without an error event (e.g. its bot check on phones). Stop reloading –
+                  // every load makes the bot check likelier – and let the TV offer "try again".
+                  if (reloaded && !started && (state === -1 || state === 5)) {
+                    clearInterval(watchdog);
+                    callbacks.current.onStalled?.();
+                    return;
+                  }
                   reload(target);
                   return;
                 }
@@ -155,6 +177,7 @@ export function YouTubePlayer({ videoId, startSeconds, loop, onEnded, onError, m
               }, STALL_CHECK_MS);
             },
             onStateChange: ({ data, target }) => {
+              if (data === YT.PlayerState.PLAYING) started = true;
               if (data === YT.PlayerState.PAUSED || data === YT.PlayerState.PLAYING) checkDrift(target, data === YT.PlayerState.PAUSED);
               if (data !== YT.PlayerState.ENDED) return;
               if (callbacks.current.loop) {

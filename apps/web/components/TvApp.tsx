@@ -787,6 +787,8 @@ export function TvApp({
           onEnded={freeChoice && next ? () => jumpTo(next.startMin) : undefined}
           onResolution={(_w, h) => noteResolution(playing.videoId, h)}
           onDrift={(drifted) => setDrift(drifted ? programmePlayerKey : null)}
+          // Never started (YouTube's notice in the frame, no error event): the same "try again" notice, no report.
+          onStalled={() => setRefusedVideoIds((prev) => new Set(prev).add(playing.videoId))}
           onError={(code) => {
             // Refused by YouTube (mostly its bot check): the viewer can try again; the server only keeps
             // the report if the video really can't be embedded (oEmbed), see app/melden/actions.ts.

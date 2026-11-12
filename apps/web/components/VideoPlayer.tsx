@@ -16,6 +16,8 @@ interface Props {
   onEnded?: () => void;
   /** The provider gave up; YouTube passes its error code. */
   onError?: (code?: number) => void;
+  /** YouTube only: the video never started, even after reloading. */
+  onStalled?: () => void;
   muted: boolean;
   onAutoplayBlocked?: () => void;
   /** "Wie damals" mode: linear TV, no controls, no pausing or skipping. Off: the provider's full controls. */
@@ -40,13 +42,13 @@ export function VideoPlayer({ live, ...props }: Props) {
   );
 }
 
-function ProviderPlayer({ provider, videoId, durationS = null, muted, onAutoplayBlocked, live, endSeconds = null, onResolution, onDrift, ...rest }: Props) {
+function ProviderPlayer({ provider, videoId, durationS = null, muted, onAutoplayBlocked, live, endSeconds = null, onResolution, onDrift, onStalled, ...rest }: Props) {
   const sound = { muted, onAutoplayBlocked, live };
   // Iframes have no API: they "end" by timer, at the segment end if there is one.
   const iframeDuration = endSeconds ?? durationS;
   switch (provider) {
     case "youtube":
-      return <YouTubePlayer videoId={videoId} endSeconds={endSeconds} onDrift={onDrift} {...rest} {...sound} />;
+      return <YouTubePlayer videoId={videoId} endSeconds={endSeconds} onDrift={onDrift} onStalled={onStalled} {...rest} {...sound} />;
     case "archive":
       return <Html5Player src={`https://archive.org/download/${videoId}`} endSeconds={endSeconds} onResolution={onResolution} {...rest} {...sound} />;
     case "dailymotion":
