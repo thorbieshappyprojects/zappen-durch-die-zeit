@@ -10,6 +10,7 @@ UI text is German; code, comments and docs are English. Older design papers are 
                  ┌─────────────────────── apps/web (Next.js 16, App Router) ───────────────────────┐
  Browser ──────▶ │ proxy.ts (CSP nonce, invalid dates → 404)                                        │
  (TvApp, players)│ pages: /  /tag/<date>  /tag/<date>/programm  /tag/<date>/lueckenlos  /info        │
+                 │        /sendung/<slug> (show page)  /suche (show search, JSON)                    │
                  │        /mitmachen (+ /mitmachen/senden)  /impressum  /datenschutz  /og  /admin/*  │
                  │ lib/db.ts (per-process caches)  lib/admin-*  lib/contribution-*  lib/video-health │
                  └───────────────┬───────────────────────────────────────────────────────────────────┘

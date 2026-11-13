@@ -1,6 +1,6 @@
 import { cache } from "react";
 import { bestDays, channelDayHints, dayCoverageScore, eventDay, eventWindow, seamlessDay, STATIONS, themeDay, tvDayDateOf, withStationNames, type ChannelDayHint, type HistoryEvent, type PoolVideo, type ThemeId } from "@zdz/core";
-import { bestVideoStarts, computeStats, createDb, getSiteSettings as loadSiteSettings, listChannelDayCoverage, listEventExclusions, listEventPool, listStationVideoCounts, recordSnapshot, type DbStats, listHiddenStations, listDaySources, listSeamlessPool, listTvDayCoverage, listTvDays, loadTvDay, type DbHandle } from "@zdz/db";
+import { bestVideoStarts, computeStats, createDb, getSiteSettings as loadSiteSettings, listChannelDayCoverage, listEventExclusions, listEventPool, listStationVideoCounts, recordSnapshot, type DbStats, listHiddenStations, listDaySources, listSeamlessPool, listTvDayCoverage, listTvDays, loadTvDay, loadShow, searchShows, type DbHandle } from "@zdz/db";
 import type { TvDay } from "@zdz/core";
 import { canEmbed, withPlayableMedia } from "./providers";
 
@@ -214,4 +214,14 @@ export async function getSiteSettings() {
 
 export async function getHiddenStations(): Promise<string[]> {
   return listHiddenStations((await db()).db);
+}
+
+/** Shows matching a search (core `rankShowHits`); `near` picks the airing to open among equally good ones. */
+export async function findShows(query: string, near?: string) {
+  return searchShows((await db()).db, query, 8, near);
+}
+
+/** Every airing of a show (normalised title) on real days, cached like a day. */
+export function getShow(key: string) {
+  return cachedBuilt(`show|${key}`, async () => loadShow((await db()).db, key));
 }

@@ -11,6 +11,7 @@ import { useFormToken } from "@/lib/form-token";
 import { matchLabel } from "@/lib/labels";
 import { HelpOverlay } from "./HelpOverlay";
 import { OffTopicReport, reportFailedVideo, VideoReport } from "./VideoReport";
+import { ShowSearch } from "./ShowSearch";
 import { ConsentOverlay, YouTubeRefused, interstitialChip, InterstitialScreen, interstitialSkipLabel, NoSignal, OffAirScreen, PowerScreen, ProgrammeCard, TestCard } from "./Screen";
 import { Teletext, TeletextChronik, TeletextOverview } from "./Teletext";
 import { YearTimeline } from "./YearTimeline";
@@ -96,8 +97,8 @@ export function TvApp({
   const builtKey = built === "chronik" ? `chronik:${event.id}` : built;
   const builtLabel = (kind: BuiltKind) => (kind === "seamless" ? "Lückenlos" : kind === "chronik" ? `${CHRONIK.label} · ${event.title}` : THEMES[kind].label);
   const seamless = built !== null;
-  /** Any show can be picked from the guide (and the player has its controls). */
-  const freeChoice = tab !== "tv" || tvMode === "free";
+  /** Any show can be picked from the guide (and the player has its controls); only "Wie damals" is strictly linear. */
+  const freeChoice = tab !== "tv" || tvMode !== "live";
   const [builtData, setBuiltData] = useState<{ key: string; date: string; channels: Channel[]; broadcasts: Broadcast[]; media: TvDay["media"] } | null>(
     null,
   );
@@ -519,8 +520,14 @@ export function TvApp({
   );
   const shortDate = (d: string) => d.split("-").reverse().join(".");
 
-  // A shared link: its programme, and with a time a start there (in "Fernsehen" as free choice).
-  // Not saved as the viewer's preference. Idempotent on purpose: React runs mount effects twice in development.
+  // "Programm frei wählen" (and the themes): a new day or another station opens a show we have a
+  // video for – the one on air, else the next, else the last earlier one. A shared link's time is
+  // kept: it named a show on purpose.
+  const autoPicked = useRef<string | null>(share.tvDayMin !== undefined ? "shared" : null);
+
+  // A shared link (or a search result): its programme, and with a time a start there (in "Fernsehen"
+  // as free choice). Not saved as the viewer's preference. Idempotent on purpose: React runs mount
+  // effects twice in development. Also runs when a link of the TV itself changes the target.
   useEffect(() => {
     if (share.event) setTab("chronik");
     else if (share.programme) setTab(share.programme);
@@ -528,13 +535,11 @@ export function TvApp({
       setTab("tv");
       setTvMode("free");
     }
-    if (share.tvDayMin !== undefined) jumpTo(share.tvDayMin);
-  }, [share.programme, share.event, share.tvDayMin, jumpTo]);
-
-  // "Programm frei wählen" (and the themes): a new day or another station opens a show we have a
-  // video for – the one on air, else the next, else the last earlier one. A shared link's time is
-  // kept: it named a show on purpose.
-  const autoPicked = useRef<string | null>(share.tvDayMin !== undefined ? "shared" : null);
+    if (share.tvDayMin !== undefined) {
+      autoPicked.current = "shared";
+      jumpTo(share.tvDayMin);
+    }
+  }, [share, jumpTo]);
   useEffect(() => {
     if (!freeChoice || tvMin === null || noSignal) return;
     const key = `${day.date}|${channel.id}|${seamlessReady}`;
@@ -815,6 +820,9 @@ export function TvApp({
     screen = programmeCard(current);
   }
 
+  // The day's real programme to read and print: in "Fernsehen" (also "Lückenlos", which is built on that day), not for themes or the Chronik.
+  const listingHref = tab === "tv" ? `/tag/${realDay.date}/programm` : undefined;
+
   // The TV modes (review §5) as teletext buttons in the guide; the explanation is each button's hover text.
   const modesBlock = (
     <>
@@ -822,7 +830,7 @@ export function TvApp({
         <div className="tt-modes" role="radiogroup" aria-label="Wie soll der Fernseher laufen?">
           {(
             [
-              ["seamless", "Lückenlos", "Durchgehend Programm auf allen Sendern – aus vorhandenen Aufnahmen, nicht das echte Programm."],
+              ["seamless", "Lückenlos", "Durchgehend Programm auf allen Sendern – aus vorhandenen Aufnahmen, nicht das echte Programm. Jede Sendung lässt sich im Programm wählen."],
               ["live", "Wie damals", `Es läuft, was am ${dateLabel} um diese Uhrzeit lief. YouTube-Videos zeigen dabei YouTubes eigene Bedienelemente.`],
               ["free", "Programm frei wählen", "Klicke im Programm auf eine Sendung."],
             ] as const
@@ -1079,6 +1087,7 @@ export function TvApp({
         </section>
 
         <div className="tt-area">
+          <ShowSearch date={realDay.date} />
           {ttView === "chronik" && tab === "chronik" ? (
             <TeletextChronik current={event.id} onPick={pickEvent} onChannelPage={() => setTtView("channel")} />
           ) : ttView === "overview" ? (
@@ -1090,6 +1099,7 @@ export function TvApp({
               onChannelPage={() => setTtView("channel")}
               label={built === "chronik" ? CHRONIK.label : built ? builtLabel(built) : undefined}
               showMatch={!seamless}
+              listingHref={listingHref}
               modes={modesBlock}
             />
           ) : noSignal ? (
@@ -1123,8 +1133,7 @@ export function TvApp({
               label={built === "chronik" ? CHRONIK.label : built ? builtLabel(built) : undefined}
               showMatch={!seamless}
               onShare={shareShow}
-              // The day listing is the real programme: not for built ones.
-              listingHref={built ? undefined : `/tag/${day.date}/programm`}
+              listingHref={listingHref}
               modes={modesBlock}
               summary={
                 <>

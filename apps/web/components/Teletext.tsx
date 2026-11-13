@@ -1,6 +1,6 @@
 "use client";
 
-import { formatClock, formatTvDayShort, HISTORY_EVENTS, matchLevelOf, nowAndNextByChannel, type Broadcast, type Channel, type HistoryEvent, type TvDay } from "@zdz/core";
+import { formatClock, formatTvDayShort, HISTORY_EVENTS, matchLevelOf, nowAndNextByChannel, showPath, type Broadcast, type Channel, type HistoryEvent, type TvDay } from "@zdz/core";
 import Link from "next/link";
 import { useEffect, useMemo, useRef } from "react";
 import { MATCH_HINT, MATCH_MARK } from "@/lib/labels";
@@ -57,7 +57,8 @@ export function Teletext({
     const list = listRef.current;
     const row = list?.querySelector<HTMLElement>(".tt-row.cur");
     if (!list || !row) return;
-    const top = row.offsetTop - 60;
+    // Relative to the list (offsetTop would be relative to the positioned entry, i.e. 0).
+    const top = row.getBoundingClientRect().top - list.getBoundingClientRect().top + list.scrollTop - 60;
     if (Math.abs(list.scrollTop - top) > 120) list.scrollTop = top;
   }, [channel.id, current?.id]);
 
@@ -128,11 +129,16 @@ export function Teletext({
                 </div>
               )}
               {/* Next to the entry, not inside it: a button can't contain a button. */}
-              {onShare && (
-                <button type="button" className="tt-share" onClick={() => onShare(b)} title={`${formatClock(b.startMin)} ${b.title} teilen`} aria-label={`„${b.title}“ um ${formatClock(b.startMin)} teilen`}>
-                  Teilen
-                </button>
-              )}
+              <span className="tt-actions">
+                <Link className="tt-share" href={`${showPath(b.title)}?tag=${day.date}`} title={`Alle Termine von „${b.title}“`} aria-label={`Alle Termine von „${b.title}“`}>
+                  Termine
+                </Link>
+                {onShare && (
+                  <button type="button" className="tt-share" onClick={() => onShare(b)} title={`${formatClock(b.startMin)} ${b.title} teilen`} aria-label={`„${b.title}“ um ${formatClock(b.startMin)} teilen`}>
+                    Teilen
+                  </button>
+                )}
+              </span>
             </li>
           );
         })}
@@ -168,6 +174,7 @@ export function TeletextOverview({
   onChannelPage,
   label,
   showMatch = true,
+  listingHref,
   modes,
 }: {
   day: TvDay;
@@ -178,6 +185,8 @@ export function TeletextOverview({
   /** Shown instead of the date. */
   label?: string;
   showMatch?: boolean;
+  /** The day listing for reading and printing; absent for built programmes. */
+  listingHref?: string;
   modes?: React.ReactNode;
 }) {
   // Recomputed once a minute, not every second.
@@ -199,13 +208,21 @@ export function TeletextOverview({
       <ul className="tt-list tt-overview">
         {rows.map(({ channel, now, next }) => {
           const level = now && showMatch ? matchLevelOf(day, now) : null;
+          const tuned = channel.displayNumber === tunedSlot;
+          // Number and name tune the channel; a show's title opens its page with all airings.
+          const show = (b: Broadcast) => (
+            <Link href={`${showPath(b.title)}?tag=${day.date}`} title={`Alle Termine von „${b.title}“`}>
+              {b.title}
+            </Link>
+          );
           return (
-            <li key={channel.id}>
+            <li key={channel.id} className={`tt-row tt-ov${tuned ? " cur" : ""}`}>
               <button
                 type="button"
-                className={`tt-row tt-ov${channel.displayNumber === tunedSlot ? " cur" : ""}`}
+                className="ov-tune"
                 onClick={() => onTune(channel.displayNumber)}
                 title={`${channel.displayNumber} ${channel.name} einschalten`}
+                aria-pressed={tuned}
               >
                 <span className="tm">{channel.displayNumber}</span>
                 <span className="ov-name">{channel.name}</span>
@@ -214,25 +231,30 @@ export function TeletextOverview({
                     {MATCH_MARK[level]}
                   </span>
                 )}
-                <span className="ov-now">
-                  {now ? (
-                    <>
-                      <b>JETZT</b> {formatClock(now.startMin)} {now.title}
-                    </>
-                  ) : (
-                    <b>–</b>
-                  )}
-                </span>
-                {next && (
-                  <span className="ov-next">
-                    <b>DANACH</b> {formatClock(next.startMin)} {next.title}
-                  </span>
-                )}
               </button>
+              <span className="ov-now">
+                {now ? (
+                  <>
+                    <b>JETZT</b> {formatClock(now.startMin)} {show(now)}
+                  </>
+                ) : (
+                  <b>–</b>
+                )}
+              </span>
+              {next && (
+                <span className="ov-next">
+                  <b>DANACH</b> {formatClock(next.startMin)} {show(next)}
+                </span>
+              )}
             </li>
           );
         })}
       </ul>
+      {listingHref && (
+        <Link className="tt-listing" href={listingHref} title="Das ganze Programm des Tages zum Lesen und Drucken">
+          ▸ Programm des Tages
+        </Link>
+      )}
       {modes}
     </section>
   );

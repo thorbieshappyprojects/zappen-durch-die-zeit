@@ -49,7 +49,7 @@ button { font: inherit; }
 .tv-area { grid-area: tv; min-width: 0; }
 .channels { grid-area: ch; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .extras { grid-area: ex; min-width: 0; }
-.tt-area { grid-area: tt; min-width: 0; }
+.tt-area { grid-area: tt; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 
 /* Wide screens: channels left, TV centre, teletext right. The TV is as large as a
    4:3 screen that fits the viewport height; channels and teletext sit right next to it
@@ -76,7 +76,7 @@ button { font: inherit; }
   .programme-tabs { margin-bottom: 0; }
   /* contain: size – they don't make the row taller than the TV; their content scrolls inside. */
   .channels, .tt-area { align-self: stretch; contain: size; }
-  .tt-area > .tt { height: 100%; max-height: none; box-sizing: border-box; }
+  .tt-area > .tt { flex: 1 1 auto; min-height: 0; max-height: none; box-sizing: border-box; }
   .tv { width: 100%; margin: 0 auto; }
   /* The info strip spans all three columns: it must not shrink with the TV, or its links get cut off. */
   .extras { width: 100%; }
@@ -235,9 +235,11 @@ button { font: inherit; }
 .tt-foot { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; font-size: 14px; flex-shrink: 0; }
 /* A show's share button: on hover or keyboard focus (touch screens: on the show that is on now). */
 .tt-entry { position: relative; }
-.tt-share { all: unset; position: absolute; right: 30px; top: 2px; display: none; padding: 0 6px; background: var(--tt-blue); color: var(--tt-white); font-size: 13px; cursor: pointer; }
-.tt-entry:hover .tt-share, .tt-entry:focus-within .tt-share { display: block; }
-@media (hover: none) { .tt-entry:has(.tt-row.cur) .tt-share { display: block; } }
+/* "Termine" (the show's page) and "Teilen" side by side. */
+.tt-actions { position: absolute; right: 30px; top: 2px; display: none; gap: 3px; }
+.tt-share { all: unset; padding: 0 6px; background: var(--tt-blue); color: var(--tt-white); font-size: 13px; cursor: pointer; }
+.tt-entry:hover .tt-actions, .tt-entry:focus-within .tt-actions { display: flex; }
+@media (hover: none) { .tt-entry:has(.tt-row.cur) .tt-actions { display: flex; } }
 .tt-share:focus-visible { outline: 1px solid var(--tt-yellow); }
 /* The day listing: a row of its own. */
 .tt-listing { flex-shrink: 0; display: block; margin-top: 8px; padding: 4px 8px; background: var(--tt-cyan); color: #000; font-size: 16px; text-decoration: none; }
@@ -328,7 +330,13 @@ body { padding-bottom: 76px; }
 .cal-legend-swatch { display: inline-block; width: 22px; font-style: normal; text-align: center; }
 .tt-tab { all: unset; cursor: pointer; float: right; font-size: 13px; color: var(--tt-cyan); padding: 0 4px; }
 .tt-tab:hover, .tt-tab:focus-visible { color: #fff; outline: 1px solid var(--tt-cyan); }
-.tt-row.tt-ov { grid-template-columns: 26px 1fr auto; }
+.tt-row.tt-ov { grid-template-columns: 26px 1fr auto; cursor: default; }
+/* Number and name tune the channel; the titles below link to the shows' pages. */
+.tt-ov .ov-tune { all: unset; grid-column: 1 / -1; display: grid; grid-template-columns: 26px 1fr auto; gap: 0 8px; cursor: pointer; }
+.tt-ov .ov-tune:focus-visible { outline: 1px solid var(--tt-yellow); }
+.tt-ov .ov-tune:hover .ov-name { text-decoration: underline; }
+.tt-ov .ov-now a, .tt-ov .ov-next a { color: inherit; text-decoration: none; }
+.tt-ov .ov-now a:hover, .tt-ov .ov-next a:hover, .tt-ov .ov-now a:focus-visible, .tt-ov .ov-next a:focus-visible { color: var(--tt-yellow); text-decoration: underline; outline: none; }
 .tt-ov .ov-name { color: var(--tt-yellow); }
 .tt-ov .ov-now, .tt-ov .ov-next { grid-column: 2 / -1; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tt-ov .ov-next { opacity: .75; }
@@ -627,3 +635,51 @@ a.listing-match:hover { text-decoration: underline; }
 .yt-refused .yt-refused-title { font-size: clamp(15px, 2vw, 20px); font-weight: 700; opacity: 1; color: var(--amber); }
 .review-body > summary { cursor: pointer; margin: 6px 0; opacity: .85; }
 .review-pending { border-left: 3px solid var(--amber); padding-left: 8px; }
+
+/* Show search above the guide: a teletext input line with its results below. */
+.tt-search { position: relative; flex-shrink: 0; font-family: var(--mono); }
+.tt-search input { width: 100%; box-sizing: border-box; padding: 5px 10px; background: #000; color: var(--tt-yellow); border: 2px solid var(--tt-blue); border-radius: 10px; font: inherit; font-size: 19px; outline: none; }
+.tt-search input::placeholder { color: var(--tt-cyan); opacity: .8; }
+.tt-search input:focus { border-color: var(--tt-cyan); }
+.tt-search-list { position: absolute; z-index: 30; left: 0; right: 0; top: calc(100% + 2px); margin: 0; padding: 4px; list-style: none; background: #000; border: 2px solid var(--tt-cyan); border-radius: 8px; max-height: min(60vh, 420px); overflow: auto; box-shadow: 0 16px 30px rgba(0,0,0,.6); }
+.tt-search-list li { display: flex; align-items: stretch; gap: 4px; }
+.tt-search-list li.on { background: #1b1b4a; }
+.tt-search-list button { all: unset; flex: 1; min-width: 0; padding: 3px 6px; cursor: pointer; display: flex; flex-direction: column; }
+.ts-title { color: var(--tt-white); font-size: 18px; }
+.tt-search-list li.on .ts-title { color: var(--tt-yellow); }
+.ts-meta { color: #9a9a9a; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ts-all { align-self: center; padding: 1px 6px; background: var(--tt-blue); color: var(--tt-white); font-size: 14px; text-decoration: none; white-space: nowrap; }
+.ts-all:hover, .ts-all:focus-visible { color: var(--tt-yellow); outline: none; }
+.tt-search-empty { padding: 4px 6px; color: var(--tt-cyan); font-size: 16px; }
+
+/* Show page /sendung/<slug>: a full teletext page. */
+.ttp { max-width: 980px; margin: 0 auto; padding: 16px 16px 24px; }
+.ttp-screen { background: #000; border-radius: 14px; padding: 14px 14px 12px; font-family: var(--mono); font-size: 19px; line-height: 1.2; color: var(--tt-white); box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+.ttp-screen .tt-head a { color: var(--tt-cyan); text-decoration: none; }
+.ttp-screen .tt-head a:hover, .ttp-screen .tt-head a:focus-visible { color: var(--tt-yellow); }
+.ttp-title { font-weight: 400; font-size: clamp(24px, 4vw, 34px); margin: 0 0 10px; }
+.ttp-facts { margin: 0 4px 10px; display: grid; gap: 2px; }
+.ttp-facts div { display: grid; grid-template-columns: 150px 1fr; gap: 8px; }
+.ttp-facts dt { color: var(--tt-cyan); }
+.ttp-facts dd { margin: 0; }
+@media (max-width: 520px) { .ttp-facts div { grid-template-columns: 1fr; gap: 0; } }
+.ttp-filter { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 4px 6px; }
+.ttp-filter a { padding: 1px 8px; background: var(--tt-blue); color: var(--tt-white); text-decoration: none; font-size: 17px; }
+.ttp-filter a span { color: var(--tt-cyan); }
+.ttp-filter a.on { background: var(--tt-yellow); color: #000; }
+.ttp-filter a.on span { color: #000; }
+.ttp-filter a:hover:not(.on), .ttp-filter a:focus-visible { color: var(--tt-yellow); outline: none; }
+.ttp-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.ttp-year { margin: 10px 4px 2px; font-weight: 400; font-size: 22px; color: var(--tt-green); }
+.tt-row.ttp-row { grid-template-columns: 110px 54px minmax(90px, 140px) 1fr; text-decoration: none; }
+.ttp-row .ttp-station { color: var(--tt-yellow); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ttp-row .m { justify-self: start; }
+.ttp-row .sub2 { grid-column: 2 / -1; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.ttp-row:hover .ttp-station, .ttp-row:focus-visible .ttp-station { text-decoration: underline; }
+@media (max-width: 520px) {
+  .tt-row.ttp-row { grid-template-columns: 96px 50px 1fr auto; font-size: 17px; }
+  .ttp-row .sub2 { grid-column: 1 / -1; }
+}
+.ttp-pager { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 10px 4px 0; color: var(--tt-cyan); }
+.ttp-pager a { color: var(--tt-yellow); text-decoration: none; }
+.ttp-pager a:hover, .ttp-pager a:focus-visible { text-decoration: underline; }
